@@ -48,4 +48,5 @@ themes/renewal-funds/node_modules/*
 # Ignore build files #
 # ================== #
 themes/renewal-funds/build/*
+themes/renewal-funds/gulpfile.js
 
