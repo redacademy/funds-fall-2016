@@ -54,7 +54,7 @@ function portfolio_company_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'portfolio_company', $args );
+	register_post_type( 'portfolio-company', $args );
 
 }
 add_action( 'init', 'portfolio_company_post_type', 0 );

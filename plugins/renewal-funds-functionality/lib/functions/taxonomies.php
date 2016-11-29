@@ -39,7 +39,7 @@ function register_portfolio_company_year_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'portfolio_company_year', array( 'portfolio_company' ), $args );
+	register_taxonomy( 'portfolio-company-year', array( 'portfolio-company' ), $args );
 
 }
 add_action( 'init', 'register_portfolio_company_year_taxonomy', 0 );
