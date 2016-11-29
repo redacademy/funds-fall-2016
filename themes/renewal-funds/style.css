@@ -664,3 +664,29 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between;
   background: green; }
+
+.nav-option {
+  background-color: white; }
+
+.header-resize {
+  height: 100vh;
+  width: 80%;
+  margin-right: 20%; }
+  .header-resize .header-bar {
+    height: 33vh; }
+  .header-resize .nav-option {
+    height: 67vh; }
+
+/*.header-resize {
+    height: 100vh;
+    background-color: lightgrey;
+    .header-bar, .nav-option {
+        width: 80vw;
+    }
+    .header-bar {
+        height: 33vh;
+    }
+    .nav-option {
+        height: 67vh;
+    }
+}*/
