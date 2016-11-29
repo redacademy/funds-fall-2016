@@ -657,6 +657,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*  mobile version header!!!!   */
 .header-bar {
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
@@ -690,3 +691,4 @@ object {
         height: 67vh;
     }
 }*/
+/*   desktop version  header!!!! */
