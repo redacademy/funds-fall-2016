@@ -9,9 +9,9 @@
 function register_portfolio_company_year_taxonomy() {
 
 	$labels = array(
-		'name'                       => 'Portfolio Company Years',
+		'name'                       => 'Portfolio Company Year',
 		'singular_name'              => 'Portfolio Company Year',
-		'menu_name'                  => 'Portfolio Company Years',
+		'menu_name'                  => 'Portfolio Company Year',
 		'all_items'                  => 'All Portfolio Company Years',
 		'parent_item'                => 'Parent Portfolio Company Year',
 		'parent_item_colon'          => 'Parent Portfolio Company Year:',
