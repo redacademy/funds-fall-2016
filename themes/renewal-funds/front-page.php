@@ -20,6 +20,8 @@ get_header(); ?>
 				endif; 
 			?>
 
+			<p>justin test</p>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
