@@ -658,7 +658,9 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-header {
+  padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  background: green; }
