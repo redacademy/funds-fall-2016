@@ -21,7 +21,7 @@ get_header(); ?>
 			?>
 			<p>hello</p>
 
-			<p>justin test</p>
+			<p>justin test2</p>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
