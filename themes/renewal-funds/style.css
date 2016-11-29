@@ -657,3 +657,8 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
