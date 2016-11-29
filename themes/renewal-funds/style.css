@@ -669,14 +669,22 @@ object {
 .nav-option {
   background-color: white; }
 
+/*  after clicking nav-btn    */
 .header-resize {
   height: 100vh;
   width: 80%;
   margin-right: 20%; }
   .header-resize .header-bar {
-    height: 33vh; }
+    height: 33vh;
+    -ms-flex-pack: center;
+        justify-content: center; }
   .header-resize .nav-option {
     height: 67vh; }
+
+.nav-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 .main-navigation {
   height: 100%; }

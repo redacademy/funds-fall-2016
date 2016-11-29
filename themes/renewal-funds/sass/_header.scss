@@ -1,5 +1,4 @@
 /*  mobile version header!!!!   */
-
 .header-bar {
     padding: 0.5rem 2rem;
     display: flex;
@@ -11,16 +10,22 @@
     background-color: white;
 }
 
+/*  after clicking nav-btn    */
 .header-resize {
     height: 100vh;
     width: 80%;
     margin-right: 20%;
     .header-bar {
         height: 33vh;
+        justify-content: center;
     }
     .nav-option {
         height: 67vh;
     }
+}
+
+.nav-logo {
+    align-self: center;
 }
 
 .main-navigation {
