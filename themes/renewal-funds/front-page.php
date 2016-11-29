@@ -20,7 +20,7 @@ get_header(); ?>
 				endif; 
 			?>
 
-			<p>justin test</p>
+			<p>justin test2</p>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
