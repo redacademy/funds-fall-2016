@@ -36,15 +36,15 @@ access_log
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*
-!plugins/renewal_funds_functionality/
+!plugins/renewal-funds-functionality/
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/renewal_funds/
+!themes/renewal-funds/
 # Ignore npm packages #
 # =================== #
-themes/renewal_funds/node_modules/*
+themes/renewal-funds/node_modules/*
 # Ignore build files #
 # ================== #
-themes/renewal_funds/build/*
+themes/renewal-funds/build/*
 
