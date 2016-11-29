@@ -678,17 +678,17 @@ object {
   .header-resize .nav-option {
     height: 67vh; }
 
-/*.header-resize {
-    height: 100vh;
-    background-color: lightgrey;
-    .header-bar, .nav-option {
-        width: 80vw;
-    }
-    .header-bar {
-        height: 33vh;
-    }
-    .nav-option {
-        height: 67vh;
-    }
-}*/
+.main-navigation {
+  height: 100%; }
+  .main-navigation ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .main-navigation li {
+    width: 100%;
+    border-bottom: 1px solid green; }
+  .main-navigation a {
+    font-size: 2rem; }
+
 /*   desktop version  header!!!! */

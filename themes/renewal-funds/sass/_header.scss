@@ -23,22 +23,24 @@
     }
 }
 
-/*.header-resize {
-    height: 100vh;
-    background-color: lightgrey;
-    .header-bar, .nav-option {
-        width: 80vw;
+.main-navigation {
+    height: 100%;
+    ul {
+        display: flex;
+        flex-direction: column;
     }
-    .header-bar {
-        height: 33vh;
+    li {
+        width: 100%;
+        border-bottom: 1px solid green;
     }
-    .nav-option {
-        height: 67vh;
+    a {
+        font-size: 2rem;
     }
-}*/
+}
+
 
 /*   desktop version  header!!!! */
 
 @media screen and (min-width: 1000px) {
-    
+
 }
