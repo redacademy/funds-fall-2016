@@ -657,7 +657,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.site-header {
+.header-bar {
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
