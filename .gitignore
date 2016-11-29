@@ -40,6 +40,7 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
+themes/renewal-funds/gulpfile.js
 !themes/renewal-funds/
 # Ignore npm packages #
 # =================== #
