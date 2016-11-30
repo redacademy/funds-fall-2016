@@ -19,9 +19,6 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'portfolio-company' );
 				endif; 
 			?>
-			<p>hello</p>
-
-			<p>justin test</p>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
