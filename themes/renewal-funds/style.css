@@ -735,17 +735,33 @@ object {
       width: 80%; }
       .site-header .nav-option .dashicons {
         display: none; }
-      .site-header .nav-option ul {
+      .site-header .nav-option .menu {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: end;
             justify-content: flex-end;
-        padding-right: 1.5rem; }
+        padding-right: 1.5rem;
+        padding-top: 0.5rem;
+        -ms-flex-align: center;
+            align-items: center; }
       .site-header .nav-option li {
         padding: 0 1rem; }
       .site-header .nav-option a {
         font-size: 2rem;
-        color: #fff; } }
+        color: #fff; }
+      .site-header .nav-option .menu-item-25 span {
+        display: none; }
+      .site-header .nav-option .menu-item-25 .dashicons {
+        display: block; }
+      .site-header .nav-option .main-navigation ul li:hover > ul {
+        top: 255px;
+        right: -23px; }
+        .site-header .nav-option .main-navigation ul li:hover > ul li {
+          border-bottom: 3px solid #d6d6cd; }
+        .site-header .nav-option .main-navigation ul li:hover > ul a {
+          background-color: #fff;
+          color: #323432;
+          width: 150px; } }
 
 .welcome {
   text-align: center; }

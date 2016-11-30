@@ -82,10 +82,12 @@
             .dashicons {
                 display: none;
             }
-            ul {
+            .menu {
                 display: flex;
                 justify-content: flex-end;
                 padding-right: 1.5rem;
+                padding-top: 0.5rem;
+                align-items: center;
             }
             li {
                 padding: 0 1rem;
@@ -93,6 +95,28 @@
             a {
                 font-size: 2rem;
                 color: $color__background-body;
+            }
+            .menu-item-25 {
+                span {
+                    display: none;
+                }
+                .dashicons {
+                    display: block;
+                }
+            }
+            .main-navigation ul li:hover>ul {
+                
+                top: 255px;
+                right: -23px;
+                li {
+                    border-bottom: 3px solid $color__brand-color-lgray;
+                }
+                a {
+                background-color: $color__background-body;
+                color: $color__text-main;
+                width: 150px;
+                }
+                
             }
         }
     }
