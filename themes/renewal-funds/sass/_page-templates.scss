@@ -3,3 +3,24 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+// For Fonts
+// h1,h2,h3,h4,h5,h6 {
+//     font-family: 
+// }
+
+// body {
+
+// }
+
+.container {
+    max-width: 656px;
+    margin: 0 auto;
+    @include desktop {
+        max-width: 1240px;
+    }
+}

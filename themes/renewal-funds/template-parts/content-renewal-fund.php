@@ -2,43 +2,46 @@
 <?php
 get_header(); ?>
 <p>content-renewal-fund.php</p>
-<div class="welcome-wrapper">
-    <div class="welcome">
-        <p>Welcome Back,</p>
-        <span class="green-text"><p>Laura</p></span>
+
+<section class="container">
+    <div class="welcome-wrapper">
+        <div class="welcome">
+            <p>Welcome Back,</p>
+            <span class="green-text"><p>Laura</p></span>
+        </div>
     </div>
-</div>
 
-<div class="main-nav-wrapper">
-    <div class="main-nav">
+    <div class="main-nav-wrapper">
+        <div class="main-dashboard-nav">
 
-        <div class="nav-icon-wrapper">
-            <a href ="#"><div class="nav-icon">
-                <img src=""/>
-            </div></a>
-            <p>Portfolio Companies</p>
+            <div class="nav-icon-wrapper">
+                <a href ="#"><div class="nav-icon">
+                    <img src=""/>
+                </div></a>
+                <p>Portfolio Companies</p>
+            </div>
+
+            <div class="nav-icon-wrapper">
+                <a href ="#"><div class="nav-icon">
+                    <img src=""/>
+                </div></a>
+                <p>Create Questionnaire</p>
+            </div>
+
+            <div class="nav-icon-wrapper">
+                <a href ="#"><div class="nav-icon">
+                    <img src=""/>
+                </div></a>
+                <p>View Responses</p>
+            </div>
+
+            <div class="nav-icon-wrapper">
+                <a href ="#"><div class="nav-icon">
+                    <img src=""/>
+                </div></a>
+                <p>Set Reminders</p>
+            </div>
+
         </div>
-
-        <div class="nav-icon-wrapper">
-            <a href ="#"><div class="nav-icon">
-                <img src=""/>
-            </div></a>
-            <p>Create Questionnaire</p>
-        </div>
-
-        <div class="nav-icon-wrapper">
-            <a href ="#"><div class="nav-icon">
-                <img src=""/>
-            </div></a>
-            <p>View Responses</p>
-        </div>
-
-        <div class="nav-icon-wrapper">
-            <a href ="#"><div class="nav-icon">
-                <img src=""/>
-            </div></a>
-            <p>Set Reminders</p>
-        </div>
-
     </div>
-</div>
+</section>

@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 
-.main-nav {
+.main-dashboard-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -49,10 +49,10 @@
 }
 
 .nav-icon {
-    height: 200px;
-    width: 200px;
+    height: 244px;
+    width: 244px;
     border: 4px solid $color__brand-color-lgreen;
-    border-radius: 100px;
+    border-radius: 122px;
 
     &:hover {
         background-color: $color__brand-color-lgreen;
@@ -63,4 +63,55 @@
         height: 250px;
         border-radius: 150px;
     }
+}
+
+// Trademark section in Portfolio dashboard
+
+.trademark-section {
+    @include desktop {
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+    }
+}
+
+.trademark-image {
+    visibility: hidden;
+    @include desktop {
+        width: 800px;
+        height: 650px;
+        background-color: red;
+        visibility: visible;
+        position: absolute;
+        left: -265px;
+    }
+}
+
+.trademark-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 656px;
+    max-height: 656px;
+    @include desktop {
+        position: absolute;
+        left: 280px;
+        top: 95px;
+        margin-bottom: 3rem;
+    }
+}
+
+.trademark-logo {
+    width: 100%;
+    height: 200px;
+    background-color: $color__brand-color-green;
+}
+
+.trademark-text {
+    background-color: $color__brand-color-green;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 3rem;
+    line-height: 1.3;
 }

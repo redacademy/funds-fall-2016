@@ -657,6 +657,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+.container {
+  max-width: 656px;
+  margin: 0 auto; }
+  @media (min-width: 1240px) {
+    .container {
+      max-width: 1240px; } }
+
 /*  mobile version header!!!!   */
 .header-bar {
   padding: 0.5rem 2rem;
@@ -731,7 +742,7 @@ object {
   color: #4b711c;
   font-weight: bold; }
 
-.main-nav {
+.main-dashboard-nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -740,7 +751,7 @@ object {
       justify-content: space-around;
   text-align: center; }
   @media (min-width: 1240px) {
-    .main-nav {
+    .main-dashboard-nav {
       width: 1200px;
       margin: 0 auto; } }
 
@@ -764,10 +775,10 @@ object {
         line-height: 1.2; } }
 
 .nav-icon {
-  height: 200px;
-  width: 200px;
+  height: 244px;
+  width: 244px;
   border: 4px solid #90b531;
-  border-radius: 100px; }
+  border-radius: 122px; }
   .nav-icon:hover {
     background-color: #90b531; }
   @media (min-width: 1240px) {
@@ -775,3 +786,49 @@ object {
       width: 250px;
       height: 250px;
       border-radius: 150px; } }
+
+@media (min-width: 1240px) {
+  .trademark-section {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    position: relative; } }
+
+.trademark-image {
+  visibility: hidden; }
+  @media (min-width: 1240px) {
+    .trademark-image {
+      width: 800px;
+      height: 650px;
+      background-color: red;
+      visibility: visible;
+      position: absolute;
+      left: -265px; } }
+
+.trademark-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%;
+  max-width: 656px;
+  max-height: 656px; }
+  @media (min-width: 1240px) {
+    .trademark-wrapper {
+      position: absolute;
+      left: 280px;
+      top: 95px;
+      margin-bottom: 3rem; } }
+
+.trademark-logo {
+  width: 100%;
+  height: 200px;
+  background-color: #4b711c; }
+
+.trademark-text {
+  background-color: #4b711c;
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 3rem;
+  line-height: 1.3; }

@@ -12,7 +12,6 @@
 }
 
 // Media Query Mixins
-$desktop-width: 1240px; 
 
 @mixin desktop {
    @media (min-width: $desktop-width) {
