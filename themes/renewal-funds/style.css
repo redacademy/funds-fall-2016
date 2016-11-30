@@ -669,7 +669,7 @@ object {
 .secondery-navigation {
   display: none; }
 
-.nav-btn2 {
+.nav-cancel {
   display: none; }
 
 /*  after clicking nav-btn    */
@@ -683,7 +683,7 @@ object {
         justify-content: center; }
   .header-resize .nav-btn, .header-resize .site-branding {
     display: none; }
-  .header-resize .nav-btn2 {
+  .header-resize .nav-cancel {
     display: block; }
   .header-resize .nav-option {
     height: 67vh;

@@ -8,7 +8,7 @@
         $('.nav-logo').show();
         $('.main-navigation').show();
     });
-    $('.nav-btn2').on('click', function(event){
+    $('.nav-cancel').on('click', function(event){
         event.preventDefault();
         $('.site-header').removeClass('header-resize');
         $('.nav-logo').hide();

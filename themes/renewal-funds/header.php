@@ -33,8 +33,8 @@
 					<div class="nav-logo">
 						<img src="<?php echo get_template_directory_uri().'/images/logos/' ?>" class= "header-logo-bigger" alt="header-logo-bigger" />
 					</div>
-					<div class="nav-btn2">
-						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					<div class="nav-cancel">
+						<i class="fa fa-times-circle-o fa-3x" aria-hidden="true"></i>
 					</div>
 					<nav id="site-navigation" class="secondery-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
