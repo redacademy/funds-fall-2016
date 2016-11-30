@@ -43,3 +43,42 @@ function register_portfolio_company_year_taxonomy() {
 
 }
 add_action( 'init', 'register_portfolio_company_year_taxonomy', 0 );
+
+// Register Questionnaire Taxonomy
+function register_questionnaire_year_taxonomy() {
+
+	$labels = array(
+		'name'                       => 'Questionnaire Year',
+		'singular_name'              => 'Questionnaire Year',
+		'menu_name'                  => 'Questionnaire Year',
+		'all_items'                  => 'All Questionnaire Years',
+		'parent_item'                => 'Parent Questionnaire Year',
+		'parent_item_colon'          => 'Parent Questionnaire Year:',
+		'new_item_name'              => 'New Questionnaire Year',
+		'add_new_item'               => 'Add Questionnaire Year',
+		'edit_item'                  => 'Edit Questionnaire Year',
+		'update_item'                => 'Update Questionnaire Year',
+		'view_item'                  => 'View Questionnaire Year',
+		'separate_items_with_commas' => 'Separate questionnaires with commas',
+		'add_or_remove_items'        => 'Add or remove questionnaire years',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Questionnaire Years',
+		'search_items'               => 'Search Questionnaire Years',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Questionnaire Years',
+		'items_list'                 => 'Questionnaire year list',
+		'items_list_navigation'      => 'Questionnaire years list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'questionnaire-year', array( 'questionnaire' ), $args );
+
+}
+add_action( 'init', 'register_questionnaire_year_taxonomy', 0 );

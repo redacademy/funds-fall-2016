@@ -60,8 +60,6 @@ function portfolio_company_post_type() {
 }
 add_action( 'init', 'portfolio_company_post_type', 0 );
 
-
-
 // Register Questionnaire Post Type
 function register_questionnaire_post_type() {
 	$labels = array(
