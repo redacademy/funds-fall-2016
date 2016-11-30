@@ -717,3 +717,62 @@ object {
       font-size: 2rem; } }
 
 /*  menu full screen*/
+
+.welcome {
+  text-align: center; }
+  .welcome p {
+    font-size: 2rem;
+    line-height: 0; }
+    @media (min-width: 1240px) {
+      .welcome p {
+        font-size: 4.5rem;
+        font-weight: bold; } }
+
+.green-text {
+  color: #01890E;
+  font-weight: bold; }
+
+.main-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center; }
+  @media (min-width: 1240px) {
+    .main-nav {
+      width: 1200px;
+      margin: 0 auto; } }
+
+.nav-icon-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .nav-icon-wrapper p {
+    font-size: 1.2rem;
+    max-width: 160px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.1; }
+    @media (min-width: 1240px) {
+      .nav-icon-wrapper p {
+        font-size: 2.5rem;
+        max-width: 280px;
+        line-height: 1.2; } }
+
+.nav-icon {
+  height: 200px;
+  width: 200px;
+  border: 4px solid #46D955;
+  border-radius: 100px; }
+  .nav-icon:hover {
+    background-color: #46D955; }
+  @media (min-width: 1240px) {
+    .nav-icon {
+      width: 250px;
+      height: 250px;
+      border-radius: 150px; } }

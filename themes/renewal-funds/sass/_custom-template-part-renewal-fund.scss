@@ -1,0 +1,66 @@
+.welcome {
+    text-align: center;
+    p {
+        font-size: 2rem;
+        line-height: 0;
+
+        @include desktop {
+            font-size: 4.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.green-text {
+    color: $color__brand-color-green;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    @include desktop {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.nav-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 1.2rem;
+        max-width: 160px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.1;
+
+
+        @include desktop {
+            font-size: 2.5rem;
+            max-width: 280px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.nav-icon {
+    height: 200px;
+    width: 200px;
+    border: 4px solid $color__brand-color-lgreen;
+    border-radius: 100px;
+
+    &:hover {
+        background-color: $color__brand-color-lgreen;
+    }
+
+    @include desktop {
+        width: 250px;
+        height: 250px;
+        border-radius: 150px;
+    }
+}
