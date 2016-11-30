@@ -668,21 +668,17 @@ object {
       justify-content: space-between;
   background: #4b711c; }
 
-.secondery-navigation {
-  display: none; }
-
-.nav-cancel {
+.nav-cancel, .nav-option {
   display: none; }
 
 /*  after clicking nav-btn    */
 .header-resize {
-  width: 100vw;
-  position: fixed; }
-  .header-resize .header-bar {
-    height: 33vh;
-    -ms-flex-pack: center;
-        justify-content: center;
-    position: relative; }
+  width: 100%;
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .header-resize .nav-btn, .header-resize .site-branding {
     display: none; }
   .header-resize .nav-logo {
@@ -695,8 +691,8 @@ object {
     top: 5%;
     right: 5%; }
   .header-resize .nav-option {
-    height: 67vh;
-    background-color: white; }
+    display: block;
+    background-color: #fff; }
   .header-resize .main-navigation {
     height: 100%; }
     .header-resize .main-navigation ul {
@@ -711,15 +707,30 @@ object {
       font-size: 2rem; }
 
 /*   desktop version  header!!!! */
-@media screen and (min-width: 1000px) {
-  .nav-btn, .nav-logo {
-    display: none; }
-  .secondery-navigation {
-    display: block; }
-    .secondery-navigation li {
-      padding: 0 1rem; }
-    .secondery-navigation a {
-      font-size: 2rem; } }
+@media (min-width: 1240px) {
+  .site-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .site-header .header-bar {
+      width: 20%; }
+    .site-header .nav-btn, .site-header .nav-logo {
+      display: none; }
+    .site-header .nav-option {
+      display: block;
+      background: #4b711c;
+      width: 80%; }
+      .site-header .nav-option ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        padding-right: 1rem; }
+      .site-header .nav-option li {
+        padding: 0 1rem; }
+      .site-header .nav-option a {
+        font-size: 2rem; } }
 
 /*  menu full screen*/
 .welcome {

@@ -8,23 +8,16 @@
     background: $color__brand-color-green;
 }
 
-.secondery-navigation {
-    display: none;
-}
-
-.nav-cancel {
+.nav-cancel, .nav-option {
     display: none;
 }
 
 /*  after clicking nav-btn    */
 .header-resize {
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    .header-bar {
-        height: 33vh;
-        justify-content: center;
-        position:relative;
-    }
+    display: flex;
+    flex-direction: column;
     .nav-btn, .site-branding {
         display: none;
     }
@@ -38,8 +31,8 @@
         right: 5%;
     }
     .nav-option {
-        height: 67vh;
-        background-color: white;
+        display: block;
+        background-color: $color__background-body;
     }
     .main-navigation {
         height: 100%;
@@ -59,17 +52,31 @@
 
 /*   desktop version  header!!!! */
 
-@media screen and (min-width: 1000px) {
-    .nav-btn, .nav-logo {
-        display: none;
-    }
-    .secondery-navigation {
-        display: block;
-        li {
-            padding: 0 1rem;
+@include desktop {
+    .site-header {
+        display: flex;
+        flex-direction: row;
+        .header-bar {
+            width: 20%;
         }
-        a {
-            font-size: 2rem;
+        .nav-btn, .nav-logo {
+            display: none;
+        }
+        .nav-option {
+            display: block;
+            background: $color__brand-color-green;
+            width: 80%;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 1rem;
+            }
+            li {
+                padding: 0 1rem;
+            }
+            a {
+                font-size: 2rem;
+            }
         }
     }
 }
