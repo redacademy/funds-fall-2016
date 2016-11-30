@@ -659,12 +659,14 @@ object {
 /* Front page */
 /*  mobile version header!!!!   */
 .header-bar {
+  /* this height needs to be reconsider!!!! */
+  height: 273px;
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: green; }
+  background: #4b711c; }
 
 .secondery-navigation {
   display: none; }
@@ -674,24 +676,27 @@ object {
 
 /*  after clicking nav-btn    */
 .header-resize {
-  height: 100vh;
   width: 100vw;
   position: fixed; }
   .header-resize .header-bar {
     height: 33vh;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    position: relative; }
   .header-resize .nav-btn, .header-resize .site-branding {
     display: none; }
-  .header-resize .nav-cancel {
-    display: block; }
-  .header-resize .nav-option {
-    height: 67vh;
-    background-color: white; }
   .header-resize .nav-logo {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center; }
+  .header-resize .nav-cancel {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%; }
+  .header-resize .nav-option {
+    height: 67vh;
+    background-color: white; }
   .header-resize .main-navigation {
     height: 100%; }
     .header-resize .main-navigation ul {

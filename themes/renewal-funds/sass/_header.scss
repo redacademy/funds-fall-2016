@@ -1,9 +1,11 @@
 /*  mobile version header!!!!   */
 .header-bar {
+    /* this height needs to be reconsider!!!! */
+    height: 273px;   
     padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
-    background: green;
+    background: $color__brand-color-green;
 }
 
 .secondery-navigation {
@@ -16,25 +18,28 @@
 
 /*  after clicking nav-btn    */
 .header-resize {
-    height: 100vh;
     width: 100vw;
     position: fixed;
     .header-bar {
         height: 33vh;
         justify-content: center;
+        position:relative;
     }
     .nav-btn, .site-branding {
         display: none;
     }
+    .nav-logo {
+        align-self: center;
+    }
     .nav-cancel {
         display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
     }
     .nav-option {
         height: 67vh;
         background-color: white;
-    }
-    .nav-logo {
-        align-self: center;
     }
     .main-navigation {
         height: 100%;
