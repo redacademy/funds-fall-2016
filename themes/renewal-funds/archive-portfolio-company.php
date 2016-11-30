@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
- */
+ * Template Name: Portfolio Company
+ *
+**/
 
 get_header(); ?>
 
