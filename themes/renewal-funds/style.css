@@ -731,7 +731,7 @@ object {
         display: flex;
         -ms-flex-pack: end;
             justify-content: flex-end;
-        padding-right: 1rem; }
+        padding-right: 1.5rem; }
       .site-header .nav-option li {
         padding: 0 1rem; }
       .site-header .nav-option a {
