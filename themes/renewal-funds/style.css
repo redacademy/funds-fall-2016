@@ -671,6 +671,9 @@ object {
 .nav-cancel, .nav-option {
   display: none; }
 
+.nav-btn {
+  color: #fff; }
+
 /*  after clicking nav-btn    */
 .header-resize {
   width: 100%;
@@ -686,6 +689,7 @@ object {
         -ms-grid-row-align: center;
         align-self: center; }
   .header-resize .nav-cancel {
+    color: #fff;
     display: block;
     position: absolute;
     top: 5%;
@@ -704,7 +708,8 @@ object {
       width: 100%;
       border-bottom: 3px solid #d6d6cd; }
     .header-resize .main-navigation a {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: #323432; }
 
 /*   desktop version  header!!!! */
 @media (min-width: 1240px) {
@@ -730,7 +735,8 @@ object {
       .site-header .nav-option li {
         padding: 0 1rem; }
       .site-header .nav-option a {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        color: #fff; } }
 
 .welcome {
   text-align: center; }

@@ -11,6 +11,9 @@
 .nav-cancel, .nav-option {
     display: none;
 }
+.nav-btn {
+    color: $color__background-body;
+}
 
 /*  after clicking nav-btn    */
 .header-resize {
@@ -25,6 +28,7 @@
         align-self: center;
     }
     .nav-cancel {
+        color: $color__background-body;
         display: block;
         position: absolute;
         top: 5%;
@@ -46,6 +50,7 @@
         }
         a {
             font-size: 2rem;
+            color: $color__text-main;
         }
     }
 }
@@ -76,6 +81,7 @@
             }
             a {
                 font-size: 2rem;
+                color: $color__background-body;
             }
         }
     }
