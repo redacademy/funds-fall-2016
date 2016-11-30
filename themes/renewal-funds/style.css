@@ -658,6 +658,10 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /*  mobile version header!!!!   */
+.site-header {
+  position: fixed;
+  width: 100%; }
+
 .header-bar {
   /* this height needs to be reconsider!!!! */
   height: 273px;
