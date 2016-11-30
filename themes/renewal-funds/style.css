@@ -676,7 +676,10 @@ object {
   display: none; }
 
 .nav-btn {
-  color: #fff; }
+  color: #fff;
+  position: absolute;
+  top: 7%;
+  right: 5%; }
 
 /*  after clicking nav-btn    */
 .header-resize {

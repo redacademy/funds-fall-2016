@@ -34,7 +34,7 @@
 						<img src="<?php echo get_template_directory_uri().'/images/logos/' ?>" class= "header-logo-bigger" alt="header-logo-bigger" />
 					</div>
 					<div class="nav-cancel">
-						<i class="fa fa-times-circle-o fa-3x" aria-hidden="true"></i>
+						<i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
 					</div>
 				</div>
 
