@@ -13,5 +13,5 @@
         $('.site-header').removeClass('header-resize');
         $('.nav-logo').hide();
         $('.main-navigation').hide();
-    })
+    });
 })(jQuery);
