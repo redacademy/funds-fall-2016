@@ -730,6 +730,8 @@ object {
       display: block;
       background: #4b711c;
       width: 80%; }
+      .site-header .nav-option .dashicons {
+        display: none; }
       .site-header .nav-option ul {
         display: -ms-flexbox;
         display: flex;

@@ -76,6 +76,9 @@
             display: block;
             background: $color__brand-color-green;
             width: 80%;
+            .dashicons {
+                display: none;
+            }
             ul {
                 display: flex;
                 justify-content: flex-end;
