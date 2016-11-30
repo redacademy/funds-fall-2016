@@ -706,7 +706,7 @@ object {
           flex-direction: column; }
     .header-resize .main-navigation li {
       width: 100%;
-      border-bottom: 1px solid green; }
+      border-bottom: 3px solid #d6d6cd; }
     .header-resize .main-navigation a {
       font-size: 2rem; }
 
