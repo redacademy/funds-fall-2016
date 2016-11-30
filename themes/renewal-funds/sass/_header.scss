@@ -6,46 +6,69 @@
     background: green;
 }
 
-.nav-option {
-    background-color: white;
+.secondery-navigation {
+    display: none;
+}
+
+.nav-btn2 {
+    display: none;
 }
 
 /*  after clicking nav-btn    */
 .header-resize {
     height: 100vh;
-    width: 80%;
-    margin-right: 20%;
+    width: 100vw;
+    position: fixed;
     .header-bar {
         height: 33vh;
         justify-content: center;
     }
+    .nav-btn, .site-branding {
+        display: none;
+    }
+    .nav-btn2 {
+        display: block;
+    }
     .nav-option {
         height: 67vh;
+        background-color: white;
+    }
+    .nav-logo {
+        align-self: center;
+    }
+    .main-navigation {
+        height: 100%;
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        li {
+            width: 100%;
+            border-bottom: 1px solid green;
+        }
+        a {
+            font-size: 2rem;
+        }
     }
 }
-
-.nav-logo {
-    align-self: center;
-}
-
-.main-navigation {
-    height: 100%;
-    ul {
-        display: flex;
-        flex-direction: column;
-    }
-    li {
-        width: 100%;
-        border-bottom: 1px solid green;
-    }
-    a {
-        font-size: 2rem;
-    }
-}
-
 
 /*   desktop version  header!!!! */
 
 @media screen and (min-width: 1000px) {
-
+    .nav-btn, .nav-logo {
+        display: none;
+    }
+    .secondery-navigation {
+        display: block;
+        li {
+            padding: 0 1rem;
+        }
+        a {
+            font-size: 2rem;
+        }
+    }
 }
+
+
+
+/*  menu full screen*/
