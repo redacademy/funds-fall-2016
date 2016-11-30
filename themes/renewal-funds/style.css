@@ -717,7 +717,6 @@ object {
       font-size: 2rem; } }
 
 /*  menu full screen*/
-
 .welcome {
   text-align: center; }
   .welcome p {
@@ -729,7 +728,7 @@ object {
         font-weight: bold; } }
 
 .green-text {
-  color: #01890E;
+  color: #4b711c;
   font-weight: bold; }
 
 .main-nav {
@@ -767,10 +766,10 @@ object {
 .nav-icon {
   height: 200px;
   width: 200px;
-  border: 4px solid #46D955;
+  border: 4px solid #90b531;
   border-radius: 100px; }
   .nav-icon:hover {
-    background-color: #46D955; }
+    background-color: #90b531; }
   @media (min-width: 1240px) {
     .nav-icon {
       width: 250px;

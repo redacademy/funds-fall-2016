@@ -1,7 +1,7 @@
 
 <?php
 get_header(); ?>
-
+<p>content-renewal-fund.php</p>
 <div class="welcome-wrapper">
     <div class="welcome">
         <p>Welcome Back,</p>
@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="main-nav-wrapper">
     <div class="main-nav">
-<p>content-renewal-fund.php</p>
+
         <div class="nav-icon-wrapper">
             <a href ="#"><div class="nav-icon">
                 <img src=""/>
