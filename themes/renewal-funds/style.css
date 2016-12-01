@@ -837,7 +837,6 @@ object {
       height: 250px;
       border-radius: 150px; } }
 
-
 @media (min-width: 1240px) {
   .trademark-section {
     display: -ms-flexbox;
@@ -975,4 +974,3 @@ object {
   padding: 0.5rem 2rem 1rem 2rem; }
   .not-found .page-content p {
     color: #323432; }
-
