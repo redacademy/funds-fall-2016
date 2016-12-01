@@ -6,7 +6,8 @@
     visibility: hidden;
     @include desktop {
         visibility: visible;
-        flex-basis: 65%;
+        flex-basis: 62%;
+        height: 110vh;
     }
 }
 
@@ -15,14 +16,16 @@
     @include desktop {
     background: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 100%;
     }
 }
 
 .feedback-form-wrapper {
     margin: 0 auto;
+    max-width: 656px;
     @include desktop {
-    flex-basis: 35%;
+    flex-basis: 38%;
+    height: 140px;
     }
 }
 
@@ -36,6 +39,10 @@
         text-align: center;
         color: $color__brand-color-green;
         font-size: 3rem;
+    
+        @include desktop {
+            margin: 2rem 0;
+        }
     }
 
     .feedback-text {
@@ -44,6 +51,7 @@
         padding: 0 4rem;
         @include desktop {
             padding: 0 1.8rem;
+            margin: 0;
         }
     }
 
