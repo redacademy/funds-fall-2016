@@ -10,14 +10,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<p>single-portfolio-company.php</p>
 
-			<?php echo gravity_form( $id_or_title = 1, 
+			<?php  
+			
+			$pc_fund_name = '';//mega fund';
+			$pc_contact_name = '';//great contact';
+			$pc_contact_email = '';//great.contact@bob.com';
+			
+			gravity_form( $id_or_title = 1, 
 										$display_title = true, 
-										$display_description = true, 
+										$display_description = false, 
 										$display_inactive = true, 
-										$field_values = null, 
+										$field_values = array( 'pc_fund' => $pc_fund_name, 'pc_contact_name' => $pc_contact_name, 'pc_contact_email' => $pc_contact_email ), 
 										$ajax = false, 
-										$tabindex, 
-										$echo = true ); ?>
+										$echo = false ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

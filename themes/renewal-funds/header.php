@@ -38,14 +38,24 @@
 					</div>
 					<nav id="site-navigation" class="secondery-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+						<?php
+							if( current_user_can( 'administrator' ) ):
+								wp_nav_menu( array ( 'menu' => 'Renewal Fund Menu' ) );
+							elseif ( current_user_can( 'editor') ) :
+								wp_nav_menu( array ( 'menu' => 'Portfolio Company Menu' ) );
+							endif;
+						?>
+
+						<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
 					</nav>
 				</div>
 
 				<div class="nav-option">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->
