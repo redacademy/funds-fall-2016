@@ -10,12 +10,14 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<p>single-portfolio-company.php</p>
 
-			<?php  
-				echo the_title();
+			<?php while ( have_posts() ) : the_post();
 
-				$pc_fund_name = '';//mega fund';
-				$pc_contact_name = '';//great contact';
-				$pc_contact_email = '';//great.contact@bob.com';
+				echo the_title();
+				echo the_archive_title();
+
+				$pc_fund_name = get_field('pc_fund');
+				$pc_contact_name = get_field('pc_contact_name');
+				$pc_contact_email = get_field('pc_contact_email');
 				
 				gravity_form( $id_or_title = 1, 
 											$display_title = true, 
@@ -23,7 +25,9 @@ get_header(); ?>
 											$display_inactive = true, 
 											$field_values = array( 'pc_fund' => $pc_fund_name, 'pc_contact_name' => $pc_contact_name, 'pc_contact_email' => $pc_contact_email ), 
 											$ajax = false, 
-											$echo = false ); ?>
+											$echo = false );
+
+			endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

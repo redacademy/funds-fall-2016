@@ -653,21 +653,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-* {
-  box-sizing: border-box;
-  outline: none; }
-
-.container {
-  max-width: 656px;
-  margin: 0 auto; }
-  @media (min-width: 1240px) {
-    .container {
-      max-width: 1240px; } }
-
 /*  mobile version header!!!!   */
 .site-header {
   position: fixed;
@@ -777,6 +762,17 @@ object {
           background-color: #fff;
           color: #323432;
           width: 150px; } }
+
+.not-found .page-header {
+  text-align: center;
+  color: #4b711c;
+  font-size: 2rem; }
+
+.not-found .page-content {
+  text-align: center;
+  padding: 0.5rem 2rem 1rem 2rem; }
+  .not-found .page-content p {
+    color: #323432; }
 
 .welcome {
   text-align: center; }
@@ -996,13 +992,20 @@ object {
     .page .wpcf7 .wpcf7-submit:first-child:hover {
       background-color: #234300; }
 
-.not-found .page-header {
-  text-align: center;
-  color: #4b711c;
-  font-size: 2rem; }
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front page */
+* {
+  box-sizing: border-box;
+  outline: none; }
 
-.not-found .page-content {
-  text-align: center;
-  padding: 0.5rem 2rem 1rem 2rem; }
-  .not-found .page-content p {
-    color: #323432; }
+.container {
+  max-width: 656px;
+  margin: 0 auto; }
+  @media (min-width: 1240px) {
+    .container {
+      max-width: 1240px; } }
+
+.post-type-archive-portfolio-company .site-content {
+  margin-top: 6rem; }
