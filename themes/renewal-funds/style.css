@@ -687,7 +687,7 @@ object {
   height: 40px;
   width: 120px; }
 
-.nav-cancel {
+.nav-cancel, .nav-option {
   display: none; }
 
 .nav-btn {
@@ -707,8 +707,6 @@ object {
       flex-direction: column; }
   .header-resize .header-bar {
     height: 30vh; }
-  .header-resize .nav-btn {
-    display: none; }
   .header-resize .site-branding {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -717,6 +715,8 @@ object {
     .header-resize .site-branding img {
       height: 60%;
       width: 80%; }
+  .header-resize .nav-btn {
+    display: none; }
   .header-resize .nav-cancel {
     color: #fff;
     display: block;

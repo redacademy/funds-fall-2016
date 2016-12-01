@@ -18,7 +18,7 @@
     width: 120px;
 }
 
-.nav-cancel {
+.nav-cancel, .nav-option {
     display: none;
 }
 .nav-btn {
@@ -38,9 +38,6 @@
     .header-bar {
         height: 30vh;
     }
-    .nav-btn {
-        display: none;
-    }
     .site-branding {
         position: absolute;
         transform: translate(-50%,-50%);
@@ -50,6 +47,9 @@
             height: 60%;
             width: 80%;
         }
+    }
+    .nav-btn {
+        display: none;
     }
     .nav-cancel {
         color: $color__background-body;
