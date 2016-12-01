@@ -220,9 +220,6 @@ td,
 th {
   padding: 0; }
 
-p {
-  margin-bottom: 0; }
-
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -734,7 +731,7 @@ object {
 .welcome {
   text-align: center; }
   .welcome p {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 0; }
     @media (min-width: 1240px) {
       .welcome p {
@@ -781,7 +778,17 @@ object {
   height: 244px;
   width: 244px;
   border: 4px solid #90b531;
-  border-radius: 122px; }
+  border-radius: 122px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .nav-icon .history-logo {
+    width: 40%; }
+  .nav-icon img {
+    width: 60%; }
   .nav-icon:hover {
     background-color: #90b531; }
   @media (min-width: 1240px) {
@@ -847,14 +854,30 @@ object {
       visibility: visible;
       -ms-flex-preferred-size: 62%;
           flex-basis: 62%;
-      height: 110vh; } }
+      height: 100vh; } }
+
+.feedback-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  color: white;
+  font-size: 2rem;
+  padding: 0 1rem;
+  background-color: #4b711c; }
 
 .feedback-image {
-  height: 0px; }
+  height: 0px;
+  position: relative; }
   @media (min-width: 1240px) {
     .feedback-image {
       background: no-repeat;
-      background-size: contain;
+      background-size: cover;
       height: 100%; } }
 
 .feedback-form-wrapper {
@@ -886,8 +909,7 @@ object {
   padding: 0 4rem; }
   @media (min-width: 1240px) {
     .page .wpcf7 .feedback-text {
-      padding: 0 1.8rem;
-      margin: 0; } }
+      padding: 0 1.8rem; } }
 
 .page .wpcf7 .wpcf7-textarea {
   display: -ms-flexbox;

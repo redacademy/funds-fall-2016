@@ -6,10 +6,13 @@
 
      <p>feedback.php</p>
      <div class="feedback-page-wrapper">
-         
+
         <div class="feedback-image-wrapper">
             <div class="feedback-image"
             style="background-image: url('<?php echo CFS()->get('feedback_image');?>')">
+                <div class="feedback-title">
+                    <p>Investing For Change</p>
+                </div>
             </div>
         </div>
 
