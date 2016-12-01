@@ -741,7 +741,7 @@ object {
     .header-resize .main-navigation a {
       font-size: 2rem;
       color: #323432; }
-    .header-resize .main-navigation .menu-item-25 {
+    .header-resize .main-navigation .menu-item-44 {
       display: none; }
 
 /*   desktop version  header!!!! */
@@ -752,7 +752,9 @@ object {
     -ms-flex-direction: row;
         flex-direction: row; }
     .site-header .header-bar {
-      width: 20%; }
+      height: 104px;
+      width: 20%;
+      border-right: 5px solid #4b711c; }
     .site-header .nav-btn {
       display: none; }
     .site-header .nav-option {
@@ -775,14 +777,14 @@ object {
       .site-header .nav-option a {
         font-size: 2rem;
         color: #fff; }
-      .site-header .nav-option .menu-item-25 span {
+      .site-header .nav-option .menu-item-44 span {
         display: none; }
-      .site-header .nav-option .menu-item-25 .dashicons {
+      .site-header .nav-option .menu-item-44 .dashicons {
         display: block; }
-      .site-header .nav-option .menu-item-31, .site-header .nav-option .menu-item-32 {
+      .site-header .nav-option .menu-item-47, .site-header .nav-option .menu-item-48, .site-header .nav-option .menu-item-14, .site-header .nav-option .menu-item-41 {
         display: none; }
       .site-header .nav-option .main-navigation ul li:hover > ul {
-        top: 255px;
+        top: 104px;
         right: -23px; }
         .site-header .nav-option .main-navigation ul li:hover > ul li {
           border-bottom: 3px solid #d6d6cd; }

@@ -78,7 +78,7 @@
             font-size: 2rem;
             color: $color__text-main;
         }
-        .menu-item-25 {
+        .menu-item-44 {
             display: none;
         }
     }
@@ -91,7 +91,9 @@
         display: flex;
         flex-direction: row;
         .header-bar {
+            height: 104px;
             width: 20%;
+            border-right: 5px solid $color__brand-color-green;
         }
         .nav-btn {
             display: none;
@@ -117,7 +119,7 @@
                 font-size: 2rem;
                 color: $color__background-body;
             }
-            .menu-item-25 {
+            .menu-item-44 {
                 span {
                     display: none;
                 }
@@ -125,12 +127,12 @@
                     display: block;
                 }
             }
-            .menu-item-31, .menu-item-32 {
+            .menu-item-47, .menu-item-48, .menu-item-14, .menu-item-41 {
                 display: none;
             }
             .main-navigation ul li:hover>ul {
                 
-                top: 255px;
+                top: 104px;
                 right: -23px;
                 li {
                     border-bottom: 3px solid $color__brand-color-lgray;
