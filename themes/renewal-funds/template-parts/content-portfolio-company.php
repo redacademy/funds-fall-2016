@@ -17,7 +17,7 @@ get_header(); ?>
 
         <div class="nav-icon-wrapper">
             <a href ="#"><div class="nav-icon">
-                <p>2/3</p>
+                <img src="<?php echo get_template_directory_uri()?>../assets/icons/add_portfolio_company_icon.png" alt="Add portfolio logo">
             </div></a>
             <p>Share your Story</p>
         </div>
