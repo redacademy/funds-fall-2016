@@ -1,0 +1,86 @@
+.feedback-page-wrapper {
+    display: flex;
+}
+
+.feedback-image-wrapper {
+    visibility: hidden;
+    @include desktop {
+        visibility: visible;
+        flex-basis: 65%;
+    }
+}
+
+.feedback-image {
+    height: 0px;
+    @include desktop {
+    background: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    }
+}
+
+.feedback-form-wrapper {
+    margin: 0 auto;
+    @include desktop {
+    flex-basis: 35%;
+    }
+}
+
+.page .wpcf7 {
+    .feedback-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feedback-green-text {
+        text-align: center;
+        color: $color__brand-color-green;
+        font-size: 3rem;
+    }
+
+    .feedback-text {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 4rem;
+        @include desktop {
+            padding: 0 1.8rem;
+        }
+    }
+
+    .wpcf7-textarea {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        background-color: $color__brand-color-lgray;
+        border-radius: 25px;
+        padding: 1rem;
+    }
+
+    .wpcf7-submit {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 3.5rem;
+        border-radius: 12px;
+        border: 2px solid $color__brand-color-dgreen;
+        background-color: $color__background-body;
+        color: $color__brand-color-dgreen;
+        box-shadow: none;
+        font-size: 1.6rem;
+        text-shadow: none;
+        &:hover {
+            background-color: $color__brand-color-dgreen;
+            color: white;
+        }
+
+        &:first-child {
+            background-color: $color__brand-color-lgreen;
+            border: none;
+            color: #fff;
+            &:hover {
+                background-color: $color__brand-color-dgreen;
+            }
+        }
+    }
+}
