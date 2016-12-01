@@ -1,9 +1,8 @@
 .welcome {
     text-align: center;
     p {
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 0;
-
         @include desktop {
             font-size: 4.5rem;
             font-weight: bold;
@@ -53,6 +52,17 @@
     width: 244px;
     border: 4px solid $color__brand-color-lgreen;
     border-radius: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .history-logo {
+        width: 40%;
+    }
+
+    img {
+        width: 60%;
+    }
 
     &:hover {
         background-color: $color__brand-color-lgreen;

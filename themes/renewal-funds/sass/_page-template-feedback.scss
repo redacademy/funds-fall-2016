@@ -6,23 +6,40 @@
     visibility: hidden;
     @include desktop {
         visibility: visible;
-        flex-basis: 65%;
+        flex-basis: 62%;
+        height: 100vh;
     }
+}
+
+.feedback-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    padding: 0 1rem;
+    background-color: $color__brand-color-green;
 }
 
 .feedback-image {
     height: 0px;
+    position: relative;
     @include desktop {
     background: no-repeat;
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
+    height: 100%;
     }
 }
 
 .feedback-form-wrapper {
     margin: 0 auto;
+    max-width: 656px;
     @include desktop {
-    flex-basis: 35%;
+    flex-basis: 38%;
+    height: 140px;
     }
 }
 
@@ -36,6 +53,10 @@
         text-align: center;
         color: $color__brand-color-green;
         font-size: 3rem;
+    
+        @include desktop {
+            margin: 2rem 0;
+        }
     }
 
     .feedback-text {
