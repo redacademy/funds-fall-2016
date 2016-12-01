@@ -18,7 +18,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<img src="<?php echo get_template_directory_uri().'/images/logos/' ?>" class="404-logo" alt="404-logo" />
+					<img src="<?php echo get_template_directory_uri().'/assets/icons/404_icon.png' ?>" class="404-logo" alt="404-logo" />
 					<div>
 						<p><?php echo esc_html("Sorry about that, but the page you are looking for doesn't exit. Please head back to the home page and try again. If the problem exists, please email us."); ?></p>
 					</div>

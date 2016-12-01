@@ -454,6 +454,10 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    border-bottom: 2px solid red; }
 
 /* Small menu. */
 .menu-toggle,
