@@ -1,40 +1,50 @@
 /*  mobile version header!!!!   */
+.site-header {
+    position: fixed;
+    width: 100%;
+}
+
 .header-bar {
+    /* this height needs to be reconsider!!!! */
+    height: 273px;   
     padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
-    background: green;
+    background: $color__brand-color-green;
 }
 
-.secondery-navigation {
+.nav-cancel, .nav-option {
     display: none;
 }
-
-.nav-btn2 {
-    display: none;
+.nav-btn {
+    color: $color__background-body;
+    position: absolute;
+    top: 7%;
+    right: 5%;
 }
 
 /*  after clicking nav-btn    */
 .header-resize {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    .header-bar {
-        height: 33vh;
-        justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
     .nav-btn, .site-branding {
         display: none;
     }
-    .nav-btn2 {
-        display: block;
-    }
-    .nav-option {
-        height: 67vh;
-        background-color: white;
-    }
     .nav-logo {
         align-self: center;
+    }
+    .nav-cancel {
+        color: $color__background-body;
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .nav-option {
+        display: block;
+        background-color: $color__background-body;
     }
     .main-navigation {
         height: 100%;
@@ -44,31 +54,76 @@
         }
         li {
             width: 100%;
-            border-bottom: 1px solid green;
+            border-bottom: 3px solid $color__brand-color-lgray;
         }
         a {
             font-size: 2rem;
+            color: $color__text-main;
+        }
+        .menu-item-25 {
+            display: none;
         }
     }
 }
 
 /*   desktop version  header!!!! */
 
-@media screen and (min-width: 1000px) {
-    .nav-btn, .nav-logo {
-        display: none;
-    }
-    .secondery-navigation {
-        display: block;
-        li {
-            padding: 0 1rem;
+@include desktop {
+    .site-header {
+        display: flex;
+        flex-direction: row;
+        .header-bar {
+            width: 20%;
         }
-        a {
-            font-size: 2rem;
+        .nav-btn, .nav-logo {
+            display: none;
+        }
+        .nav-option {
+            display: block;
+            background: $color__brand-color-green;
+            width: 80%;
+            .dashicons {
+                display: none;
+            }
+            .menu {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 1.5rem;
+                padding-top: 0.5rem;
+                align-items: center;
+            }
+            li {
+                padding: 0 1rem;
+            }
+            a {
+                font-size: 2rem;
+                color: $color__background-body;
+            }
+            .menu-item-25 {
+                span {
+                    display: none;
+                }
+                .dashicons {
+                    display: block;
+                }
+            }
+            .menu-item-31, .menu-item-32 {
+                display: none;
+            }
+            .main-navigation ul li:hover>ul {
+                
+                top: 255px;
+                right: -23px;
+                li {
+                    border-bottom: 3px solid $color__brand-color-lgray;
+                }
+                a {
+                background-color: $color__background-body;
+                color: $color__text-main;
+                width: 150px;
+                }
+                
+            }
         }
     }
 }
-
-
-
-/*  menu full screen*/
