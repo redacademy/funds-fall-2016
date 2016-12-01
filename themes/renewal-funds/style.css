@@ -675,7 +675,7 @@ object {
 
 .header-bar {
   /* this height needs to be reconsider!!!! */
-  height: 10vh;
+  height: 80px;
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +684,7 @@ object {
   background: #4b711c; }
 
 .site-branding img {
-  height: 40px;
+  height: 50px;
   width: 120px; }
 
 .nav-cancel, .nav-option {
@@ -706,15 +706,16 @@ object {
   -ms-flex-direction: column;
       flex-direction: column; }
   .header-resize .header-bar {
-    height: 30vh; }
+    height: 190px; }
   .header-resize .site-branding {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 15%; }
+    top: 15%;
+    text-align: center; }
     .header-resize .site-branding img {
       height: 60%;
-      width: 80%; }
+      width: 60%; }
   .header-resize .nav-btn {
     display: none; }
   .header-resize .nav-cancel {
@@ -722,7 +723,7 @@ object {
     display: block;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 5%;
+    top: 6%;
     right: 5%; }
   .header-resize .nav-option {
     display: block;
