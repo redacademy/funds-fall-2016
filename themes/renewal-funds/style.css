@@ -717,6 +717,8 @@ object {
     .header-resize .main-navigation a {
       font-size: 2rem;
       color: #323432; }
+    .header-resize .main-navigation .menu-item-25 {
+      display: none; }
 
 /*   desktop version  header!!!! */
 @media (min-width: 1240px) {
@@ -753,6 +755,8 @@ object {
         display: none; }
       .site-header .nav-option .menu-item-25 .dashicons {
         display: block; }
+      .site-header .nav-option .menu-item-31, .site-header .nav-option .menu-item-32 {
+        display: none; }
       .site-header .nav-option .main-navigation ul li:hover > ul {
         top: 255px;
         right: -23px; }

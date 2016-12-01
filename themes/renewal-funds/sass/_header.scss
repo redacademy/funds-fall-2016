@@ -60,6 +60,9 @@
             font-size: 2rem;
             color: $color__text-main;
         }
+        .menu-item-25 {
+            display: none;
+        }
     }
 }
 
@@ -103,6 +106,9 @@
                 .dashicons {
                     display: block;
                 }
+            }
+            .menu-item-31, .menu-item-32 {
+                display: none;
             }
             .main-navigation ul li:hover>ul {
                 
