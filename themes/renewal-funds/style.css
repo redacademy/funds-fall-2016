@@ -669,40 +669,52 @@ object {
       max-width: 1240px; } }
 
 /*  mobile version header!!!!   */
+.site-header {
+  position: fixed;
+  width: 100%; }
+
 .header-bar {
+  /* this height needs to be reconsider!!!! */
+  height: 273px;
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: green; }
+  background: #4b711c; }
 
-.secondery-navigation {
+.nav-cancel, .nav-option {
   display: none; }
 
-.nav-btn2 {
-  display: none; }
+.nav-btn {
+  color: #fff;
+  position: absolute;
+  top: 7%;
+  right: 5%; }
 
 /*  after clicking nav-btn    */
 .header-resize {
-  height: 100vh;
-  width: 100vw;
-  position: fixed; }
-  .header-resize .header-bar {
-    height: 33vh;
-    -ms-flex-pack: center;
-        justify-content: center; }
+  width: 100%;
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .header-resize .nav-btn, .header-resize .site-branding {
     display: none; }
-  .header-resize .nav-btn2 {
-    display: block; }
-  .header-resize .nav-option {
-    height: 67vh;
-    background-color: white; }
   .header-resize .nav-logo {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center; }
+  .header-resize .nav-cancel {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%; }
+  .header-resize .nav-option {
+    display: block;
+    background-color: #fff; }
   .header-resize .main-navigation {
     height: 100%; }
     .header-resize .main-navigation ul {
@@ -712,22 +724,60 @@ object {
           flex-direction: column; }
     .header-resize .main-navigation li {
       width: 100%;
-      border-bottom: 1px solid green; }
+      border-bottom: 3px solid #d6d6cd; }
     .header-resize .main-navigation a {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: #323432; }
+    .header-resize .main-navigation .menu-item-25 {
+      display: none; }
 
 /*   desktop version  header!!!! */
-@media screen and (min-width: 1000px) {
-  .nav-btn, .nav-logo {
-    display: none; }
-  .secondery-navigation {
-    display: block; }
-    .secondery-navigation li {
-      padding: 0 1rem; }
-    .secondery-navigation a {
-      font-size: 2rem; } }
+@media (min-width: 1240px) {
+  .site-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .site-header .header-bar {
+      width: 20%; }
+    .site-header .nav-btn, .site-header .nav-logo {
+      display: none; }
+    .site-header .nav-option {
+      display: block;
+      background: #4b711c;
+      width: 80%; }
+      .site-header .nav-option .dashicons {
+        display: none; }
+      .site-header .nav-option .menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        padding-right: 1.5rem;
+        padding-top: 0.5rem;
+        -ms-flex-align: center;
+            align-items: center; }
+      .site-header .nav-option li {
+        padding: 0 1rem; }
+      .site-header .nav-option a {
+        font-size: 2rem;
+        color: #fff; }
+      .site-header .nav-option .menu-item-25 span {
+        display: none; }
+      .site-header .nav-option .menu-item-25 .dashicons {
+        display: block; }
+      .site-header .nav-option .menu-item-31, .site-header .nav-option .menu-item-32 {
+        display: none; }
+      .site-header .nav-option .main-navigation ul li:hover > ul {
+        top: 255px;
+        right: -23px; }
+        .site-header .nav-option .main-navigation ul li:hover > ul li {
+          border-bottom: 3px solid #d6d6cd; }
+        .site-header .nav-option .main-navigation ul li:hover > ul a {
+          background-color: #fff;
+          color: #323432;
+          width: 150px; } }
 
-/*  menu full screen*/
 .welcome {
   text-align: center; }
   .welcome p {
@@ -786,6 +836,7 @@ object {
       width: 250px;
       height: 250px;
       border-radius: 150px; } }
+
 
 @media (min-width: 1240px) {
   .trademark-section {
@@ -913,3 +964,15 @@ object {
     color: #fff; }
     .page .wpcf7 .wpcf7-submit:first-child:hover {
       background-color: #234300; }
+
+.not-found .page-header {
+  text-align: center;
+  color: #4b711c;
+  font-size: 2rem; }
+
+.not-found .page-content {
+  text-align: center;
+  padding: 0.5rem 2rem 1rem 2rem; }
+  .not-found .page-content p {
+    color: #323432; }
+
