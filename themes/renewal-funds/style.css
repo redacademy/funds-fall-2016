@@ -675,7 +675,7 @@ object {
 
 .header-bar {
   /* this height needs to be reconsider!!!! */
-  height: 273px;
+  height: 10vh;
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
@@ -683,13 +683,18 @@ object {
       justify-content: space-between;
   background: #4b711c; }
 
-.nav-cancel, .nav-option {
+.site-branding img {
+  height: 40px;
+  width: 120px; }
+
+.nav-cancel {
   display: none; }
 
 .nav-btn {
   color: #fff;
   position: absolute;
-  top: 7%;
+  transform: translate(-50%, -50%);
+  top: 50%;
   right: 5%; }
 
 /*  after clicking nav-btn    */
@@ -700,16 +705,23 @@ object {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .header-resize .nav-btn, .header-resize .site-branding {
+  .header-resize .header-bar {
+    height: 30vh; }
+  .header-resize .nav-btn {
     display: none; }
-  .header-resize .nav-logo {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center; }
+  .header-resize .site-branding {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 15%; }
+    .header-resize .site-branding img {
+      height: 60%;
+      width: 80%; }
   .header-resize .nav-cancel {
     color: #fff;
     display: block;
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 5%;
     right: 5%; }
   .header-resize .nav-option {
@@ -740,7 +752,7 @@ object {
         flex-direction: row; }
     .site-header .header-bar {
       width: 20%; }
-    .site-header .nav-btn, .site-header .nav-logo {
+    .site-header .nav-btn {
       display: none; }
     .site-header .nav-option {
       display: block;

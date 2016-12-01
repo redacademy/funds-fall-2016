@@ -5,21 +5,27 @@
 }
 
 .header-bar {
-    /* this height needs to be reconsider!!!! */
-    height: 273px;   
+    /* this height needs to be reconsider!!!! */ 
+    height: 10vh; 
     padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     background: $color__brand-color-green;
 }
 
-.nav-cancel, .nav-option {
+.site-branding img {
+    height: 40px;
+    width: 120px;
+}
+
+.nav-cancel {
     display: none;
 }
 .nav-btn {
     color: $color__background-body;
     position: absolute;
-    top: 7%;
+    transform: translate(-50%,-50%);
+    top: 50%;
     right: 5%;
 }
 
@@ -29,16 +35,27 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    .nav-btn, .site-branding {
+    .header-bar {
+        height: 30vh;
+    }
+    .nav-btn {
         display: none;
     }
-    .nav-logo {
-        align-self: center;
+    .site-branding {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 15%;
+        img {
+            height: 60%;
+            width: 80%;
+        }
     }
     .nav-cancel {
         color: $color__background-body;
         display: block;
         position: absolute;
+        transform: translate(-50%,-50%);
         top: 5%;
         right: 5%;
     }
@@ -75,7 +92,7 @@
         .header-bar {
             width: 20%;
         }
-        .nav-btn, .nav-logo {
+        .nav-btn {
             display: none;
         }
         .nav-option {
