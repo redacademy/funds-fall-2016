@@ -14,12 +14,15 @@ get_header(); ?>
 		<p>404.php</p>
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<h1 class="page-title"><?php echo esc_html( 'Ooops 404!' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					
-
+					<img src="" class="404-logo">
+					<div>
+						<p><?php echo esc_html("Sorry about that, but the page you are looking for doesn't exit. Please head back to the home page and try again. If the problem exists, please email us."); ?></p>
+					</div>
+					<button></button>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
