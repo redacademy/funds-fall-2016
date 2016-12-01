@@ -36,7 +36,7 @@
 					<div class="nav-cancel">
 						<i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
 					</div>
-<<<<<<< HEAD
+					
 					<nav id="site-navigation" class="secondery-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 
@@ -51,8 +51,6 @@
 						<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 					</nav>
-=======
->>>>>>> 78bf9275e02257c9884554dcbf61727dd2b89ccc
 				</div>
 
 				<div class="nav-option">
