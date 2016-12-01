@@ -855,13 +855,12 @@ object {
     width: 600px;
     position: relative; } }
 
-.trademark-image {
+.trademark-image-wrapper {
   visibility: hidden; }
   @media (min-width: 1240px) {
-    .trademark-image {
+    .trademark-image-wrapper {
       width: 800px;
       height: 650px;
-      background-color: red;
       visibility: visible;
       position: absolute;
       left: -265px; } }
@@ -878,13 +877,18 @@ object {
     .trademark-wrapper {
       position: absolute;
       left: 280px;
-      top: 95px;
+      top: 100px;
       margin-bottom: 3rem; } }
 
-.trademark-logo {
+.trademark-logo-wrapper {
   width: 100%;
-  height: 200px;
-  background-color: #4b711c; }
+  border: 2px solid #4b711c; }
+
+.trademark-logo {
+  width: 60%;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
 
 .trademark-text {
   background-color: #4b711c;
