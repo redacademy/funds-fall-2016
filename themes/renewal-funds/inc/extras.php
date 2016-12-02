@@ -39,7 +39,7 @@ function red_starter_connection_types() {
 	p2p_register_connection_type( array(
         'name' => 'pc_to_story',
         'from' => 'portfolio-company',
-        'to' => 'story',
+        'to' => 'post', //story
 		'admin_dropdown' => 'any'
     ) );
 }
