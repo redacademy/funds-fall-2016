@@ -86,12 +86,12 @@
     }
 }
 
-.trademark-image {
+.trademark-image-wrapper {
     visibility: hidden;
+    height: 0px;
     @include desktop {
         width: 800px;
         height: 650px;
-        background-color: red;
         visibility: visible;
         position: absolute;
         left: -265px;
@@ -107,15 +107,20 @@
     @include desktop {
         position: absolute;
         left: 280px;
-        top: 95px;
+        top: 100px;
         margin-bottom: 3rem;
     }
 }
 
-.trademark-logo {
+.trademark-logo-wrapper {
     width: 100%;
-    height: 200px;
-    background-color: $color__brand-color-green;
+    border: 2px solid $color__brand-color-green;
+}
+
+.trademark-logo {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
 }
 
 .trademark-text {

@@ -1,6 +1,13 @@
+
+.page-id-22 .site-content {
+    padding-top: 200px;
+}
+
 .feedback-page-wrapper {
     display: flex;
 }
+
+// Image for DESKTOP ONLY
 
 .feedback-image-wrapper {
     visibility: hidden;
@@ -34,74 +41,71 @@
     }
 }
 
-.feedback-form-wrapper {
-    margin: 0 auto;
-    max-width: 656px;
+// Gravity Form
+
+.feedback-page {
     @include desktop {
-    flex-basis: 38%;
-    height: 140px;
+    width: 35%;
     }
 }
 
-.page .wpcf7 {
-    .feedback-page {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .feedback-green-text {
-        text-align: center;
-        color: $color__brand-color-green;
-        font-size: 3rem;
+.feedback-green-text {
+    text-align: center;
+    color: $color__brand-color-green;
+    font-size: 3rem;
     
-        @include desktop {
-            margin: 2rem 0;
-        }
+    @include desktop {
+        margin: 2rem 0;
     }
+}
 
-    .feedback-text {
-        font-size: 2rem;
-        text-align: center;
-        padding: 0 4rem;
-        @include desktop {
-            padding: 0 1.8rem;
-        }
+.feedback-text {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 3.5rem;
+    margin: 0;
+    @include desktop {
+        padding: 0 1.8rem;
     }
+}
 
-    .wpcf7-textarea {
+.gform_wrapper .textarea.medium {
+    height: 270px;
+}
+
+.textarea.medium {
         display: flex;
-        width: 80%;
         margin: 0 auto;
         background-color: $color__brand-color-lgray;
         border-radius: 25px;
-        padding: 1rem;
-    }
+}
 
-    .wpcf7-submit {
-        display: flex;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+// The Submit Button
+
+
+body .gform_wrapper .gform_footer input[type=submit] {
+    width: auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3.5rem;
+    border-radius: 12px;
+    border: none;
+    background-color: $color__brand-color-lgreen;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+    @include desktop {
         padding: 0.5rem 3.5rem;
-        border-radius: 12px;
-        border: 2px solid $color__brand-color-dgreen;
-        background-color: $color__background-body;
-        color: $color__brand-color-dgreen;
-        box-shadow: none;
-        font-size: 1.6rem;
-        text-shadow: none;
-        &:hover {
-            background-color: $color__brand-color-dgreen;
-            color: white;
-        }
-
-        &:first-child {
-            background-color: $color__brand-color-lgreen;
-            border: none;
-            color: #fff;
-            &:hover {
-                background-color: $color__brand-color-dgreen;
-            }
-        }
     }
+    &:hover {
+        background-color: $color__brand-color-dgreen;
+    }
+}
+
+.gform_footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
 }
