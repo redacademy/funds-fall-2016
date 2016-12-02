@@ -17,28 +17,28 @@ get_header(); ?>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/add_portfolio_company_icon.png" alt="Add portfolio logo">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/add_portfolio_company_icon.png" alt="Add portfolio logo">
                 </div></a>
                 <p>Share your Story</p>
             </div>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/fill_questionnaire_icon.png" alt="Fill Quest logo">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/fill_questionnaire_icon.png" alt="Fill Quest logo">
                 </div></a>
                 <p>Respond Questionnaire</p>
             </div>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img class="history-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/history_icon.png" alt="History logo">
+                    <img class="history-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/png/history_icon.png" alt="History logo">
                 </div></a>
                 <p>View History</p>
             </div>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/contact_icon.png" alt="Contact logo">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/contact_icon.png" alt="Contact logo">
                 </div></a>
                 <p>Feedback</p>
             </div>
