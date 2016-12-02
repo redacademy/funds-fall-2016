@@ -3,9 +3,7 @@
     position: fixed;
     width: 100%;
 }
-
-.header-bar {
-    /* this height needs to be reconsider!!!! */ 
+.header-bar { 
     height: 58px; 
     padding: 1rem 2rem;
     display: flex;
@@ -17,7 +15,6 @@
     height: 30px;
     width: 88px;
 }
-
 .nav-cancel, .nav-option {
     display: none;
 }
@@ -100,7 +97,6 @@
     }
 }
 }
-
 /*   desktop version  header!!!! */
 
 @include desktop {
@@ -108,9 +104,8 @@
         display: flex;
         flex-direction: row;
         .header-bar {
-            height: 104px;
+            height: 70.5px;
             width: 20%;
-            border-right: 5px solid $color__brand-color-green;
         }
         .nav-btn {
             display: none;
@@ -119,32 +114,32 @@
             display: block;
             background: $color__brand-color-green;
             width: 80%;
-            .dashicons {
+            height: 70.5px;
+            .main-navigation {
+                position: absolute;
+                transform: translate(0, -50%);
+                top: 50%;
+                right: 0;
+                padding-right: 1.5rem;
+            }
+            img {
                 display: none;
             }
             .menu {
                 display: flex;
                 justify-content: flex-end;
-                padding-right: 1.5rem;
-                padding-top: 0.5rem;
-                align-items: center;
             }
             li {
-                padding: 0 1rem;
+                padding: 0 0.75rem;
             }
             a {
-                font-size: 2rem;
+                font-size: 1rem;
                 color: $color__background-body;
             }
             .menu-item-44 {
-                span {
-                    display: none;
-                }
-                .dashicons {
-                    display: block;
-                }
+                
             }
-            .menu-item-47, .menu-item-48, .menu-item-14, .menu-item-41 {
+            .menu-item-14, .menu-item-82, .menu-item-83 {
                 display: none;
             }
             .main-navigation ul li:hover>ul {
@@ -159,7 +154,6 @@
                 color: $color__text-main;
                 width: 150px;
                 }
-                
             }
         }
     }
