@@ -5,7 +5,7 @@
  <main id="main" class="site-main" role="main">
 
      <p>feedback.php</p>
-     <div class="feedback-page-wrapper">
+    <div class="feedback-page-wrapper">
 
         <div class="feedback-image-wrapper">
             <div class="feedback-image"
@@ -16,11 +16,19 @@
             </div>
         </div>
 
-        <div class="feedback-form-wrapper">
-            <?php echo CFS()->get('feedback_form');?>
+        <div class="feedback-page container">
+            <div class="feedback-wrapper">
+                <p class="feedback-green-text">How Can We Improve?</p>
+                <p class="feedback-text">We are constantly looking to improve our platform. Your feedback is valuable to us.</p>
+            </div>
+
+            <div class="feedback-form-wrapper">
+                <?php echo CFS()->get('feedback_form');?>
+            </div>
+            
         </div>
 
-     </div>
+    </div>
      
  </main><!-- #main -->
 </div><!-- #primary -->

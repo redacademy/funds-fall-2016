@@ -17,28 +17,28 @@ get_header(); ?>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img src="<?php echo get_template_directory_uri()?>../assets/icons/add_portfolio_company_icon.png" alt="Add portfolio logo">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/add_portfolio_company_icon.png" alt="Add portfolio logo">
                 </div></a>
                 <p>Share your Story</p>
             </div>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img src="<?php echo get_template_directory_uri()?>../assets/icons/fill_questionnaire_icon.png" alt="Fill Quest logo">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/fill_questionnaire_icon.png" alt="Fill Quest logo">
                 </div></a>
                 <p>Respond Questionnaire</p>
             </div>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img class="history-logo" src="<?php echo get_template_directory_uri()?>../assets/icons/history_icon.png" alt="History logo">
+                    <img class="history-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/history_icon.png" alt="History logo">
                 </div></a>
                 <p>View History</p>
             </div>
 
             <div class="nav-icon-wrapper">
                 <a href ="#"><div class="nav-icon">
-                    <img src="<?php echo get_template_directory_uri()?>../assets/icons/contact_icon.png" alt="Contact logo">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/icons/contact_icon.png" alt="Contact logo">
                 </div></a>
                 <p>Feedback</p>
             </div>
@@ -51,12 +51,12 @@ get_header(); ?>
     <section class="trademark-section">
 
         <div class="trademark-image-wrapper">
-            <img class="trademark-image" src="<?php echo get_template_directory_uri()?>../assets/images/Dashboard_BG.png" alt="Renewal Slogan logo">
+            <img class="trademark-image" src="<?php echo get_template_directory_uri()?>/assets/images/Dashboard_BG.png" alt="Renewal Slogan logo">
         </div>
 
         <div class="trademark-wrapper">
             <div class="trademark-logo-wrapper">
-                <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>../assets/icons/renewalfunds_slogan.png" alt="Renewal Slogan logo">
+                <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/renewalfunds_slogan.png" alt="Renewal Slogan logo">
             </div>
             <div class="trademark-text">
                 <p>We want to help tell your story, showing the difference our partners make in the world is important to us. Here, you will be able to respond to questionnaires, edit your profile, view your history, share your story, and stay in touch with us.</p>

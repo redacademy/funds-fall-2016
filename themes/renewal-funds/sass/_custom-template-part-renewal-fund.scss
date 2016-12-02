@@ -88,6 +88,7 @@
 
 .trademark-image-wrapper {
     visibility: hidden;
+    height: 0px;
     @include desktop {
         width: 800px;
         height: 650px;
