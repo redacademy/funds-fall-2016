@@ -1007,5 +1007,8 @@ object {
     .page .wpcf7 .wpcf7-submit:first-child:hover {
       background-color: #234300; }
 
+.single-portfolio-company .site-content {
+  padding-top: 25rem; }
+
 .post-type-archive-portfolio-company .site-content {
-  margin-top: 6rem; }
+  padding-top: 25rem; }
