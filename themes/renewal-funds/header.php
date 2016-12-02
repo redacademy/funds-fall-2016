@@ -25,7 +25,7 @@
 					<div class="site-branding">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<!--<p class="site-description"><?php bloginfo( 'description' ); ?></p>-->
-						<img src="<?php echo get_template_directory_uri().'/assets/icons/renewalfunds_slogan.png' ?>" class= "header-logo" alt="header-logo" />
+						<img src="<?php echo get_template_directory_uri().'/assets/icons/png/renewalfunds_slogan.png' ?>" class= "header-logo" alt="header-logo" />
 					</div><!-- .site-branding -->
 					<div class="nav-btn">
 						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
