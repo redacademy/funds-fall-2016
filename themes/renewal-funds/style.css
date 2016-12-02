@@ -894,8 +894,6 @@ object {
   padding: 0 3rem;
   line-height: 1.3; }
 
-.page-id-22 .site-content {
-  padding-top: 200px; }
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -910,6 +908,9 @@ object {
   @media (min-width: 1240px) {
     .container {
       max-width: 1240px; } }
+
+.page-id-22 .site-content {
+  padding-top: 200px; }
 
 .feedback-page-wrapper {
   display: -ms-flexbox;
