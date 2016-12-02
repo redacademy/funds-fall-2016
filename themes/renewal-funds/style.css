@@ -795,14 +795,22 @@ object {
       .site-header .nav-option .menu-item-14, .site-header .nav-option .menu-item-82, .site-header .nav-option .menu-item-83 {
         display: none; }
       .site-header .nav-option .main-navigation ul li:hover > ul {
-        top: 104px;
-        right: -23px; }
+        top: 46px;
+        right: 3rem;
+        border: 2px solid #4b711c; }
         .site-header .nav-option .main-navigation ul li:hover > ul li {
-          border-bottom: 3px solid #d6d6cd; }
+          border-bottom: 2px solid #d6d6cd; }
+        .site-header .nav-option .main-navigation ul li:hover > ul li:last-child {
+          border-bottom: none; }
+        .site-header .nav-option .main-navigation ul li:hover > ul img {
+          display: inline-block;
+          height: 29px;
+          width: 29px;
+          margin: 0.5rem 0.5rem 0.5rem 0; }
         .site-header .nav-option .main-navigation ul li:hover > ul a {
           background-color: #fff;
           color: #323432;
-          width: 150px; } }
+          width: 104px; } }
 
 .not-found .page-header {
   text-align: center;
