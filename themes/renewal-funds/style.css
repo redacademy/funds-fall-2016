@@ -454,6 +454,10 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    border-bottom: 2px solid red; }
 
 /* Small menu. */
 .menu-toggle,
@@ -660,7 +664,7 @@ object {
 
 .header-bar {
   /* this height needs to be reconsider!!!! */
-  height: 273px;
+  height: 80px;
   padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
@@ -668,13 +672,18 @@ object {
       justify-content: space-between;
   background: #4b711c; }
 
+.site-branding img {
+  height: 50px;
+  width: 120px; }
+
 .nav-cancel, .nav-option {
   display: none; }
 
 .nav-btn {
   color: #fff;
   position: absolute;
-  top: 7%;
+  transform: translate(-50%, -50%);
+  top: 50%;
   right: 5%; }
 
 /*  after clicking nav-btn    */
@@ -685,17 +694,25 @@ object {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .header-resize .nav-btn, .header-resize .site-branding {
+  .header-resize .header-bar {
+    height: 190px; }
+  .header-resize .site-branding {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 15%;
+    text-align: center; }
+    .header-resize .site-branding img {
+      height: 60%;
+      width: 60%; }
+  .header-resize .nav-btn {
     display: none; }
-  .header-resize .nav-logo {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center; }
   .header-resize .nav-cancel {
     color: #fff;
     display: block;
     position: absolute;
-    top: 5%;
+    transform: translate(-50%, -50%);
+    top: 6%;
     right: 5%; }
   .header-resize .nav-option {
     display: block;
@@ -713,7 +730,7 @@ object {
     .header-resize .main-navigation a {
       font-size: 2rem;
       color: #323432; }
-    .header-resize .main-navigation .menu-item-25 {
+    .header-resize .main-navigation .menu-item-44 {
       display: none; }
 
 /*   desktop version  header!!!! */
@@ -724,8 +741,10 @@ object {
     -ms-flex-direction: row;
         flex-direction: row; }
     .site-header .header-bar {
-      width: 20%; }
-    .site-header .nav-btn, .site-header .nav-logo {
+      height: 104px;
+      width: 20%;
+      border-right: 5px solid #4b711c; }
+    .site-header .nav-btn {
       display: none; }
     .site-header .nav-option {
       display: block;
@@ -747,14 +766,14 @@ object {
       .site-header .nav-option a {
         font-size: 2rem;
         color: #fff; }
-      .site-header .nav-option .menu-item-25 span {
+      .site-header .nav-option .menu-item-44 span {
         display: none; }
-      .site-header .nav-option .menu-item-25 .dashicons {
+      .site-header .nav-option .menu-item-44 .dashicons {
         display: block; }
-      .site-header .nav-option .menu-item-31, .site-header .nav-option .menu-item-32 {
+      .site-header .nav-option .menu-item-47, .site-header .nav-option .menu-item-48, .site-header .nav-option .menu-item-14, .site-header .nav-option .menu-item-41 {
         display: none; }
       .site-header .nav-option .main-navigation ul li:hover > ul {
-        top: 255px;
+        top: 104px;
         right: -23px; }
         .site-header .nav-option .main-navigation ul li:hover > ul li {
           border-bottom: 3px solid #d6d6cd; }
@@ -894,8 +913,6 @@ object {
   padding: 0 3rem;
   line-height: 1.3; }
 
-.page-id-22 .site-content {
-  padding-top: 200px; }
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -910,6 +927,9 @@ object {
   @media (min-width: 1240px) {
     .container {
       max-width: 1240px; } }
+
+.page-id-22 .site-content {
+  padding-top: 200px; }
 
 .feedback-page-wrapper {
   display: -ms-flexbox;
