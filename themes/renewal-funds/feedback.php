@@ -9,7 +9,7 @@
 
         <div class="feedback-image-wrapper">
             <div class="feedback-image"
-            style="background-image: url('<?php echo CFS()->get('feedback_image');?>')">
+            style="background-image: url('<?php echo get_field('feedback_image');?>')">
                 <div class="feedback-title">
                     <p>Investing For Change</p>
                 </div>
@@ -23,7 +23,7 @@
             </div>
 
             <div class="feedback-form-wrapper">
-                <?php echo CFS()->get('feedback_form');?>
+                <?php echo get_field('feedback_form');?>
             </div>
             
         </div>
