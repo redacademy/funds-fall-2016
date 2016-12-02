@@ -6,16 +6,16 @@
 
 .header-bar {
     /* this height needs to be reconsider!!!! */ 
-    height: 80px; 
-    padding: 0.5rem 2rem;
+    height: 58px; 
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     background: $color__brand-color-green;
 }
 
 .site-branding img {
-    height: 50px;
-    width: 120px;
+    height: 30px;
+    width: 88px;
 }
 
 .nav-cancel, .nav-option {
@@ -30,35 +30,41 @@
 }
 
 /*  after clicking nav-btn    */
+@include mobile {
 .header-resize {
     width: 100%;
     position: fixed;
     display: flex;
     flex-direction: column;
     .header-bar {
-        height: 190px;
+        height: 200px;
     }
     .site-branding {
         position: absolute;
         transform: translate(-50%,-50%);
         left: 50%;
-        top: 15%;
+        top: 17%;
+        width: 163px;
         text-align: center;
         img {
-            height: 60%;
-            width: 60%;
+            height: auto;
+            width: 100%;
         }
     }
     .nav-btn {
         display: none;
     }
     .nav-cancel {
-        color: $color__background-body;
+        color: white;
+        width: 18px;
         display: block;
         position: absolute;
         transform: translate(-50%,-50%);
         top: 6%;
         right: 5%;
+        img {
+            height: 16px;
+        }
     }
     .nav-option {
         display: block;
@@ -82,6 +88,7 @@
             display: none;
         }
     }
+}
 }
 
 /*   desktop version  header!!!! */
