@@ -81,11 +81,21 @@
             border-bottom: 3px solid $color__brand-color-lgray;
         }
         a {
-            font-size: 2rem;
             color: $color__text-main;
         }
         .menu-item-44 {
             display: none;
+        }
+        img {
+            margin: 0.5rem 0.5rem;
+            height: 32px;
+            width: 32px;
+        }
+        span {
+            font-size: 1.1rem;
+            position: absolute;
+            transform: translate(0,-50%);
+            top: 50%;
         }
     }
 }
