@@ -653,21 +653,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-* {
-  box-sizing: border-box;
-  outline: none; }
-
-.container {
-  max-width: 656px;
-  margin: 0 auto; }
-  @media (min-width: 1240px) {
-    .container {
-      max-width: 1240px; } }
-
 /*  mobile version header!!!!   */
 .site-header {
   position: fixed;
@@ -777,6 +762,17 @@ object {
           background-color: #fff;
           color: #323432;
           width: 150px; } }
+
+.not-found .page-header {
+  text-align: center;
+  color: #4b711c;
+  font-size: 2rem; }
+
+.not-found .page-content {
+  text-align: center;
+  padding: 0.5rem 2rem 1rem 2rem; }
+  .not-found .page-content p {
+    color: #323432; }
 
 .welcome {
   text-align: center; }
@@ -900,6 +896,20 @@ object {
 
 .page-id-22 .site-content {
   padding-top: 200px; }
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front page */
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+.container {
+  max-width: 656px;
+  margin: 0 auto; }
+  @media (min-width: 1240px) {
+    .container {
+      max-width: 1240px; } }
 
 .feedback-page-wrapper {
   display: -ms-flexbox;
@@ -998,13 +1008,8 @@ body .gform_wrapper .gform_footer input[type=submit] {
       justify-content: center;
   font-size: 1.6rem; }
 
-.not-found .page-header {
-  text-align: center;
-  color: #4b711c;
-  font-size: 2rem; }
+.single-portfolio-company .site-content {
+  padding-top: 25rem; }
 
-.not-found .page-content {
-  text-align: center;
-  padding: 0.5rem 2rem 1rem 2rem; }
-  .not-found .page-content p {
-    color: #323432; }
+.post-type-archive-portfolio-company .site-content {
+  padding-top: 25rem; }
