@@ -10,10 +10,21 @@
         event.preventDefault();
         $('.site-header').removeClass('header-resize');
     });
+<<<<<<< HEAD
 
     // login functions
 
     //$('.a-unique-class').text( 'this is really bollocks' );
     //$( '.single-story .site-main > p' ).text( 'this is really bollocks' );
     
+=======
+})(jQuery);
+
+(function($){
+        $('.sub-menu').hide();
+    $('#menu-item-44').on('click',function(event){
+        event.preventDefault();
+        $('.sub-menu').show();
+    });
+>>>>>>> martin
 })(jQuery);

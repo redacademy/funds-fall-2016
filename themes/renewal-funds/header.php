@@ -25,13 +25,13 @@
 					<div class="site-branding">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<!--<p class="site-description"><?php bloginfo( 'description' ); ?></p>-->
-						<img src="<?php echo get_template_directory_uri().'/assets/icons/renewalfunds_slogan.png' ?>" class= "header-logo" alt="header-logo" />
+						<img src="<?php echo get_template_directory_uri().'/assets/icons/svg/renewal_funds_icon.svg' ?>" class= "header-logo" alt="header-logo" />
 					</div><!-- .site-branding -->
 					<div class="nav-btn">
-						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+						<i class="fa fa-bars fa-fw" aria-hidden="true"></i>
 					</div>
 					<div class="nav-cancel">
-						<i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
+						<img src="<?php echo get_template_directory_uri().'/assets/icons/svg/cancel_icon.svg' ?>" />
 					</div>
 				</div>
 
