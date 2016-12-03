@@ -12,19 +12,12 @@ get_header(); ?>
 		<p>archive-story.php</p>
 
 		<?php 
-			/*gravity_form( $id_or_title = 3, 
-							$display_title = true, 
-							$display_description = false, 
-							$display_inactive = true, 
-							$field_values = array(), 
-							$ajax = false, 
-							$echo = false );*/
-		
+			
 			if ( have_posts() ) : ?>
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					//the_archive_title( '<h1 class="page-title">', '</h1>' );
+					//the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
@@ -32,7 +25,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'story-yes' );
 				?>
 
 			<?php endwhile; ?>
@@ -41,7 +34,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'no-story' ); ?>
+			<?php get_template_part( 'template-parts/content', 'story-no' ); ?>
 
 		<?php endif; ?>
 

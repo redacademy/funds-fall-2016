@@ -790,7 +790,7 @@ object {
     -ms-flex-direction: row;
         flex-direction: row; }
     .site-header .header-bar {
-      height: 70.5px;
+      height: 104px;
       width: 20%; }
     .site-header .nav-btn {
       display: none; }
@@ -1095,13 +1095,6 @@ body .gform_wrapper .gform_footer input[type=submit] {
       justify-content: center;
   font-size: 1.6rem; }
 
-
-.single-portfolio-company .site-content {
-  padding-top: 25rem; }
-
-.post-type-archive-portfolio-company .site-content {
-  padding-top: 25rem; }
-
 .site-info {
   background-color: #536048;
   height: 40px;
@@ -1110,4 +1103,3 @@ body .gform_wrapper .gform_footer input[type=submit] {
   .site-info p {
     margin: 0;
     padding: 0.5rem 0; }
-
