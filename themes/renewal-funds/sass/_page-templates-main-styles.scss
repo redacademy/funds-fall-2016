@@ -24,3 +24,9 @@
         max-width: 1240px;
     }
 }
+
+// to pad down for header
+.site-content {
+    padding-top: $desktop-content-padding;
+}
+

@@ -38,9 +38,9 @@
 				<div class="nav-option">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<?php
-							if( current_user_can( 'administrator' ) ):
+							if( current_user_can( 'rf_user' ) || current_user_can( 'administrator' )):
 								wp_nav_menu( array ( 'menu' => 'Renewal Fund Menu' ) );
-							elseif ( current_user_can( 'editor') ) :
+							elseif ( current_user_can( 'pc_user') ) :
 								wp_nav_menu( array ( 'menu' => 'Portfolio Company Menu' ) );
 							endif;
 						?>

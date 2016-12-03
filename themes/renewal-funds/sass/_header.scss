@@ -1,7 +1,10 @@
+// styles for header
+
 /*  mobile version header!!!!   */
 .site-header {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .header-bar {
@@ -91,7 +94,7 @@
         display: flex;
         flex-direction: row;
         .header-bar {
-            height: 104px;
+            height: $desktop-header-height;
             width: 20%;
             border-right: 5px solid $color__brand-color-green;
         }

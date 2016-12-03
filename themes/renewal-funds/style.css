@@ -660,7 +660,8 @@ object {
 /*  mobile version header!!!!   */
 .site-header {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
 
 .header-bar {
   /* this height needs to be reconsider!!!! */
@@ -793,6 +794,24 @@ object {
   .not-found .page-content p {
     color: #323432; }
 
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front page */
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+.container {
+  max-width: 656px;
+  margin: 0 auto; }
+  @media (min-width: 1240px) {
+    .container {
+      max-width: 1240px; } }
+
+.site-content {
+  padding-top: 104px; }
+
 .welcome {
   text-align: center; }
   .welcome p {
@@ -913,24 +932,6 @@ object {
   padding: 0 3rem;
   line-height: 1.3; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-* {
-  box-sizing: border-box;
-  outline: none; }
-
-.container {
-  max-width: 656px;
-  margin: 0 auto; }
-  @media (min-width: 1240px) {
-    .container {
-      max-width: 1240px; } }
-
-.page-id-22 .site-content {
-  padding-top: 200px; }
-
 .feedback-page-wrapper {
   display: -ms-flexbox;
   display: flex; }
@@ -1027,9 +1028,3 @@ body .gform_wrapper .gform_footer input[type=submit] {
   -ms-flex-pack: center;
       justify-content: center;
   font-size: 1.6rem; }
-
-.single-portfolio-company .site-content {
-  padding-top: 5rem; }
-
-.post-type-archive-portfolio-company .site-content {
-  padding-top: 5rem; }
