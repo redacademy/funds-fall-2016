@@ -814,14 +814,26 @@ object {
 
 .not-found .page-header {
   text-align: center;
-  color: #4b711c;
-  font-size: 2rem; }
+  color: #323432;
+  font-weight: normal;
+  padding-top: 2.5rem; }
+  .not-found .page-header h1 {
+    font-size: 2.5rem;
+    margin: 0; }
 
 .not-found .page-content {
   text-align: center;
   padding: 0.5rem 2rem 1rem 2rem; }
+  .not-found .page-content img {
+    height: 87px;
+    width: 87px; }
   .not-found .page-content p {
+    font-size: 1.25rem;
     color: #323432; }
+  .not-found .page-content a {
+    text-decoration: none;
+    color: white;
+    background-color: #90b531; }
 
 .welcome {
   text-align: center; }
