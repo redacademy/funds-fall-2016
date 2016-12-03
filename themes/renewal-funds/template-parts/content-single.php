@@ -19,7 +19,7 @@
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-	<p>content-single.php</p>
+	
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

@@ -1,17 +1,16 @@
 <?php
 /**
- * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
- */
+ * Template Name: Questionnaire
+ *
+**/
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        <p>single-questionnaire.php</p>
-
 		<?php while ( have_posts() ) : the_post(); ?>
+			<p>single-questionnaire.php</p>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
@@ -23,7 +22,6 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

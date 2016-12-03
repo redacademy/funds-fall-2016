@@ -22,7 +22,6 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 
-
 /*
  *
  * Adds relational connection between posts and pages
@@ -30,17 +29,24 @@ add_filter( 'body_class', 'red_starter_body_classes' );
  */
 function red_starter_connection_types() {
     p2p_register_connection_type( array(
-        'name' => 'pc_to_questionnaire',
+        'name' => 'portfolio-company_to_story',
+        'from' => 'portfolio-company',
+        'to' => 'story',
+		'admin_dropdown' => 'any'
+    ) );
+
+    p2p_register_connection_type( array(
+        'name' => 'portfolio-company_to_questionnaire',
         'from' => 'portfolio-company',
         'to' => 'questionnaire',
 		'admin_dropdown' => 'any'
     ) );
 
-	p2p_register_connection_type( array(
-        'name' => 'pc_to_story',
-        'from' => 'portfolio-company',
-        'to' => 'post', //story
-		'admin_dropdown' => 'any'
+    p2p_register_connection_type( array(
+        'name' => 'post_to_user',
+        'from' => 'post',
+        'to' => 'user',
+        'admin_dropdown' => 'any'
     ) );
 }
 add_action( 'p2p_init', 'red_starter_connection_types' );

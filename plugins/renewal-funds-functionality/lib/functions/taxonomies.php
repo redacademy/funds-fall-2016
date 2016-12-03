@@ -44,6 +44,47 @@ function register_portfolio_company_year_taxonomy() {
 }
 add_action( 'init', 'register_portfolio_company_year_taxonomy', 0 );
 
+
+// Register Story Type Taxonomy
+/*function register_story_type_taxonomy() {
+
+	$labels = array(
+		'name'                       => 'Story Type',
+		'singular_name'              => 'Story Type',
+		'menu_name'                  => 'Story Types',
+		'all_items'                  => 'All Story Types',
+		'parent_item'                => 'Parent Story Type',
+		'parent_item_colon'          => 'Parent Story Type:',
+		'new_item_name'              => 'New Story Type',
+		'add_new_item'               => 'Add Story Type',
+		'edit_item'                  => 'Edit Story Type',
+		'update_item'                => 'Update Story Type',
+		'view_item'                  => 'View Story Type',
+		'separate_items_with_commas' => 'Separate story types with commas',
+		'add_or_remove_items'        => 'Add or remove portfolio story types',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Story Types',
+		'search_items'               => 'Search Story Types',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Story Types',
+		'items_list'                 => 'Story type list',
+		'items_list_navigation'      => 'Story type list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'story-type', array( 'story' ), $args );
+
+}
+add_action( 'init', 'register_story_type_taxonomy', 0 );*/
+
+
 // Register Questionnaire Taxonomy
 function register_questionnaire_year_taxonomy() {
 
