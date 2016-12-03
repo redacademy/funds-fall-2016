@@ -43,8 +43,16 @@ function red_starter_connection_types() {
     ) );
 
     p2p_register_connection_type( array(
-        'name' => 'multiple_authors',
+        'name' => 'multiple_authors', //
         'from' => 'portfolio-company',
+        'to' => 'user',
+        'to_query_vars' => array( 'role' => 'pc_user' ),
+        'admin_dropdown' => 'any'
+    ) );
+
+    p2p_register_connection_type( array(
+        'name' => 'story_to_user',
+        'from' => 'story',
         'to' => 'user',
         'to_query_vars' => array( 'role' => 'pc_user' ),
         'admin_dropdown' => 'any'

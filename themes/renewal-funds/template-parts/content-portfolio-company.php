@@ -8,7 +8,7 @@
     //echo $user_login;
 
     $posts = get_posts( array(
-                        'connected_type' => 'multiple_authors',
+                        'connected_type' => 'multiple_authors', //
                         'connected_items' => $user->ID,
                         'suppress_filters' => false,
                         'nopaging' => true
@@ -39,6 +39,16 @@
             <div class="main-dashboard-nav">
 
                 <div class="nav-icon-wrapper">
+
+                    <?php 
+
+                        $connected = new WP_Query( array(
+                                                    'connected_type' => 'portfolio-company_to_story',
+                                                    'connected_items' => get_queried_object(),
+                                                    'nopaging' => true,
+                                                    ) );
+                    ?>
+
                     <a href="<?php echo get_page_link( get_page_by_title('Story Upload')->ID ); ?>"><div class="nav-icon">
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/add_portfolio_company_icon.png" alt="Add portfolio logo">
                     </div></a>

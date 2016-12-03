@@ -11,7 +11,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<p>archive-story.php</p>
 
-		<?php if ( have_posts() ) : ?>
+		<?php 
+			/*gravity_form( $id_or_title = 3, 
+							$display_title = true, 
+							$display_description = false, 
+							$display_inactive = true, 
+							$field_values = array(), 
+							$ajax = false, 
+							$echo = false );*/
+		
+			if ( have_posts() ) : ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -32,7 +41,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'no-story' ); ?>
 
 		<?php endif; ?>
 
