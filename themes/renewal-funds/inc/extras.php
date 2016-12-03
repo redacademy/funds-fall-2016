@@ -43,12 +43,10 @@ function red_starter_connection_types() {
     ) );
 
     p2p_register_connection_type( array(
-        //'name' => 'post_to_user',
         'name' => 'multiple_authors',
         'from' => 'portfolio-company',
         'to' => 'user',
         'to_query_vars' => array( 'role' => 'pc_user' ),
-        //'to_query_vars' => array( 'role' => 'editor' ),
         'admin_dropdown' => 'any'
     ) );
 }
@@ -63,9 +61,15 @@ if ( is_admin() && !current_user_can( 'administrator' ) &&! ( defined( 'DOING_AJ
 }
 add_action( 'init', 'blockusers_init' );*/
 
-function remove_admin_bar() {
+
+/*
+ *
+ * Removes front end admin bar
+ *
+ */
+function red_starter_remove_admin_bar() {
     if (!current_user_can('administrator') && !is_admin()) {
         show_admin_bar(false);
     }
 }
-add_action('after_setup_theme', 'remove_admin_bar');
+add_action('after_setup_theme', 'red_starter_remove_admin_bar');
