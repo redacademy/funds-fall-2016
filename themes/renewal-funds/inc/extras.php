@@ -50,3 +50,19 @@ function red_starter_connection_types() {
     ) );
 }
 add_action( 'p2p_init', 'red_starter_connection_types' );
+
+
+/*function blockusers_init() {
+if ( is_admin() && !current_user_can( 'administrator' ) &&! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+    wp_redirect( home_url() );
+    exit;
+    }
+}
+add_action( 'init', 'blockusers_init' );*/
+
+function remove_admin_bar() {
+    if (!current_user_can('administrator') && !is_admin()) {
+        show_admin_bar(false);
+    }
+}
+add_action('after_setup_theme', 'remove_admin_bar');
