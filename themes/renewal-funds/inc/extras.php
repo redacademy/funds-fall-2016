@@ -43,10 +43,12 @@ function red_starter_connection_types() {
     ) );
 
     p2p_register_connection_type( array(
-        'name' => 'post_to_user',
-        'from' => 'post',
+        //'name' => 'post_to_user',
+        'name' => 'multiple_authors',
+        'from' => 'portfolio-company',
         'to' => 'user',
-        //'to_query_vars' => array( 'role' => 'administrator' ),
+        'to_query_vars' => array( 'role' => 'pc_user' ),
+        //'to_query_vars' => array( 'role' => 'editor' ),
         'admin_dropdown' => 'any'
     ) );
 }
