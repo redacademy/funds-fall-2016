@@ -1,5 +1,4 @@
 <?php
-
     $user = wp_get_current_user(); 
 
     //echo print_r($user);
@@ -29,7 +28,6 @@
 
 ?>
     <section class="container">
-
         <div class="welcome-wrapper">
             <div class="welcome">
                 <p>Welcome Back,</p>
@@ -67,7 +65,6 @@
                     </div></a>
                     <p>Feedback</p>
                 </div>
-
             </div>
         </div>
 
