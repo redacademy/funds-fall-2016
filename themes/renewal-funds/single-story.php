@@ -1,9 +1,9 @@
 <?php
 /**
+ * Template part for displaying a message that posts cannot be found.
  *
- * Template Name: Story
- *
-**/
+ * @package RED_Starter_Theme
+ */
 
 get_header(); ?>
 

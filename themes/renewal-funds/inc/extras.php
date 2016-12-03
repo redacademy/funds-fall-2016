@@ -46,6 +46,7 @@ function red_starter_connection_types() {
         'name' => 'post_to_user',
         'from' => 'post',
         'to' => 'user',
+        //'to_query_vars' => array( 'role' => 'administrator' ),
         'admin_dropdown' => 'any'
     ) );
 }
