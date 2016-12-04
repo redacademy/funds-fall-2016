@@ -16,7 +16,6 @@ get_header(); ?>
 												'nopaging' => true,)); ?>
 
 		<?php $user = wp_get_current_user(); 
-
 			 $story_posts = get_posts( array(
 										'connected_type' => 'story_to_user',
 										'connected_items' => $user->ID,
@@ -35,11 +34,9 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php //while ( have_posts() ) : the_post(); ?>
-
 				<?php
 					get_template_part( 'template-parts/content', 'story-yes' );
 				?>
-
 			<?php //endwhile; ?>
 
 			<?php //the_posts_navigation(); ?>

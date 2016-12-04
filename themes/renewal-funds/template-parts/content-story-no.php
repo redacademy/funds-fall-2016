@@ -5,7 +5,7 @@
 
         <p>seems like there're no stories yet.</p>
 
-        <img src="<?php echo get_template_directory_uri() . '/assets/icons/svg/create_questionnaire.svg' ?>" class="" alt="Create questionnaire icon" />
+        <img src="<?php echo get_template_directory_uri() . '/assets/icons/svg/share_story_icon.svg' ?>" class="" alt="Create questionnaire icon" />
 
         <p>Showing the difference our partners make in the world is important to us.</p>
 
