@@ -5,7 +5,7 @@
  <main id="main" class="site-main" role="main">
 
      <p>feedback.php</p>
-    <div class="feedback-page-wrapper">
+    <div class="feedback-page-wrapper container">
 
         <div class="feedback-image-wrapper">
             <div class="feedback-image"

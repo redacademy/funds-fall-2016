@@ -1,8 +1,16 @@
+.welcome-page {
+    padding-top: 103px;
+}
+
 .welcome {
     text-align: center;
+    @include desktop {
+        margin: 1.5rem 0;
+    }
     p {
         font-size: 3rem;
         line-height: 0;
+        padding: 1.5rem 0;
         @include desktop {
             font-size: 4.5rem;
             font-weight: bold;
@@ -13,6 +21,7 @@
 .green-text {
     color: $color__brand-color-green;
     font-weight: bold;
+    padding: 1rem;
 }
 
 .main-dashboard-nav {
@@ -32,11 +41,12 @@
     flex-direction: column;
     align-items: center;
     p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         max-width: 160px;
         text-align: center;
         font-weight: bold;
         line-height: 1.1;
+        margin: 1.3rem 0;
 
 
         @include desktop {
