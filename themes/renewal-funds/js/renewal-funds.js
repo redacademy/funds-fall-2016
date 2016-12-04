@@ -11,6 +11,9 @@
         $('.site-header').removeClass('header-resize');
     });
 
+    // login functions
+
+    $( "#login" ).replaceWith( "<p>Hello,</p>" );
 
     // login functions
 

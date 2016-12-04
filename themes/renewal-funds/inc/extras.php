@@ -104,4 +104,9 @@ function add_login_logout_link($items, $args) {
     $items .= '<li>'. $loginoutlink .'</li>';     
     return $items; 
 }
-add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+
+add_action( 'p2p_init', 'red_starter_connection_types' );
+
+
+
+

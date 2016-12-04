@@ -3,7 +3,11 @@
 <?php get_header(); ?>
 <div id="primary-feedback" class="content-area-feedback">
  <main id="main" class="site-main" role="main">
-    <div class="feedback-page-wrapper">
+
+     <p>feedback.php</p>
+    <div class="feedback-page-wrapper container">
+
+    <div class="feedback-page">
 
         <div class="feedback-image-wrapper">
             <div class="feedback-image" style="background-image: url('<?php echo get_field('feedback_image');?>')">
