@@ -1,23 +1,23 @@
+// styles for header
+
 /*  mobile version header!!!!   */
 .site-header {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
-
-.header-bar {
-    /* this height needs to be reconsider!!!! */ 
-    height: 80px; 
-    padding: 0.5rem 2rem;
+.header-bar { 
+    height: 58px; 
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     background: $color__brand-color-green;
 }
 
 .site-branding img {
-    height: 50px;
-    width: 120px;
+    height: 30px;
+    width: 88px;
 }
-
 .nav-cancel, .nav-option {
     display: none;
 }
@@ -30,35 +30,41 @@
 }
 
 /*  after clicking nav-btn    */
+@include mobile {
 .header-resize {
     width: 100%;
     position: fixed;
     display: flex;
     flex-direction: column;
     .header-bar {
-        height: 190px;
+        height: 200px;
     }
     .site-branding {
         position: absolute;
         transform: translate(-50%,-50%);
         left: 50%;
-        top: 15%;
+        top: 17%;
+        width: 163px;
         text-align: center;
         img {
-            height: 60%;
-            width: 60%;
+            height: auto;
+            width: 100%;
         }
     }
     .nav-btn {
         display: none;
     }
     .nav-cancel {
-        color: $color__background-body;
+        color: white;
+        width: 18px;
         display: block;
         position: absolute;
         transform: translate(-50%,-50%);
         top: 6%;
         right: 5%;
+        img {
+            height: 16px;
+        }
     }
     .nav-option {
         display: block;
@@ -75,15 +81,25 @@
             border-bottom: 3px solid $color__brand-color-lgray;
         }
         a {
-            font-size: 2rem;
             color: $color__text-main;
         }
         .menu-item-44 {
             display: none;
         }
+        img {
+            margin: 0.5rem 0.5rem;
+            height: 32px;
+            width: 32px;
+        }
+        span {
+            font-size: 1.1rem;
+            position: absolute;
+            transform: translate(0,-50%);
+            top: 50%;
+        }
     }
 }
-
+}
 /*   desktop version  header!!!! */
 
 @include desktop {
@@ -91,9 +107,12 @@
         display: flex;
         flex-direction: row;
         .header-bar {
-            height: 104px;
+
+            height: $desktop-header-height;
+
+            
+
             width: 20%;
-            border-right: 5px solid $color__brand-color-green;
         }
         .nav-btn {
             display: none;
@@ -102,47 +121,55 @@
             display: block;
             background: $color__brand-color-green;
             width: 80%;
-            .dashicons {
+            height: 70.5px;
+            .main-navigation {
+                position: absolute;
+                transform: translate(0, -50%);
+                top: 50%;
+                right: 0;
+                padding-right: 1.5rem;
+            }
+            img {
                 display: none;
             }
             .menu {
                 display: flex;
                 justify-content: flex-end;
-                padding-right: 1.5rem;
-                padding-top: 0.5rem;
-                align-items: center;
             }
             li {
-                padding: 0 1rem;
+                padding: 0 0.75rem;
             }
             a {
-                font-size: 2rem;
+                font-size: 1rem;
                 color: $color__background-body;
             }
             .menu-item-44 {
-                span {
-                    display: none;
-                }
-                .dashicons {
-                    display: block;
-                }
+                
             }
-            .menu-item-47, .menu-item-48, .menu-item-14, .menu-item-41 {
+            .menu-item-14, .menu-item-82, .menu-item-83 {
                 display: none;
             }
             .main-navigation ul li:hover>ul {
-                
-                top: 104px;
-                right: -23px;
+                top: 46px;
+                right: 3rem;
+                border: 2px solid $color__brand-color-green;
                 li {
-                    border-bottom: 3px solid $color__brand-color-lgray;
+                    border-bottom: 2px solid $color__brand-color-lgray;
+                }
+                li:last-child{
+                    border-bottom: none;
+                }
+                img {
+                    display: inline-block;
+                    height: 29px;
+                    width: 29px;
+                    margin: 0.5rem 0.5rem 0.5rem 0;
                 }
                 a {
-                background-color: $color__background-body;
-                color: $color__text-main;
-                width: 150px;
+                    background-color: $color__background-body;
+                    color: $color__text-main;
+                    width: 104px;
                 }
-                
             }
         }
     }

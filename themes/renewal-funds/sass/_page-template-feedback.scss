@@ -3,6 +3,8 @@
     padding-top: 103px;
 }
 
+// styles for feedback page
+
 .feedback-page-wrapper {
     display: flex;
 }
@@ -74,10 +76,10 @@
 }
 
 .textarea.medium {
-        display: flex;
-        margin: 0 auto;
-        background-color: $color__brand-color-lgray;
-        border-radius: 25px;
+    display: flex;
+    margin: 0 auto;
+    background-color: $color__brand-color-lgray;
+    border-radius: 25px;
 }
 
 // The Submit Button

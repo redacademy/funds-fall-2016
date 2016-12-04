@@ -4,6 +4,9 @@ get_header(); ?>
 <p>content-renewal-fund.php</p>
 
 <section class="welcome-page container">
+
+<section class="container">
+
     <div class="welcome-wrapper">
         <div class="welcome">
             <p>Welcome Back,</p>

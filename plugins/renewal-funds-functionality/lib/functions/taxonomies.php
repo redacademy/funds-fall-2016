@@ -44,6 +44,47 @@ function register_portfolio_company_year_taxonomy() {
 }
 add_action( 'init', 'register_portfolio_company_year_taxonomy', 0 );
 
+
+// Register Story Year Taxonomy
+function register_story_year_taxonomy() {
+
+	$labels = array(
+		'name'                       => 'Story Year',
+		'singular_name'              => 'Story Year',
+		'menu_name'                  => 'Story Years',
+		'all_items'                  => 'All Story Years',
+		'parent_item'                => 'Parent Story Year',
+		'parent_item_colon'          => 'Parent Story Year:',
+		'new_item_name'              => 'New Story Year',
+		'add_new_item'               => 'Add Story Year',
+		'edit_item'                  => 'Edit Story Year',
+		'update_item'                => 'Update Story Year',
+		'view_item'                  => 'View Story Year',
+		'separate_items_with_commas' => 'Separate story years with commas',
+		'add_or_remove_items'        => 'Add or remove story years',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Story Years',
+		'search_items'               => 'Search Story Years',
+		'not_found'                  => 'Not Found',
+		'no_terms'                   => 'No Story Years',
+		'items_list'                 => 'Story year list',
+		'items_list_navigation'      => 'Story year list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'story-year', array( 'story' ), $args );
+
+}
+add_action( 'init', 'register_story_year_taxonomy', 0 );
+
+
 // Register Questionnaire Taxonomy
 function register_questionnaire_year_taxonomy() {
 

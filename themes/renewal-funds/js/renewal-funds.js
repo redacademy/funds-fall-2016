@@ -1,5 +1,6 @@
 // js file for renewal funds
 (function( $ ) {
+    // navigation functions
     $('.nav-btn').on('click',function(event){
         event.preventDefault();
         $('.site-header').addClass('header-resize');
@@ -13,5 +14,20 @@
     // login functions
 
     $( "#login" ).replaceWith( "<p>Hello,</p>" );
+
+    // login functions
+
+    //$('.a-unique-class').text( 'this is really bollocks' );
+    //$( '.single-story .site-main > p' ).text( 'this is really bollocks' );
+    
+
+})(jQuery);
+
+(function($){
+        $('.sub-menu').hide();
+    $('#menu-item-44').on('click',function(event){
+        event.preventDefault();
+        $('.sub-menu').show();
+    });
 
 })(jQuery);
