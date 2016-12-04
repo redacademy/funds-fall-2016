@@ -80,10 +80,10 @@
 
 .trademark-section {
     @include desktop {
-    display: flex;
-    margin: 0 auto;
-    width: 600px;
-    position: relative;
+        //display: flex;
+        margin: 0 auto;
+        width: 600px;
+        position: relative;
     }
 }
 

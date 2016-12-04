@@ -949,8 +949,6 @@ object {
 
 @media (min-width: 1240px) {
   .trademark-section {
-    display: -ms-flexbox;
-    display: flex;
     margin: 0 auto;
     width: 600px;
     position: relative; } }
@@ -1095,11 +1093,11 @@ body .gform_wrapper .gform_footer input[type=submit] {
       justify-content: center;
   font-size: 1.6rem; }
 
-.site-info {
+.site-footer {
   background-color: #536048;
   height: 40px;
   text-align: center;
   color: white; }
-  .site-info p {
+  .site-footer p {
     margin: 0;
     padding: 0.5rem 0; }
