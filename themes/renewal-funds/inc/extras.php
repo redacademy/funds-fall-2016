@@ -95,7 +95,11 @@ function red_starter_remove_admin_bar() {
 }
 add_action('after_setup_theme', 'red_starter_remove_admin_bar');
 
- 
+/*
+*
+* Adds logout functionality to header
+*
+*/
 function add_login_logout_link($items, $args) {         
     ob_start();         
     wp_loginout('index.php');         
@@ -104,8 +108,7 @@ function add_login_logout_link($items, $args) {
     $items .= '<li>'. $loginoutlink .'</li>';     
     return $items; 
 }
-
-add_action( 'p2p_init', 'red_starter_connection_types' );
+add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 
 
 
