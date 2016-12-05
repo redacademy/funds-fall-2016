@@ -229,3 +229,16 @@ function my_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+
+function login_function() {
+    add_filter( 'gettext', 'username_change', 20, 3 );
+    function username_change( $translated_text, $text, $domain ) 
+    {
+        if ($text === 'Username or Email') 
+        {
+            $translated_text = 'Email Address';
+        }
+        return $translated_text;
+    }
+}
+add_action( 'login_head', 'login_function' );

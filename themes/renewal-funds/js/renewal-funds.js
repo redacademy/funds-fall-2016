@@ -13,8 +13,9 @@
 
     // login functions
 
-    $( "#loginform" ).wrap( "<div class='login-wrapper'></div>" );
+        // $( "label[for=user_login]" ).html( "<p> The fuck </p>" );
 
+$("#loginform > p ").append("Fuck this shit");
     // login functions
 
     //$('.a-unique-class').text( 'this is really bollocks' );
