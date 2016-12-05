@@ -841,7 +841,6 @@ object {
     -ms-flex-direction: row;
         flex-direction: row; }
     .site-header .header-bar {
-      height: 104px;
       width: 20%; }
     .site-header .nav-btn {
       display: none; }
