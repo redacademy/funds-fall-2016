@@ -19,7 +19,9 @@
 
     //$('.a-unique-class').text( 'this is really bollocks' );
     //$( '.single-story .site-main > p' ).text( 'this is really bollocks' );
-    
+
+    //$('#backtoblog').text( 'this is really bollocks' );
+
 
 })(jQuery);
 

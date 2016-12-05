@@ -37,7 +37,6 @@
 
         <div class="main-nav-wrapper">
             <div class="main-dashboard-nav">
-
                 <div class="nav-icon-wrapper">
                     <a href="<?php echo get_post_type_archive_link('story'); ?>"><div class="nav-icon">
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/add_portfolio_company_icon.png" alt="Add portfolio logo">
@@ -68,22 +67,20 @@
             </div>
         </div>
 
-    <!--Trademark Section only in desktop-->
-
-        <section class="trademark-section">
-
+        <!--Trademark Section only in desktop-->
+        <div class="trademark-section">
             <div class="trademark-image-wrapper">
-                <img class="trademark-image" src="<?php echo get_template_directory_uri()?>/assets/images/Dashboard_BG.png" alt="Renewal Slogan logo">
+                <img class="trademark-image" src="<?php echo get_template_directory_uri()?>/assets/images/dashboard-background.png" alt="Renewal Slogan logo">
             </div>
 
             <div class="trademark-wrapper">
                 <div class="trademark-logo-wrapper">
-                    <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/renewalfunds_slogan.png" alt="Renewal Slogan logo">
+                    <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/png/renewalfunds_slogan.png" alt="Renewal Slogan logo">
                 </div>
+
                 <div class="trademark-text">
                     <p>We want to help tell your story, showing the difference our partners make in the world is important to us. Here, you will be able to respond to questionnaires, edit your profile, view your history, share your story, and stay in touch with us.</p>
                 </div>
             </div>
-
-        </section>
+        </div>
     </section>
