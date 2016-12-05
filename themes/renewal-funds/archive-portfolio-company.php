@@ -11,52 +11,64 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<p>archive-portfolio-company.php</p>
 
+		<h1>History</h1>
+
 		<?php 
 			 $user = wp_get_current_user(); 
 
-			 // stories
-			 $story_posts = get_posts( array(
+			// stories
+			$story_posts = new WP_Query( array(
 										'connected_type' => 'story_to_user',
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
-										'nopaging' => true
-                						) ); ?>
+										'nopaging' => true,
+										));	?>
+										
+			<pre>
+				<?php print_r( $story_posts );?>	
+			</pre>					
 
-			<h2>Stories</h2>
+			<h2>Stories</h2>							
 
-			<?php foreach ( $story_posts as $story_post ) :
-				//echo print_r($story_post); 
-				
-				?>
-				<?php if( has_post_thumbnail( $story_post->ID) ) : ?>
-					<p><?php echo get_the_post_thumbnail($story_post->ID, 'large'); ?></p>
-				<?php endif; ?>
+			<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
+				<div>
+					<div>
+						<a href="<?php echo get_permalink(); ?>">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail('large'); ?>
+							<?php endif; ?>
+						</a>
+					</div>
 
-				<a href="<?php echo get_post_permalink($story_post->ID); ?>"><?php echo get_the_title($story_post->ID); ?></a>
-				<p><?php echo get_field('story_body', $story_post->ID); ?></p>
-			<?php endforeach; 
+					<div>
+						<a href="<?php echo get_permalink(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</div>
+				</div>
+			<?php endwhile; 	
 
-			wp_reset_postdata();
+			wp_reset_postdata();				
 
 			// questionnaires
-			$questionnaire_posts = get_posts( array(
-										'connected_type' => 'questionnaire_to_user',
-										'connected_items' => $user->ID,
-										'suppress_filters' => false,
-										'nopaging' => true
-                					) ); ?>
+			$questionnaire_posts = new WP_Query( array(
+											'connected_type' => 'questionnaire_to_user',
+											'connected_items' => $user->ID,
+											'suppress_filters' => false,
+											'nopaging' => true,
+											));	?>
 
 			<h2>Questionnaires</h2>
 
-			<?php foreach ($questionnaire_posts as $questionnaire_post) : 
-        		//echo 'questionnaire - ' . $questionnaire_post->post_title; ?>
-				
-				<a href="<?php echo $questionnaire_post->guid; ?>"><?php echo $questionnaire_post->post_title; ?></a>
-    		<?php endforeach;
+			<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+				<div>
+					<a href="<?php echo get_permalink(); ?>">
+						<?php the_title(); ?>
+					</a>
+				</div>
+			<?php endwhile;
 
 			wp_reset_postdata();
-		
-			//echo print_r($posts[0]);
 		
 			/*if ( have_posts() ) : ?>
             
