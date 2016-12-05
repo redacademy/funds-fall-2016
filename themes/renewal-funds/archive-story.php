@@ -11,19 +11,26 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<p>archive-story.php</p>
 
-		<?php $connected = new WP_Query(array('connected_type' => 'portfolio_company_to_story',
-												'connected_items' => get_queried_object(),
-												'nopaging' => true,)); ?>
+		<?php //$connected = new WP_Query(array('connected_type' => 'portfolio_company_to_story',
+												//'connected_items' => get_queried_object(),
+												//'nopaging' => true,)); 
+		?>
 
 		<?php $user = wp_get_current_user(); 
-			 $story_posts = get_posts( array(
+			 /*$story_posts = get_posts( array(
 										'connected_type' => 'story_to_user',
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
 										'nopaging' => true
-                						) ); ?>			
+                						) ); */
+
+			$story_posts = new WP_Query( array(
+										'connected_type' => 'story_to_user',
+										'connected_items' => $user->ID,
+										'suppress_filters' => false,
+										'nopaging'  => true ) ); ?>
 																	
-		<?php if ( count( $story_posts ) > 0 ) : ?>
+		<?php if ( $story_posts->have_posts() ) : ?>
 			
 			<header class="page-header">
 				<?php

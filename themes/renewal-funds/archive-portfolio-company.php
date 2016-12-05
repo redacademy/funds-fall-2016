@@ -14,7 +14,7 @@ get_header(); ?>
 		<h1>History</h1>
 
 		<?php 
-			 $user = wp_get_current_user(); 
+			$user = wp_get_current_user(); 
 
 			// stories
 			$story_posts = new WP_Query( array(
@@ -24,31 +24,42 @@ get_header(); ?>
 										'nopaging' => true,
 										));	?>
 										
-			<pre>
-				<?php print_r( $story_posts );?>	
-			</pre>					
+			<!--<pre>
+				<?php //print_r( $story_posts );?>	
+			</pre>-->					
 
-			<h2>Stories</h2>							
+			<h2>Stories</h2>
 
-			<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
-				<div>
+			<?php if ( $story_posts->have_posts() ) : ?>
+
+				<header class="page-header">
+					<?php
+						//the_archive_title( '<h1 class="page-title">', '</h1>' );
+						//the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					?>
+				</header><!-- .page-header -->
+
+				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
 					<div>
-						<a href="<?php echo get_permalink(); ?>">
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail('large'); ?>
-							<?php endif; ?>
-						</a>
-					</div>
+						<div>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail('large'); ?>
+								<?php endif; ?>
+							</a>
+						</div>
 
-					<div>
-						<a href="<?php echo get_permalink(); ?>">
-							<?php the_title(); ?>
-						</a>
+						<div>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</div>
 					</div>
-				</div>
-			<?php endwhile; 	
+				<?php endwhile; 	
 
-			wp_reset_postdata();				
+				wp_reset_postdata();
+
+			endif;
 
 			// questionnaires
 			$questionnaire_posts = new WP_Query( array(
