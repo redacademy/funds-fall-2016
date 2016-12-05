@@ -751,7 +751,7 @@ object {
   z-index: 1; }
 
 .header-bar {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
