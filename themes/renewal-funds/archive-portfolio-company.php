@@ -25,12 +25,15 @@ get_header(); ?>
 			<h2>Stories</h2>
 
 			<?php foreach ( $story_posts as $story_post ) :
-				//echo print_r($story_post); ?>
-				<?php //echo 'story - ' . $story_post->post_title;?>
-				<a href="<?php echo $story_post->guid; ?>"><?php echo $story_post->post_title; ?></a>
-				<p><?php echo $story_post->post_content; ?></p>
-				<p><?php the_field('story_body'); ?></p>
+				//echo print_r($story_post); 
+				
+				?>
+				<?php if( has_post_thumbnail( $story_post->ID) ) : ?>
+					<p><?php echo get_the_post_thumbnail($story_post->ID, 'large'); ?></p>
+				<?php endif; ?>
 
+				<a href="<?php echo get_post_permalink($story_post->ID); ?>"><?php echo get_the_title($story_post->ID); ?></a>
+				<p><?php echo get_field('story_body', $story_post->ID); ?></p>
 			<?php endforeach; 
 
 			wp_reset_postdata();
