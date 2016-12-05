@@ -851,7 +851,8 @@ object {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: #4b711c; }
+  background-color: #4b711c;
+  height: 94px; }
 
 .header-bar {
   padding: 1rem 2rem;
@@ -942,7 +943,8 @@ object {
 /*   desktop version  header!!!! */
 @media (min-width: 1240px) {
   .site-header {
-    background-color: #4b711c; }
+    background-color: #4b711c;
+    height: 108px; }
     .site-header .header-container {
       width: 1240px;
       margin: 0 auto;

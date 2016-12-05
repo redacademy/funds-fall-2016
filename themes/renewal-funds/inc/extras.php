@@ -105,7 +105,7 @@ function add_login_logout_link($items, $args) {
     wp_loginout('index.php');         
     $loginoutlink = ob_get_contents();     
     ob_end_clean();         
-    $items .= '<li><img src="<?php echo get_template_directory_uri()./assets/icons/svg/logout_icon.svg ?>" />'. $loginoutlink .'</li>';     
+    $items .= '<li><img src="<?php echo get_template_directory_uri() ?>/assets/icons/svg/logout_icon.svg" />'. $loginoutlink .'</li>';     
     return $items; 
 }
 add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);

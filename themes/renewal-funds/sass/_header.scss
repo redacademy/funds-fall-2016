@@ -6,6 +6,7 @@
     width: 100%;
     z-index: 1;
     background-color: $color__brand-color-green;
+    height: 94px;
 }
 .header-bar {   
     padding: 1rem 2rem;
@@ -110,6 +111,7 @@
 @include desktop {
     .site-header {
         background-color: $color__brand-color-green;
+        height: 108px;
         .header-container {
             width: 1240px;
             margin: 0 auto;
