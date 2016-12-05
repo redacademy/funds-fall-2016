@@ -751,7 +751,6 @@ object {
   z-index: 1; }
 
 .header-bar {
-  height: 58px;
   padding: 1rem 2rem;
   display: -ms-flexbox;
   display: flex;
@@ -760,7 +759,7 @@ object {
   background: #4b711c; }
 
 .site-branding img {
-  height: 30px;
+  height: 32px;
   width: 88px; }
 
 .nav-cancel, .nav-option {
@@ -841,7 +840,8 @@ object {
     -ms-flex-direction: row;
         flex-direction: row; }
     .site-header .header-bar {
-      width: 20%; }
+      width: 20%;
+      padding: 1rem 2rem; }
     .site-header .nav-btn {
       display: none; }
     .site-header .nav-option {

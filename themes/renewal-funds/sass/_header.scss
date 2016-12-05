@@ -7,7 +7,7 @@
     z-index: 1;
 }
 .header-bar { 
-    height: 58px; 
+     
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .site-branding img {
-    height: 30px;
+    height: 32px;
     width: 88px;
 }
 .nav-cancel, .nav-option {
@@ -107,6 +107,7 @@
         flex-direction: row;
         .header-bar {
             width: 20%;
+            padding: 1rem 2rem;
         }
         .nav-btn {
             display: none;
