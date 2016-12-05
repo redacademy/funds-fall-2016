@@ -120,12 +120,7 @@
             display: block;
             background: $color__brand-color-green;
             width: 80%;
-            height: 70.5px;
             .main-navigation {
-                position: absolute;
-                transform: translate(0, -50%);
-                top: 50%;
-                right: 0;
                 padding-right: 1.5rem;
             }
             img {
@@ -136,7 +131,7 @@
                 justify-content: flex-end;
             }
             li {
-                padding: 0 0.75rem;
+                padding: 1.5rem 0.75rem;
             }
             a {
                 font-size: 1rem;

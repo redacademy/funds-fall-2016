@@ -848,13 +848,8 @@ object {
     .site-header .nav-option {
       display: block;
       background: #4b711c;
-      width: 80%;
-      height: 70.5px; }
+      width: 80%; }
       .site-header .nav-option .main-navigation {
-        position: absolute;
-        transform: translate(0, -50%);
-        top: 50%;
-        right: 0;
         padding-right: 1.5rem; }
       .site-header .nav-option img {
         display: none; }
@@ -864,7 +859,7 @@ object {
         -ms-flex-pack: end;
             justify-content: flex-end; }
       .site-header .nav-option li {
-        padding: 0 0.75rem; }
+        padding: 1.5rem 0.75rem; }
       .site-header .nav-option a {
         font-size: 1rem;
         color: #fff; }
