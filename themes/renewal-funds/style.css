@@ -529,18 +529,7 @@ a {
     .main-navigation .current_page_item > a,
     .main-navigation .current-menu-item > a,
     .main-navigation .current_page_ancestor > a {
-      position: relative;
-      z-index: 1; }
-      .main-navigation .current_page_item > a:before,
-      .main-navigation .current-menu-item > a:before,
-      .main-navigation .current_page_ancestor > a:before {
-        content: "";
-        position: absolute;
-        left: 25%;
-        bottom: 0;
-        height: 1px;
-        width: 50px;
-        border-bottom: 1px solid #b0aea5; } }
+      border-bottom: 1px solid #b0aea5; } }
 
 /* Small menu. */
 .menu-toggle,
