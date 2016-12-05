@@ -759,8 +759,8 @@ object {
   background: #4b711c; }
 
 .site-branding img {
-  height: 32px;
-  width: 88px; }
+  height: 75px;
+  width: 140px; }
 
 .nav-cancel, .nav-option {
   display: none; }
@@ -846,7 +846,7 @@ object {
           flex-direction: row; }
     .site-header .header-bar {
       width: 20%;
-      padding: 1.5rem 2rem; }
+      padding: 0.8rem 2rem; }
     .site-header .nav-btn {
       display: none; }
     .site-header .nav-option {
