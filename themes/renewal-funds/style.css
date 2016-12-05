@@ -793,7 +793,8 @@ object {
       left: 50%;
       top: 22%;
       width: 163px;
-      text-align: center; }
+      text-align: center;
+      margin-left: 0; }
       .header-resize .site-branding img {
         height: auto;
         width: 100%; }
@@ -805,10 +806,10 @@ object {
       display: block;
       position: absolute;
       transform: translate(-50%, -50%);
-      top: 6%;
-      right: 5%;
-      height: 20px;
-      width: 20px; }
+      top: 10%;
+      right: 7%;
+      height: 30px;
+      width: 30px; }
     .header-resize .nav-option {
       display: block;
       background-color: #fff; }
