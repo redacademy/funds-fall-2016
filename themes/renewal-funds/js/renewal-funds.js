@@ -13,7 +13,7 @@
 
     // login functions
 
-    $( "#login" ).replaceWith( "<p>Hello,</p>" );
+    $( "#loginform" ).wrap( "<div class='login-wrapper'></div>" );
 
     // login functions
 

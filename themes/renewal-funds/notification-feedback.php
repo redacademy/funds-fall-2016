@@ -8,13 +8,21 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<p>notification-feedback.php</p>
 
-        <h2>Thanks for Your Feedback!</h2>
+        <div class="thanks-page-wrapper">
 
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/logo-leaf.png' ?>" class="" alt="Leaf Image" />
+        <div class="thanks-msg">
+            <p>Thanks for your Feedback!</p>
+        </div>
 
-        <div>
+        <div class="thanks-image-wrapper">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/leafs.png" alt="Add portfolio logo">
+        </div>
+
+        <div class="home-button">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Home</a>
         </div>
+
+    </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

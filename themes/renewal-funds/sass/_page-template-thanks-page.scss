@@ -6,8 +6,8 @@
 }
 
 .thanks-msg {
-    font-size: 4rem;
-    padding: 0 4rem;
+    font-size: 3rem;
+    padding: 0 3rem;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    padding: 0.7rem 4rem;
+    padding: 0rem 4rem;
     border-radius: 12px;
     border: none;
     background-color: $color__brand-color-lgreen;
@@ -31,7 +31,10 @@
     box-shadow: none;
     font-size: 2rem;
     margin: 2rem 0;
-    
+    a {
+        color: white;
+        text-decoration: none;
+    }    
     &:hover {
         background-color: $color__brand-color-dgreen;
     }

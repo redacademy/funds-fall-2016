@@ -1189,8 +1189,8 @@ body .gform_wrapper .gform_footer input[type=submit] {
       justify-content: space-around; }
 
 .thanks-msg {
-  font-size: 4rem;
-  padding: 0 4rem;
+  font-size: 3rem;
+  padding: 0 3rem;
   text-align: center; }
 
 .thanks-image-wrapper {
@@ -1206,7 +1206,7 @@ body .gform_wrapper .gform_footer input[type=submit] {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0.7rem 4rem;
+  padding: 0rem 4rem;
   border-radius: 12px;
   border: none;
   background-color: #90b531;
@@ -1215,6 +1215,9 @@ body .gform_wrapper .gform_footer input[type=submit] {
   box-shadow: none;
   font-size: 2rem;
   margin: 2rem 0; }
+  .home-button a {
+    color: white;
+    text-decoration: none; }
   .home-button:hover {
     background-color: #234300; }
 
