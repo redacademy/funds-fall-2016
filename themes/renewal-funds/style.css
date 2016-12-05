@@ -748,19 +748,22 @@ object {
 .site-header {
   position: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #4b711c; }
 
 .header-bar {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   background: #4b711c; }
 
-.site-branding img {
-  height: 75px;
-  width: 140px; }
+.site-branding {
+  margin-left: 1rem; }
+  .site-branding img {
+    height: 55px;
+    width: 120px; }
 
 .nav-cancel, .nav-option {
   display: none; }
@@ -847,6 +850,9 @@ object {
     .site-header .header-bar {
       width: 20%;
       padding: 0.8rem 2rem; }
+      .site-header .header-bar img {
+        height: 75px;
+        width: 140px; }
     .site-header .nav-btn {
       display: none; }
     .site-header .nav-option {

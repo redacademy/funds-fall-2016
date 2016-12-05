@@ -5,17 +5,21 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: $color__brand-color-green;
 }
 .header-bar {   
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     background: $color__brand-color-green;
 }
 
-.site-branding img {
-    height: 75px;
-    width: 140px;
+.site-branding {
+    margin-left: 1rem;
+    img {
+        height: 55px;
+        width: 120px;
+    }
 }
 .nav-cancel, .nav-option {
     display: none;
@@ -114,6 +118,10 @@
         .header-bar {
             width: 20%;
             padding: 0.8rem 2rem;
+            img {
+                height: 75px;
+                width: 140px;
+            }
         }
         .nav-btn {
             display: none;
