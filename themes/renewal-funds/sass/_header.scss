@@ -151,28 +151,6 @@
             .menu-item-127 {
                 display: none;
             }
-            .main-navigation ul li:hover>ul {
-                top: 46px;
-                right: 3rem;
-                border: 2px solid $color__brand-color-green;
-                li {
-                    border-bottom: 2px solid $color__brand-color-lgray;
-                }
-                li:last-child{
-                    border-bottom: none;
-                }
-                img {
-                    display: inline-block;
-                    height: 29px;
-                    width: 29px;
-                    margin: 0.5rem 0.5rem 0.5rem 0;
-                }
-                a {
-                    background-color: $color__background-body;
-                    color: $color__text-main;
-                    width: 104px;
-                }
-            }
         }
     }
 }
