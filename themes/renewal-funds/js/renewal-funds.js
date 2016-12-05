@@ -33,4 +33,4 @@ $("#loginform > p ").append("Fuck this shit");
         $('.sub-menu').show();
     });
 
-})(jQuery);
+})(jQuery);//
