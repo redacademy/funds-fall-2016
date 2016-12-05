@@ -102,8 +102,13 @@
 
 @include desktop {
     .site-header {
-        display: flex;
-        flex-direction: row;
+        background-color: $color__brand-color-green;
+        .header-container {
+            width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
         .header-bar {
             width: 20%;
             padding: 1rem 2rem;
@@ -132,10 +137,7 @@
                 font-size: 1rem;
                 color: $color__background-body;
             }
-            .menu-item-44 {
-                
-            }
-            .menu-item-14, .menu-item-82, .menu-item-83 {
+            .menu-item-14 {
                 display: none;
             }
             .main-navigation ul li:hover>ul {

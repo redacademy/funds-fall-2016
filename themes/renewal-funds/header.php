@@ -21,6 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+			<div class="header-container">
 				<div class="header-bar">
 					<div class="site-branding">
 
@@ -50,6 +51,7 @@
 						?>
 					</nav><!-- #site-navigation -->
 				</div>
+			</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

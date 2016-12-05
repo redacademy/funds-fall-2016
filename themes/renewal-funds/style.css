@@ -835,10 +835,14 @@ object {
 /*   desktop version  header!!!! */
 @media (min-width: 1240px) {
   .site-header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row; }
+    background-color: #4b711c; }
+    .site-header .header-container {
+      width: 1240px;
+      margin: 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
     .site-header .header-bar {
       width: 20%;
       padding: 1rem 2rem; }
@@ -862,7 +866,7 @@ object {
       .site-header .nav-option a {
         font-size: 1rem;
         color: #fff; }
-      .site-header .nav-option .menu-item-14, .site-header .nav-option .menu-item-82, .site-header .nav-option .menu-item-83 {
+      .site-header .nav-option .menu-item-14 {
         display: none; }
       .site-header .nav-option .main-navigation ul li:hover > ul {
         top: 46px;
