@@ -427,19 +427,16 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6em 1em .4em; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -447,8 +444,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 /* Fields */
 input[type="text"],
@@ -911,6 +907,21 @@ object {
     color: white;
     background-color: #90b531; }
 
+.error-header {
+  font-size: 4rem;
+  color: #4b711c;
+  text-align: center; }
+
+.error-message {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 3.5rem; }
+  .error-message a {
+    color: #90b531; }
+  @media (min-width: 1240px) {
+    .error-message {
+      width: 50%; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1147,7 +1158,7 @@ body .gform_wrapper .gform_footer input[type=submit] {
   box-shadow: none; }
   @media (min-width: 1240px) {
     body .gform_wrapper .gform_footer input[type=submit] {
-      padding: 0.5rem 3.5rem; } }
+      padding: 0.7rem 3.5rem; } }
   body .gform_wrapper .gform_footer input[type=submit]:hover {
     background-color: #234300; }
 
@@ -1166,3 +1177,47 @@ body .gform_wrapper .gform_footer input[type=submit] {
   .site-info p {
     margin: 0;
     padding: 0.5rem 0; }
+
+.thanks-page-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.thanks-msg {
+  font-size: 4rem;
+  padding: 0 4rem;
+  text-align: center; }
+
+.thanks-image-wrapper {
+  padding: 3rem 0;
+  max-width: 250px; }
+
+.home-button {
+  width: auto;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0.7rem 4rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #90b531;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: none;
+  font-size: 2rem;
+  margin: 2rem 0; }
+  .home-button:hover {
+    background-color: #234300; }
+
+.error-header-message p {
+  color: black;
+  font-size: 2rem; }

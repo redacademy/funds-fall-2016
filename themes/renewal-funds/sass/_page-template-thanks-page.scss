@@ -1,0 +1,38 @@
+.thanks-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thanks-msg {
+    font-size: 4rem;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.thanks-image-wrapper {
+    padding: 3rem 0;
+    max-width: 250px;
+}
+
+.home-button {
+    width: auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 4rem;
+    border-radius: 12px;
+    border: none;
+    background-color: $color__brand-color-lgreen;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 2rem;
+    margin: 2rem 0;
+    
+    &:hover {
+        background-color: $color__brand-color-dgreen;
+    }
+}

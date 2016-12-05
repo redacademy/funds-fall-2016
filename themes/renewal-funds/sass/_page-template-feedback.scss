@@ -99,7 +99,7 @@ body .gform_wrapper .gform_footer input[type=submit] {
     text-shadow: none;
     box-shadow: none;
     @include desktop {
-        padding: 0.5rem 3.5rem;
+        padding: 0.7rem 3.5rem;
     }
     &:hover {
         background-color: $color__brand-color-dgreen;
