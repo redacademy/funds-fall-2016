@@ -75,7 +75,7 @@
 
             <div class="trademark-wrapper">
                 <div class="trademark-logo-wrapper">
-                    <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/png/renewalfunds_slogan.png" alt="Renewal Slogan logo">
+                    <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/svg/renewal_funds_icon.svg" alt="Renewal Slogan logo">
                 </div>
 
                 <div class="trademark-text">

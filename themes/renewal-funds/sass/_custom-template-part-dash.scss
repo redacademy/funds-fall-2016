@@ -1,6 +1,7 @@
 
 .welcome-page {
     padding-top: 103px;
+    min-width: 520px;
 }
 
 //styles for pc and rf template parts
@@ -11,9 +12,12 @@
         margin: 1.5rem 0;
     }
     p {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 0;
         padding: 1.5rem 0;
+        @include tablet {
+            font-size: 3rem;
+        }
         @include desktop {
             font-size: 4.5rem;
             font-weight: bold;
@@ -24,7 +28,9 @@
 .green-text {
     color: $color__brand-color-green;
     font-weight: bold;
+    font-size: 1rem;
     padding: 1rem;
+    // min-width: 510px;
 }
 
 .main-dashboard-nav {
@@ -43,6 +49,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    @include desktop {
+        width: 25%;
+    }
     p {
         font-size: 1.5rem;
         max-width: 160px;
@@ -60,10 +70,10 @@
 }
 
 .nav-icon {
-    height: 244px;
-    width: 244px;
+    height: 148px;
+    width: 148px;
     border: 4px solid $color__brand-color-lgreen;
-    border-radius: 122px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,10 +90,14 @@
         background-color: $color__brand-color-lgreen;
     }
 
+    @include tablet {
+        width: 200px;
+        height: 200px;
+    }
+
     @include desktop {
         width: 250px;
         height: 250px;
-        border-radius: 150px;
     }
 }
 
@@ -126,19 +140,39 @@
 
 .trademark-logo-wrapper {
     width: 100%;
-    border: 2px solid $color__brand-color-green;
+    background-color: $color__brand-color-green;
 }
 
 .trademark-logo {
     width: 60%;
     display: flex;
     margin: 0 auto;
+    padding-top: 1rem;
 }
 
 .trademark-text {
     background-color: $color__brand-color-green;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 0 3rem;
+    padding: 2rem 3rem 3rem 3rem;
     line-height: 1.3;
+    text-align: center;
+    @include tablet {
+        font-size: 2rem;
+    }
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.home {
+    position: relative;
+}
+
+.home .site-footer {
+    @include desktop {
+        position: absolute;
+        bottom: -770px;
+        width: 100%;
+    }
 }
