@@ -33,8 +33,10 @@
 .header-resize {
     width: 100%;
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
     .header-bar {
         height: 200px;
     }
@@ -137,7 +139,7 @@
                 font-size: 1rem;
                 color: $color__background-body;
             }
-            .menu-item-14 {
+            .menu-item-127 {
                 display: none;
             }
             .main-navigation ul li:hover>ul {

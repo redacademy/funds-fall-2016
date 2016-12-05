@@ -776,11 +776,12 @@ object {
 @media (max-width: 1240px) {
   .header-resize {
     width: 100%;
-    position: fixed;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
+    position: fixed; }
+    .header-resize .header-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
     .header-resize .header-bar {
       height: 200px; }
     .header-resize .site-branding {
@@ -866,7 +867,7 @@ object {
       .site-header .nav-option a {
         font-size: 1rem;
         color: #fff; }
-      .site-header .nav-option .menu-item-14 {
+      .site-header .nav-option .menu-item-127 {
         display: none; }
       .site-header .nav-option .main-navigation ul li:hover > ul {
         top: 46px;
