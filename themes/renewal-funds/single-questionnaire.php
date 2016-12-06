@@ -21,20 +21,24 @@ get_header(); ?>
 
 			// check if the flexible content field has rows of data
 			if( have_rows('questionnaire_item') ):
-				echo '<form>';
+				//echo '<form>';
 				// loop through the rows of data
 				while ( have_rows('questionnaire_item') ) : the_row();
 					// check current row layout
 					if( get_row_layout() === 'questionnaire_question' ):
 						$question = get_sub_field('question_name');
-						echo '<label>' . $question . '</label>';
+						//echo '<label>' . $question . '</label>';
+
+						echo '<p>' . $question . '</p>';
 
 						$answer = get_sub_field('question_response');
-						echo '<textarea rows="4">' . $answer . '</textarea>';
+						//echo '<textarea rows="4">' . $answer . '</textarea>';
+
+						echo '<p>' . $answer . '</p>';
 					endif;
 				endwhile;
-				echo '<button>Submit</button>';
-				echo '</form>';
+				//echo '<button>Submit</button>';
+				//echo '</form>';
 			else :
 				// no layouts found
 			endif;

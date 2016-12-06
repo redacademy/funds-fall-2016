@@ -125,6 +125,16 @@ add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
 
 
 
+/*function populate_questionnaire_form_fields( $entry  ) {
+    //$post = get_post( $entry['post_id'] );
+
+    //$entries = [];
+
+    //add_entries( $entries, $form_id = 4 ); //GFAPI::
+}
+add_filter( 'gform_pre_render_4', 'populate_questionnaire_form_fields', 10, 2 );*/
+
+
 // Styling the Login page
 
 function custom_login() { ?>
@@ -132,7 +142,7 @@ function custom_login() { ?>
         <div class="login-image-wrapper">
 
             <div class="login-image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/images/Login.png" alt="Login Logo">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/login.png" alt="Login Logo">
                 <div class="login-title">
                     <p>Investing For Change</p>
                 </div>
@@ -243,7 +253,6 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 
 function login_function() {
     add_filter( 'gettext', 'username_change', 20, 3 );

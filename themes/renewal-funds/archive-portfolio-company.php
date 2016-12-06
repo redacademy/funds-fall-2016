@@ -5,9 +5,17 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+	//$portfolio_company = get_queried_object(); ?>
 
 	<div id="primary" class="content-area">
+
+		<!--<header class="archive-header">
+			<h1 class="archive-title">
+				<?php //echo $portfolio_company->name; ?>
+			</h1>
+		</header><!-- .archive-header -->
+
 		<main id="main" class="site-main" role="main">
 		<p>archive-portfolio-company.php</p>
 
@@ -53,6 +61,10 @@ get_header(); ?>
 							<a href="<?php echo get_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>
+						</div>
+
+						<div>
+							<?php the_field('story_body'); ?>
 						</div>
 					</div>
 				<?php endwhile; 	
