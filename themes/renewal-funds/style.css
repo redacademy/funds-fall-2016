@@ -1014,26 +1014,28 @@ object {
   .not-found .page-content p {
     font-size: 1.25rem;
     color: #323432; }
-  .not-found .page-content a {
-    text-decoration: none;
-    color: white;
-    background-color: #90b531; }
 
-.error-header {
-  font-size: 4rem;
-  color: #4b711c;
-  text-align: center; }
+.error-content a {
+  text-decoration: none;
+  color: #234300; }
+
+/*.error-header {
+    font-size: 4rem;
+    color: $color__brand-color-green;
+    text-align: center;
+}
 
 .error-message {
-  text-align: center;
-  font-size: 2rem;
-  padding: 0 3.5rem; }
-  .error-message a {
-    color: #90b531; }
-  @media (min-width: 1240px) {
-    .error-message {
-      width: 50%; } }
-
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    a {
+        color: $color__brand-color-lgreen;
+    }
+    @include desktop {
+        width: 50%;
+    }
+}*/
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/

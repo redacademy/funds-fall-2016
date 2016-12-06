@@ -22,14 +22,15 @@
         font-size: 1.25rem;
         color: $color__text-main;
     }
-    a {
-        text-decoration: none;
-        color: white;
-        background-color: $color__brand-color-lgreen;
-    }
+}
+.error-content a {
+    text-decoration: none;
+    color: $color__brand-color-dgreen;
 }
 
-.error-header {
+
+
+/*.error-header {
     font-size: 4rem;
     color: $color__brand-color-green;
     text-align: center;
@@ -45,4 +46,4 @@
     @include desktop {
         width: 50%;
     }
-}
+}*/
