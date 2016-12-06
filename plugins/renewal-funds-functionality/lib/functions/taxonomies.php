@@ -39,14 +39,14 @@ function register_portfolio_company_year_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'portfolio-company-year', array( 'portfolio-company' ), $args );
+	register_taxonomy( 'portfolio-company-year', array( 'portfolio-company', 'story', 'questionnaire' ), $args );
 
 }
 add_action( 'init', 'register_portfolio_company_year_taxonomy', 0 );
 
 
 // Register Story Year Taxonomy
-function register_story_year_taxonomy() {
+/*function register_story_year_taxonomy() {
 
 	$labels = array(
 		'name'                       => 'Story Year',
@@ -122,4 +122,4 @@ function register_questionnaire_year_taxonomy() {
 	register_taxonomy( 'questionnaire-year', array( 'questionnaire' ), $args );
 
 }
-add_action( 'init', 'register_questionnaire_year_taxonomy', 0 );
+add_action( 'init', 'register_questionnaire_year_taxonomy', 0 );*/
