@@ -606,6 +606,10 @@ textarea {
   border-top: none;
   border-bottom: none; }
 
+@media (min-width: 1240px) {
+  .gform_wrapper {
+    padding: 0 5rem; } }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

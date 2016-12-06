@@ -75,3 +75,9 @@ textarea {
 	border-top: none;
 	border-bottom: none;
 }
+
+@include desktop {
+	.gform_wrapper {
+		padding: 0 5rem;
+	}
+}
