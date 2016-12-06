@@ -110,6 +110,21 @@ function add_login_logout_link($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 
+/*
+*
+* Add post-to-post user to a posted story
+*
+*/
+function add_user_id_to_story_post( $entry  ) {
+    $post = get_post( $entry['post_id'] );
+    $user = wp_get_current_user(); 
+
+    p2p_type( 'story_to_user' )->connect( $post->ID, $user->ID, array('date' => current_time('mysql')) );
+}
+add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
+
+
+
 // Styling the Login page
 
 function custom_login() { ?>

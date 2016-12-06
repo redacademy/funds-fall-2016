@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Renewal Funds
 Theme URI: http://underscores.me/
@@ -1035,7 +1036,7 @@ object {
       max-width: 1440px; } }
 
 .site-content {
-  padding-top: 72px; }
+  padding-top: 108px; }
 
 .welcome-page {
   padding-top: 103px;
@@ -1058,6 +1059,7 @@ object {
         font-size: 4.5rem;
         font-weight: bold; } }
 
+ß
 .green-text {
   color: #4b711c;
   font-weight: bold;
