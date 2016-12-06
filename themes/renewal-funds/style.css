@@ -672,7 +672,7 @@ a {
     .main-navigation .current_page_item > a,
     .main-navigation .current-menu-item > a,
     .main-navigation .current_page_ancestor > a {
-      border-bottom: 1px solid #b0aea5; } }
+      border-bottom: 3px solid #b0aea5; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -930,7 +930,7 @@ object {
       position: absolute;
       transform: translate(-50%, -50%);
       top: 3rem;
-      right: 1.5rem;
+      right: 1.6rem;
       height: 28px;
       width: 28px; }
     .header-resize .nav-option {
