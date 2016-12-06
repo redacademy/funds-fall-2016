@@ -1019,6 +1019,10 @@ object {
   text-decoration: none;
   color: #234300; }
 
+@media (min-width: 1240px) {
+  .content-container .not-found {
+    padding: 1rem 5rem; } }
+
 /*.error-header {
     font-size: 4rem;
     color: $color__brand-color-green;

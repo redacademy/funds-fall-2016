@@ -28,7 +28,11 @@
     color: $color__brand-color-dgreen;
 }
 
-
+@include desktop {
+    .content-container .not-found {
+        padding: 1rem 5rem;
+    }
+}
 
 /*.error-header {
     font-size: 4rem;
