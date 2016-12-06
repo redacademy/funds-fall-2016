@@ -593,6 +593,12 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.gform_body {
+  padding: 0.5rem 3rem; }
+
+#field_3_1, #field_3_2, #field_3_4 {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
