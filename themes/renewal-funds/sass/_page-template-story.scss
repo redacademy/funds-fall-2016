@@ -1,15 +1,3 @@
-.content-container {
-    max-width: 720px;
-    margin: 0 auto;
-}
 .page-header h1 {
         text-align: center;
     }
-
-
-@include desktop {
-    .content-container {
-        max-width: 1240px;
-        margin: 0 auto;
-    }
-}
