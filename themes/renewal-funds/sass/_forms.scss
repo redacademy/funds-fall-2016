@@ -64,3 +64,14 @@ textarea {
 #field_3_1, #field_3_2, #field_3_4 {
 	text-align: center;
 }
+
+#gform_fields_3 li.gfield.gfield_error {
+	background-color: white;
+	border-top: none;
+	border-bottom: none;
+}
+
+#gform_3 .validation_error {
+	border-top: none;
+	border-bottom: none;
+}
