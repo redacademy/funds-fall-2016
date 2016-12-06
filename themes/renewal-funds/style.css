@@ -1196,6 +1196,13 @@ object {
     bottom: -770px;
     width: 100%; } }
 
+@media (min-width: 1240px) {
+  .content-container {
+    max-width: 1240px;
+    margin: 0 auto; }
+  h1 {
+    text-align: center; } }
+
 .site-footer {
   background-color: #536048;
   height: 40px;
