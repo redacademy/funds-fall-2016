@@ -878,7 +878,7 @@ object {
   width: 100%;
   z-index: 1;
   background-color: #4b711c;
-  height: 94px; }
+  height: 96px; }
 
 .header-bar {
   padding: 1rem 2rem;
@@ -891,18 +891,17 @@ object {
 .site-branding {
   margin-left: 1rem; }
   .site-branding img {
-    height: 55px;
-    width: 120px; }
+    height: 57px;
+    width: 122px; }
 
 .nav-cancel, .nav-option {
   display: none; }
 
 .nav-btn {
-  color: #fff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  right: 5%; }
+  color: #fff; }
+  .nav-btn .fa {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
 /*  after clicking nav-btn    */
 @media (max-width: 1240px) {
@@ -931,10 +930,10 @@ object {
       display: block;
       position: absolute;
       transform: translate(-50%, -50%);
-      top: 10%;
-      right: 7%;
-      height: 30px;
-      width: 30px; }
+      top: 3rem;
+      right: 1.5rem;
+      height: 28px;
+      width: 28px; }
     .header-resize .nav-option {
       display: block;
       background-color: #fff; }
