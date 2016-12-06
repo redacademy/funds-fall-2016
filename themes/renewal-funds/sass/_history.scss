@@ -1,0 +1,59 @@
+.history-page-wrapper {
+    text-align: center;
+    font-size: 1.5rem;
+    @include desktop {
+        text-align: left;
+        max-width: 1240px;
+        margin: 0 auto;
+        h2 {
+        font-size: 2rem;
+        margin: 0;
+        }
+    }
+    
+}
+
+.story-section {
+    display: flex;
+}
+
+.story-image-wrapper {
+    display: none;
+    width: 200px;
+    height: 200px;
+    @include desktop {
+        display: block;
+    }
+}
+
+.story-wrapper {
+    width: 80%;
+    margin-left: 2rem;
+    ul {
+        margin: 0;
+    }
+}
+
+.story-wrapper li {
+    margin-bottom: 3rem;
+}
+
+.story-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: $color__brand-color-dgreen;
+    @include desktop {
+    font-size: 2rem;
+    }
+}
+
+.story-text {
+    font-size: 1.5rem;
+    margin: 0;
+    display: none;
+    @include desktop {
+    font-size: 1.75rem;
+    display: block;
+    }
+}

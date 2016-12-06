@@ -1,17 +1,26 @@
 <section>
     <p>content-story-no.php</p>
 	<div class="page-content">
-        <h2>Hmm...</h2>
+    <div class="thanks-page-wrapper">
 
-        <p>seems like there're no stories yet.</p>
+        <div class="error-header">
+            <p>Hmmm...</p>
+            <span class="error-header-message"><p>seems like there's no stories yet</p></span>
+        </div>
 
-        <img src="<?php echo get_template_directory_uri() . '/assets/icons/svg/share_story_icon.svg' ?>" class="" alt="Create questionnaire icon" />
+        <div class="thanks-image-wrapper">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/create_questionnaire_icon.png" alt="create questionnaire logo">
+        </div>
 
-        <p>Showing the difference our partners make in the world is important to us.</p>
+        <div class="error-message">
+            <p>Showing the difference our partners make in the world is important to us.</p>
+        </div>
 
-        <div>
+        <div class="home-button">
             <a href="<?php echo get_page_link( get_page_by_title('Story Upload')->ID ); ?>">Add Story</a>
         </div>
+
+    </div>
     </div><!-- .page-content -->
 </section>
 
