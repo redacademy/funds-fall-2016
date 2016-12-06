@@ -79,3 +79,9 @@ textarea {
 		padding: 0 5rem;
 	}
 }
+
+@media only screen and (min-width: 641px) {
+	#field_3_1 select.medium, #field_3_2 input.medium { 
+		width: 100%
+	}
+}
