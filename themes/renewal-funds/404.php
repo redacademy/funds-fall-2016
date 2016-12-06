@@ -11,6 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="container">
 		<p>404.php</p>
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -19,13 +20,13 @@ get_header(); ?>
 
 				<div class="page-content">
 					<img src="<?php echo get_template_directory_uri().'/assets/icons/svg/404_icon.svg' ?>" class="404-logo" alt="404-logo" />
-					<div>
-						<p><?php echo esc_html("Sorry about that, but the page you are looking for doesn't exit. Please head back to the home page and try again. If the problem exists, please email us."); ?></p>
+					<div class="error-content">
+						<p><?php echo esc_html("Sorry about that, but the page you are looking for doesn't exit. Please head back to the home page and try again. If the problem exists, please")?> <a href="mailto:123@123.com"> <?php echo email ?></a><?php echo esc_html(" us."); ?></p>
 					</div>
-					<button class="404-home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a></button>
+					<button class="error-home home-button"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a></button>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-
+		</div> <!--content-container -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
