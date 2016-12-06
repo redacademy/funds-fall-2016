@@ -1200,7 +1200,7 @@ object {
   .content-container {
     max-width: 1240px;
     margin: 0 auto; }
-  h1 {
+  .page-header h1 {
     text-align: center; } }
 
 .site-footer {

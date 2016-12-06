@@ -11,7 +11,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="content-container">
 		<p>archive-story.php</p>
-				<h1>Share Your Store</h1>
 
 		<?php //$connected = new WP_Query(array('connected_type' => 'portfolio_company_to_story',
 												//'connected_items' => get_queried_object(),
@@ -35,6 +34,7 @@ get_header(); ?>
 		<?php if ( $story_posts->have_posts() ) : ?>
 			
 			<header class="page-header">
+				<h1>Share Your Store</h1>
 				<?php
 					//the_archive_title( '<h1 class="page-title">', '</h1>' );
 					//the_archive_description( '<div class="taxonomy-description">', '</div>' );
