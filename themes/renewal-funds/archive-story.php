@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="content-container">
 		<p>archive-story.php</p>
 
 		<?php //$connected = new WP_Query(array('connected_type' => 'portfolio_company_to_story',
@@ -33,6 +34,7 @@ get_header(); ?>
 		<?php if ( $story_posts->have_posts() ) : ?>
 			
 			<header class="page-header">
+				<h1>Share Your Store</h1>
 				<?php
 					//the_archive_title( '<h1 class="page-title">', '</h1>' );
 					//the_archive_description( '<div class="taxonomy-description">', '</div>' );
@@ -50,7 +52,7 @@ get_header(); ?>
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'story-no' ); ?>
 		<?php endif; ?>
-
+			</div> <!-- content-container -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
