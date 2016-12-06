@@ -125,14 +125,30 @@ add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
 
 
 
-/*function populate_questionnaire_form_fields( $entry  ) {
+/*function populate_questionnaire_form_fields( $entry ) {
     //$post = get_post( $entry['post_id'] );
 
     //$entries = [];
 
     //add_entries( $entries, $form_id = 4 ); //GFAPI::
+
+    if ( $form_id == 4 ) {
+        $input = '<input type="text" value="test">';
+    }
+    return $input;
 }
 add_filter( 'gform_pre_render_4', 'populate_questionnaire_form_fields', 10, 2 );*/
+
+
+/*add_filter( 'gform_field_input', 'tracker', 10, 5 );
+function tracker( $input, $field, $value, $lead_id, $form_id ) {
+    // because this will fire for every form/field, only do it when it is the specific form and field
+    if ( $form_id == 4 ) {
+        $input = '<input type="text" value="test">';
+    }
+    return $input;
+}*/
+
 
 
 // Styling the Login page
