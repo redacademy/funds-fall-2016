@@ -918,13 +918,8 @@ object {
     .header-resize .header-bar {
       height: 200px; }
     .header-resize .site-branding {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 22%;
-      width: 230px;
-      text-align: center;
-      margin-left: 0; }
+      margin: 1.5rem auto;
+      width: 230px; }
       .header-resize .site-branding img {
         height: auto;
         width: 100%; }
