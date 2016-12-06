@@ -984,7 +984,7 @@ object {
       .site-header .nav-option a {
         font-size: 1.3rem;
         color: #fff; }
-      .site-header .nav-option .menu-item-127 {
+      .site-header .nav-option .menu-item-127, .site-header .nav-option .menu-item-126 {
         display: none; } }
 
 .not-found .page-header {
@@ -1199,12 +1199,17 @@ object {
 .admin-bar .site-footer {
   bottom: -100px; }
 
+.content-container {
+  max-width: 720px;
+  margin: 0 auto; }
+
+.page-header h1 {
+  text-align: center; }
+
 @media (min-width: 1240px) {
   .content-container {
     max-width: 1240px;
-    margin: 0 auto; }
-  .page-header h1 {
-    text-align: center; } }
+    margin: 0 auto; } }
 
 .site-footer {
   background-color: #536048;
