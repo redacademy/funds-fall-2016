@@ -11,7 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<p>archive-portfolio-company.php</p>
 
-		<h1>History</h1>
+		<div class="history-page-wrapper">
+			<h1>History</h1>
 
 		<?php 
 			$user = wp_get_current_user(); 
@@ -27,8 +28,8 @@ get_header(); ?>
 			<!--<pre>
 				<?php //print_r( $story_posts );?>	
 			</pre>-->					
-
-			<h2>Stories</h2>
+			
+			<h2>Stories: </h2>
 
 			<?php if ( $story_posts->have_posts() ) : ?>
 
@@ -40,19 +41,42 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
-					<div>
-						<div>
-							<a href="<?php echo get_permalink(); ?>">
+					<div class="story-section container">
+						<div class="story-image-wrapper">
+							<a class="story-thumbnail" href="<?php echo get_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail('large'); ?>
 								<?php endif; ?>
 							</a>
 						</div>
 
-						<div>
-							<a href="<?php echo get_permalink(); ?>">
-								<?php the_title(); ?>
-							</a>
+						<div class="story-wrapper">
+							
+							<ul>
+								
+								<li>
+									<a class="story-title" href="<?php echo get_permalink(); ?>">
+									<?php the_title(); ?>
+									</a>
+									<p class="story-text">With so many different ways to find information online, it can sometimes be hard...
+									Sasha wishes he had a big black cock in his ear. But for Christmas he wants it in his nose. For his 
+									New Years Resolution, he wants to challenge and beat the World Guiness Record to masturbate 40 plus time  
+									within 24 hours on camera. 
+									</p>
+								</li>
+							
+								<li>
+									<a class="story-title" href="<?php echo get_permalink(); ?>">
+									<?php the_title(); ?>
+									</a>
+									<p class="story-text">Ringo on the hand, wants to buy the $150,000 new realistic sex doll to pleqasure himself without getting a girl friend. 
+									Ringo now is a 54year old Virgin.
+									</p>
+								</li>
+
+							</ul>
+							
+							
 						</div>
 					</div>
 				<?php endwhile; 	
@@ -76,6 +100,7 @@ get_header(); ?>
 					<a href="<?php echo get_permalink(); ?>">
 						<?php the_title(); ?>
 					</a>
+				</div>
 				</div>
 			<?php endwhile;
 
@@ -106,7 +131,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; */?> 
-
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

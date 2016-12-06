@@ -1,13 +1,8 @@
-
-.welcome-page {
-    padding-top: 103px;
-    min-width: 520px;
-}
-
 //styles for pc and rf template parts
 
 .welcome {
     text-align: center;
+    padding: 3rem 0;
     @include desktop {
         margin: 1.5rem 0;
     }
@@ -40,8 +35,7 @@
     text-align: center;
 
     @include desktop {
-        width: 1200px;
-        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 }
 
@@ -172,7 +166,11 @@
 .home .site-footer {
     @include desktop {
         position: absolute;
-        bottom: -770px;
+        bottom: -800px;
         width: 100%;
     }
+}
+
+.admin-bar .site-footer {
+    bottom: -100px;
 }

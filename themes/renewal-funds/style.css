@@ -224,7 +224,7 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Avenir Book';
+  font-family: 'Avenir';
   src: url("../../assets/fonts/Avenir Book.eot");
   src: url("../../assets/fonts/Avenir Book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir Book.woff2") format("woff2"), url("../../assets/fonts/Avenir Book.woff") format("woff"), url("../../assets/fonts/Avenir Book.ttf") format("truetype"), url("../../assets/fonts/Avenir Book.svg#Avenir Book") format("svg");
   font-weight: 400;
@@ -232,7 +232,7 @@ th {
   font-stretch: normal; }
 
 @font-face {
-  font-family: 'Avenir Heavy';
+  font-family: 'Avenir';
   src: url("../../assets/fonts/Avenir Heavy.eot");
   src: url("../../assets/fonts/Avenir Heavy.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir Heavy.woff2") format("woff2"), url("../../assets/fonts/Avenir Heavy.woff") format("woff"), url("../../assets/fonts/Avenir Heavy.svg#Avenir Heavy") format("svg");
   font-weight: 900;
@@ -240,7 +240,7 @@ th {
   font-stretch: normal; }
 
 @font-face {
-  font-family: 'Avenir Medium';
+  font-family: 'Avenir';
   src: url("../../assets/fonts/Avenir Medium.eot");
   src: url("../../assets/fonts/Avenir Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir Medium.woff2") format("woff2"), url("../../assets/fonts/Avenir Medium.woff") format("woff"), url("../../assets/fonts/Avenir Medium.svg#Avenir Medium") format("svg");
   font-weight: 500;
@@ -256,7 +256,7 @@ input,
 select,
 textarea {
   color: #323432;
-  font-family: "Avenir Book";
+  font-family: "Avenir";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -329,7 +329,7 @@ big {
   bottom: 100px;
   right: 0;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 3rem 1rem;
   background-color: #4b711c; }
 
@@ -349,7 +349,8 @@ big {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  margin-top: 3rem; }
   @media (min-width: 1240px) {
     .feedback-wrapper {
       padding: 0 1rem; } }
@@ -366,29 +367,26 @@ big {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem; }
-  @media (min-width: 1240px) {
+  @media (min-width: 641px) {
     .feedback-green-text {
-      margin-bottom: 0;
-      margin: 2rem 0;
-      font-size: 2.5rem; } }
+      font-size: 2rem; } }
 
 .feedback-text {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   width: 100%;
   margin: 0;
   text-align: center; }
-  @media (min-width: 1240px) {
+  @media (min-width: 641px) {
     .feedback-text {
-      font-size: 1.8rem;
-      padding: 0 1.8rem;
-      min-width: 300px; } }
+      font-size: 1.5rem;
+      padding: 0 1.8rem; } }
 
 body .gform_wrapper ul li.gfield {
   margin-top: 0 !important; }
 
 .gform_wrapper .textarea.medium {
   height: 200px; }
-  @media (min-width: 1240px) {
+  @media (min-width: 641px) {
     .gform_wrapper .textarea.medium {
       height: 270px; } }
 
@@ -413,7 +411,7 @@ body .gform_wrapper .gform_footer input[type=submit] {
   color: #fff;
   text-shadow: none;
   box-shadow: none; }
-  @media (min-width: 600px) {
+  @media (min-width: 641px) {
     body .gform_wrapper .gform_footer input[type=submit] {
       padding: 0.7rem 3.5rem; } }
   body .gform_wrapper .gform_footer input[type=submit]:hover {
@@ -1058,17 +1056,14 @@ object {
   margin: 0 auto; }
   @media (min-width: 1240px) {
     .container {
-      max-width: 1440px; } }
+      max-width: 1240px; } }
 
 .site-content {
   padding-top: 72px; }
 
-.welcome-page {
-  padding-top: 103px;
-  min-width: 520px; }
-
 .welcome {
-  text-align: center; }
+  text-align: center;
+  padding: 3rem 0; }
   @media (min-width: 1240px) {
     .welcome {
       margin: 1.5rem 0; } }
@@ -1076,7 +1071,7 @@ object {
     font-size: 2rem;
     line-height: 0;
     padding: 1.5rem 0; }
-    @media (min-width: 600px) {
+    @media (min-width: 641px) {
       .welcome p {
         font-size: 3rem; } }
     @media (min-width: 1240px) {
@@ -1100,8 +1095,7 @@ object {
   text-align: center; }
   @media (min-width: 1240px) {
     .main-dashboard-nav {
-      width: 1200px;
-      margin: 0 auto; } }
+      margin-bottom: 2rem; } }
 
 .nav-icon-wrapper {
   display: -ms-flexbox;
@@ -1144,7 +1138,7 @@ object {
     width: 60%; }
   .nav-icon:hover {
     background-color: #90b531; }
-  @media (min-width: 600px) {
+  @media (min-width: 641px) {
     .nav-icon {
       width: 200px;
       height: 200px; } }
@@ -1203,7 +1197,7 @@ object {
   padding: 2rem 3rem 3rem 3rem;
   line-height: 1.3;
   text-align: center; }
-  @media (min-width: 600px) {
+  @media (min-width: 641px) {
     .trademark-text {
       font-size: 2rem; } }
   @media (min-width: 1240px) {
@@ -1216,8 +1210,11 @@ object {
 @media (min-width: 1240px) {
   .home .site-footer {
     position: absolute;
-    bottom: -770px;
+    bottom: -800px;
     width: 100%; } }
+
+.admin-bar .site-footer {
+  bottom: -100px; }
 
 .site-footer {
   background-color: #536048;
@@ -1274,3 +1271,54 @@ object {
 .error-header-message p {
   color: black;
   font-size: 2rem; }
+
+.history-page-wrapper {
+  text-align: center;
+  font-size: 1.5rem; }
+  @media (min-width: 1240px) {
+    .history-page-wrapper {
+      text-align: left;
+      max-width: 1240px;
+      margin: 0 auto; }
+      .history-page-wrapper h2 {
+        font-size: 2rem;
+        margin: 0; } }
+
+.story-section {
+  display: -ms-flexbox;
+  display: flex; }
+
+.story-image-wrapper {
+  display: none;
+  width: 200px;
+  height: 200px; }
+  @media (min-width: 1240px) {
+    .story-image-wrapper {
+      display: block; } }
+
+.story-wrapper {
+  width: 80%;
+  margin-left: 2rem; }
+  .story-wrapper ul {
+    margin: 0; }
+
+.story-wrapper li {
+  margin-bottom: 3rem; }
+
+.story-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #234300; }
+  @media (min-width: 1240px) {
+    .story-title {
+      font-size: 2rem; } }
+
+.story-text {
+  font-size: 1.5rem;
+  margin: 0;
+  display: none; }
+  @media (min-width: 1240px) {
+    .story-text {
+      font-size: 1.75rem;
+      display: block; } }
