@@ -594,9 +594,6 @@ textarea {
 .gform_body {
   padding: 0.5rem 3rem; }
 
-#field_3_1, #field_3_2, #field_3_4, #field_3_3 {
-  text-align: center; }
-
 #gform_fields_3 li.gfield.gfield_error {
   background-color: white;
   border-top: none;
@@ -604,7 +601,9 @@ textarea {
 
 #gform_3 .validation_error {
   border-top: none;
-  border-bottom: none; }
+  border-bottom: none;
+  padding: 0.5rem 3rem;
+  text-align: left; }
 
 @media (min-width: 1240px) {
   .gform_wrapper {
