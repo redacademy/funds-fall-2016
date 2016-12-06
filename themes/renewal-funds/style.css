@@ -381,9 +381,6 @@ big {
       font-size: 1.5rem;
       padding: 0 1.8rem; } }
 
-.page-template-feedback body .gform_wrapper ul li.gfield {
-  margin-top: 0 !important; }
-
 .page-template-feedback .gform_wrapper .textarea.medium {
   height: 200px; }
   @media (min-width: 641px) {
@@ -395,7 +392,10 @@ big {
   border-radius: 25px;
   padding: 0 1rem; }
 
-.page-template-feedback body .gform_wrapper .gform_footer input[type=submit] {
+.page-template-feedback .gform_footer {
+  font-size: 1.6rem; }
+
+body .gform_wrapper .gform_footer input[type=submit] {
   width: auto;
   display: -ms-flexbox;
   display: flex;
@@ -412,13 +412,13 @@ big {
   text-shadow: none;
   box-shadow: none; }
   @media (min-width: 641px) {
-    .page-template-feedback body .gform_wrapper .gform_footer input[type=submit] {
+    body .gform_wrapper .gform_footer input[type=submit] {
       padding: 0.7rem 3.5rem; } }
-  .page-template-feedback body .gform_wrapper .gform_footer input[type=submit]:hover {
+  body .gform_wrapper .gform_footer input[type=submit]:hover {
     background-color: #234300; }
 
-.page-template-feedback .gform_footer {
-  font-size: 1.6rem; }
+body .gform_wrapper ul li.gfield {
+  margin-top: 0 !important; }
 
 p {
   margin: 0; }
@@ -1036,9 +1036,25 @@ object {
 
 @media (min-width: 1240px) {
   .content-container .not-found {
-    padding: 1rem 5rem; }
+    padding: 1rem 5rem; } }
+
+/*.error-header {
+    font-size: 4rem;
+    color: $color__brand-color-green;
+    text-align: center;
 }
 
+.error-message {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    a {
+        color: $color__brand-color-lgreen;
+    }
+    @include desktop {
+        width: 50%;
+    }
+}*/
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
