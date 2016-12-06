@@ -28,6 +28,10 @@
     color: $color__brand-color-dgreen;
 }
 
+.not-found .error-home {
+    margin: 2rem auto;
+}
+
 @include desktop {
     .content-container .not-found {
         padding: 1rem 5rem;

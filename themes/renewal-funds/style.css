@@ -1019,6 +1019,9 @@ object {
   text-decoration: none;
   color: #234300; }
 
+.not-found .error-home {
+  margin: 2rem auto; }
+
 @media (min-width: 1240px) {
   .content-container .not-found {
     padding: 1rem 5rem; } }
@@ -1258,7 +1261,7 @@ object {
   width: auto;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 2rem auto;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -1270,8 +1273,7 @@ object {
   color: #fff;
   text-shadow: none;
   box-shadow: none;
-  font-size: 2rem;
-  margin: 2rem 0; }
+  font-size: 2rem; }
   .home-button a {
     color: white;
     text-decoration: none; }
