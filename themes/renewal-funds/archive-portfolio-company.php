@@ -58,32 +58,13 @@ get_header();
 							</a>
 						</div>
 
-						<div class="story-wrapper">
-							
-							<ul>
-								
-								<li>
-									<a class="story-title" href="<?php echo get_permalink(); ?>">
-									<?php the_title(); ?>
-									</a>
-									<p class="story-text">With so many different ways to find information online, it can sometimes be hard...
-									Sasha wishes he had a big black cock in his ear. But for Christmas he wants it in his nose. For his 
-									New Years Resolution, he wants to challenge and beat the World Guiness Record to masturbate 40 plus time  
-									within 24 hours on camera. 
-									</p>
-								</li>
-							
-								<li>
-									<a class="story-title" href="<?php echo get_permalink(); ?>">
-									<?php the_title(); ?>
-									</a>
-									<p class="story-text">Ringo on the hand, wants to buy the $150,000 new realistic sex doll to pleqasure himself without getting a girl friend. 
-									Ringo now is a 54year old Virgin.
-									</p>
-								</li>
+						<div>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</div>
 
-							</ul>
-							
+						<div class="story-wrapper">
 							
 						</div>
 
