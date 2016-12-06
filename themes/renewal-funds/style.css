@@ -883,7 +883,8 @@ object {
 @media (max-width: 1240px) {
   .header-resize {
     width: 100%;
-    position: fixed; }
+    position: fixed;
+    height: auto; }
     .header-resize .header-container {
       display: -ms-flexbox;
       display: flex;
@@ -945,7 +946,7 @@ object {
 @media (min-width: 1240px) {
   .site-header {
     background-color: #4b711c;
-    height: 108px; }
+    height: 108.78px; }
     .site-header .header-container {
       width: 1240px;
       margin: 0 auto;
