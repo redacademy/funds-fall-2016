@@ -20,10 +20,10 @@ get_header(); ?>
 			<?php 
 
 			// check if the flexible content field has rows of data
-			if( have_rows('questionnaire') ):
+			if( have_rows('questionnaire_item') ):
 				echo '<form>';
 				// loop through the rows of data
-				while ( have_rows('questionnaire') ) : the_row();
+				while ( have_rows('questionnaire_item') ) : the_row();
 					// check current row layout
 					if( get_row_layout() === 'questionnaire_question' ):
 						$question = get_sub_field('question_name');
