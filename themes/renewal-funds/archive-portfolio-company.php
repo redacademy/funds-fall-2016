@@ -37,7 +37,7 @@ get_header();
 				<?php //print_r( $story_posts );?>	
 			</pre>-->					
 			
-			<h2>Stories: </h2>
+			<h2 class="container">Stories:</h2>
 
 			<?php if ( $story_posts->have_posts() ) : ?>
 
@@ -49,28 +49,29 @@ get_header();
 				</header><!-- .page-header -->
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
-					<div class="story-section container">
-						<div class="story-image-wrapper">
-							<a class="story-thumbnail" href="<?php echo get_permalink(); ?>">
-								<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail('large'); ?>
-								<?php endif; ?>
-							</a>
-						</div>
+					<div class="container">
 
-						<div>
-							<a href="<?php echo get_permalink(); ?>">
-								<?php the_title(); ?>
-							</a>
-						</div>
+						<ul class="story-section-wrapper">
+							<li class="story-section">
+								<div class="story-image-wrapper">
+									<?php
+									$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+									?>
+									<a href="<?php echo get_permalink(); ?>">
+									<div class="story-thumbnail" style="<?php echo $thumbnail[2]; ?>px;background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;">
+									</div>
+									</a>
+								</div>
+								
+								<div class="story-wrapper">
+									<a class="story-title" href="<?php echo get_permalink(); ?>">
+										<?php the_title(); ?>
+									</a>
+									<p class="story-text"><?php the_field('story_body'); ?></p>
+								</div>
+							</li>
+						</ul>
 
-						<div class="story-wrapper">
-							
-						</div>
-
-						<div>
-							<?php the_field('story_body'); ?>
-						</div>
 					</div>
 				<?php endwhile; 	
 

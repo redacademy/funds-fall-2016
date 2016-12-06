@@ -22,27 +22,18 @@
         font-size: 1.25rem;
         color: $color__text-main;
     }
-    a {
-        text-decoration: none;
-        color: white;
-        background-color: $color__brand-color-lgreen;
-    }
+}
+.error-content a {
+    text-decoration: none;
+    color: $color__brand-color-lgreen;
 }
 
-.error-header {
-    font-size: 4rem;
-    color: $color__brand-color-green;
-    text-align: center;
+.not-found .error-home {
+    margin: 2rem auto;
 }
 
-.error-message {
-    text-align: center;
-    font-size: 2rem;
-    padding: 0 3.5rem;
-    a {
-        color: $color__brand-color-lgreen;
-    }
-    @include desktop {
-        width: 50%;
+@include desktop {
+    .content-container .not-found {
+        padding: 1rem 5rem;
     }
 }

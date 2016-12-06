@@ -39,6 +39,7 @@
 }
 
 // Gravity Form
+.page-template-feedback {
 
 .feedback-wrapper {
     display: flex;
@@ -82,10 +83,6 @@
     }
 }
 
-body .gform_wrapper ul li.gfield {
-    margin-top: 0 !important;
-}
-
 .gform_wrapper .textarea.medium {
     height: 200px;
     @include tablet {
@@ -97,6 +94,11 @@ body .gform_wrapper ul li.gfield {
     background-color: $color__brand-color-lgray;
     border-radius: 25px;
     padding: 0 1rem;
+}
+
+.gform_footer {
+    font-size: 1.6rem;
+}
 }
 
 // The Submit Button
@@ -122,6 +124,8 @@ body .gform_wrapper .gform_footer input[type=submit] {
     }
 }
 
-.gform_footer {
-    font-size: 1.6rem;
+body .gform_wrapper ul li.gfield {
+    margin-top: 0 !important;
 }
+
+
