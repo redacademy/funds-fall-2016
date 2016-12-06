@@ -92,18 +92,8 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		position: relative;
-		z-index: 1;
-		&:before{
-			content : "";
-  			position: absolute;
-  			left    : 25%;
-  			bottom  : 0;
-  			height  : 1px;
-  			width   : 50px;
-  			border-bottom:1px solid $color__brand-color-gray;
+  		border-bottom:1px solid $color__brand-color-gray;
 		}
-	}
 	}
 }
 

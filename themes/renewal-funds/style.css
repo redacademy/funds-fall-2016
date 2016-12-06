@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Renewal Funds
 Theme URI: http://underscores.me/
@@ -644,18 +645,7 @@ a {
     .main-navigation .current_page_item > a,
     .main-navigation .current-menu-item > a,
     .main-navigation .current_page_ancestor > a {
-      position: relative;
-      z-index: 1; }
-      .main-navigation .current_page_item > a:before,
-      .main-navigation .current-menu-item > a:before,
-      .main-navigation .current_page_ancestor > a:before {
-        content: "";
-        position: absolute;
-        left: 25%;
-        bottom: 0;
-        height: 1px;
-        width: 50px;
-        border-bottom: 1px solid #b0aea5; } }
+      border-bottom: 1px solid #b0aea5; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -986,24 +976,7 @@ object {
         font-size: 1.3rem;
         color: #fff; }
       .site-header .nav-option .menu-item-127 {
-        display: none; }
-      .site-header .nav-option .main-navigation ul li:hover > ul {
-        top: 46px;
-        right: 3rem;
-        border: 2px solid #4b711c; }
-        .site-header .nav-option .main-navigation ul li:hover > ul li {
-          border-bottom: 2px solid #d6d6cd; }
-        .site-header .nav-option .main-navigation ul li:hover > ul li:last-child {
-          border-bottom: none; }
-        .site-header .nav-option .main-navigation ul li:hover > ul img {
-          display: inline-block;
-          height: 29px;
-          width: 29px;
-          margin: 0.5rem 0.5rem 0.5rem 0; }
-        .site-header .nav-option .main-navigation ul li:hover > ul a {
-          background-color: #fff;
-          color: #323432;
-          width: 104px; } }
+        display: none; } }
 
 .not-found .page-header {
   text-align: center;
@@ -1059,7 +1032,7 @@ object {
       max-width: 1240px; } }
 
 .site-content {
-  padding-top: 72px; }
+  padding-top: 108px; }
 
 .welcome {
   text-align: center;
@@ -1079,6 +1052,7 @@ object {
         font-size: 4.5rem;
         font-weight: bold; } }
 
+ß
 .green-text {
   color: #4b711c;
   font-weight: bold;
