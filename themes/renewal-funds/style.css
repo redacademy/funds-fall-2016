@@ -390,7 +390,7 @@ big {
 .page-template-feedback .textarea.medium {
   background-color: #d6d6cd;
   border-radius: 25px;
-  padding: 0 1rem; }
+  padding: 1rem 1.5rem; }
 
 .page-template-feedback .gform_footer {
   font-size: 1.6rem; }
