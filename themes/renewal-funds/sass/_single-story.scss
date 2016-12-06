@@ -1,0 +1,24 @@
+.story img {
+    display: none;
+}
+
+.single-story-wrapper {
+    text-align: center;
+}
+
+.single-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.single-story-text {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+    @include tablet {
+        padding: 0 8rem;
+    }
+    @include desktop {
+        padding: 0 10rem;
+    }
+}
