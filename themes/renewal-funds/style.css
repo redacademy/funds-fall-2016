@@ -1219,9 +1219,11 @@ object {
 
 .site-footer {
   background-color: #536048;
-  height: 40px;
+  height: 80px;
   text-align: center;
   color: white; }
+  .site-footer .site-info {
+    padding: 1.25rem 0; }
   .site-footer p {
     margin: 0;
     padding: 0.5rem 0; }
