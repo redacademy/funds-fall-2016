@@ -590,11 +590,33 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.gform_body {
+.post-type-archive-story .gform_body {
   padding: 0.5rem 3rem; }
 
-#field_3_1, #field_3_2, #field_3_4 {
-  text-align: center; }
+.post-type-archive-story #gform_fields_3 li.gfield.gfield_error {
+  background-color: white;
+  border-top: none;
+  border-bottom: none; }
+
+.post-type-archive-story #gform_3 .validation_error {
+  border-top: none;
+  border-bottom: none;
+  padding: 0.5rem 3rem;
+  text-align: left; }
+
+.post-type-archive-story #input_3_2, .post-type-archive-story #input_3_1, .post-type-archive-story #input_3_3 {
+  background-color: #d6d6cd;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 1rem 1.5rem; }
+
+@media (min-width: 1240px) {
+  .post-type-archive-story .gform_wrapper {
+    padding: 0 5rem; } }
+
+@media only screen and (min-width: 641px) {
+  .post-type-archive-story #field_3_1 select.medium, .post-type-archive-story #field_3_2 input.medium {
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -983,7 +1005,7 @@ object {
       .site-header .nav-option a {
         font-size: 1.3rem;
         color: #fff; }
-      .site-header .nav-option .menu-item-127 {
+      .site-header .nav-option .menu-item-127, .site-header .nav-option .menu-item-126 {
         display: none; } }
 
 .not-found .page-header {
@@ -1004,26 +1026,35 @@ object {
   .not-found .page-content p {
     font-size: 1.25rem;
     color: #323432; }
-  .not-found .page-content a {
-    text-decoration: none;
-    color: white;
-    background-color: #90b531; }
 
-.error-header {
-  font-size: 4rem;
-  color: #4b711c;
-  text-align: center; }
+.error-content a {
+  text-decoration: none;
+  color: #90b531; }
+
+.not-found .error-home {
+  margin: 2rem auto; }
+
+@media (min-width: 1240px) {
+  .content-container .not-found {
+    padding: 1rem 5rem; } }
+
+/*.error-header {
+    font-size: 4rem;
+    color: $color__brand-color-green;
+    text-align: center;
+}
 
 .error-message {
-  text-align: center;
-  font-size: 2rem;
-  padding: 0 3.5rem; }
-  .error-message a {
-    color: #90b531; }
-  @media (min-width: 1240px) {
-    .error-message {
-      width: 50%; } }
-
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    a {
+        color: $color__brand-color-lgreen;
+    }
+    @include desktop {
+        width: 50%;
+    }
+}*/
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1200,12 +1231,8 @@ object {
 .admin-bar .site-footer {
   bottom: -100px; }
 
-@media (min-width: 1240px) {
-  .content-container {
-    max-width: 1240px;
-    margin: 0 auto; }
-  .page-header h1 {
-    text-align: center; } }
+.page-header h1 {
+  text-align: center; }
 
 .site-footer {
   background-color: #536048;
@@ -1239,7 +1266,7 @@ object {
   width: auto;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 2rem auto;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -1251,8 +1278,7 @@ object {
   color: #fff;
   text-shadow: none;
   box-shadow: none;
-  font-size: 2rem;
-  margin: 2rem 0; }
+  font-size: 2rem; }
   .home-button a {
     color: white;
     text-decoration: none; }

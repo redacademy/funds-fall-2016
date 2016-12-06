@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="content-container">
+			<div class="container">
 		<p>archive-story.php</p>
 
 		<?php //$connected = new WP_Query(array('connected_type' => 'portfolio_company_to_story',
