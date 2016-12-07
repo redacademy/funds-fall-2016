@@ -609,9 +609,6 @@ textarea {
   border: 1px solid #ccc;
   padding: 1rem 1.5rem; }
 
-.post-type-archive-story #gform_submit_button_3 {
-  line-height: 1; }
-
 @media (min-width: 1240px) {
   .post-type-archive-story .gform_wrapper {
     padding: 0 5rem; } }
@@ -619,6 +616,10 @@ textarea {
 @media only screen and (min-width: 641px) {
   .post-type-archive-story #field_3_1 select.medium, .post-type-archive-story #field_3_2 input.medium {
     width: 100%; } }
+
+/* just put it here. it affect feedback page and archive story page!!!*/
+.gform_wrapper input[type=submit] {
+  line-height: 1 !important; }
 
 /*--------------------------------------------------------------
 # Navigation

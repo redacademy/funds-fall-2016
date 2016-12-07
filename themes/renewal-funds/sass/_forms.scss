@@ -78,10 +78,7 @@ textarea {
 		border: 1px solid #ccc;
 		padding: 1rem 1.5rem;
 	}
-	// this button line-height selector needs to be confirm!!!!!!
-	#gform_submit_button_3 {
-		line-height: 1;
-	}  
+	  
 	@include desktop {
 		.gform_wrapper {
 			padding: 0 5rem;
@@ -93,3 +90,7 @@ textarea {
 		}
 	}
 }	
+/* just put it here. it affect feedback page and archive story page!!!*/
+.gform_wrapper input[type=submit] {
+	line-height: 1 !important;
+}
