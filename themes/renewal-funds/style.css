@@ -1323,7 +1323,8 @@ object {
   font-size: 1.6rem; }
   .home-button a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 1; }
   .home-button:hover {
     background-color: #234300; }
 
