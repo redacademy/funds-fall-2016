@@ -403,16 +403,15 @@ body .gform_wrapper .gform_footer input[type=submit] {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0 3.5rem;
+  padding: 0.7rem 3.5rem;
   border-radius: 12px;
   border: none;
   background-color: #90b531;
   color: #fff;
   text-shadow: none;
-  box-shadow: none; }
-  @media (min-width: 641px) {
-    body .gform_wrapper .gform_footer input[type=submit] {
-      padding: 0.7rem 3.5rem; } }
+  box-shadow: none;
+  font-size: 1.6rem;
+  line-height: 1; }
   body .gform_wrapper .gform_footer input[type=submit]:hover {
     background-color: #234300; }
 
@@ -616,6 +615,10 @@ textarea {
 @media only screen and (min-width: 641px) {
   .post-type-archive-story #field_3_1 select.medium, .post-type-archive-story #field_3_2 input.medium {
     width: 100%; } }
+
+/* just put it here. it affect feedback page and archive story page!!!*/
+.gform_wrapper input[type=submit] {
+  line-height: 1 !important; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1257,6 +1260,55 @@ object {
 .acf-input-wrap > input {
   background: white !important; }
 
+/* changes !!!!!*/
+.single-questionnaire h1 {
+  text-align: center; }
+
+.single-questionnaire .acf-form {
+  padding: 0 3rem 1rem; }
+
+.single-questionnaire .acf-fields > .acf-field {
+  border-top: none; }
+
+.single-questionnaire .acf-hl {
+  display: none; }
+
+.single-questionnaire .acf-flexible-content .layout {
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+  .single-questionnaire .acf-flexible-content .layout .acf-fc-layout-controlls {
+    display: none; }
+
+.acf-form-submit {
+  text-align: center; }
+  .acf-form-submit .acf-button {
+    width: auto;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2rem auto;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0.7rem 3.5rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #90b531;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 1.6rem; }
+    .acf-form-submit .acf-button a {
+      color: white;
+      text-decoration: none; }
+    .acf-form-submit .acf-button:hover {
+      background-color: #234300; }
+
+.acf-input-wrap input {
+  font-size: 1.5rem !important;
+  font-weight: bold; }
+
 .thanks-page-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -1285,17 +1337,18 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0rem 4rem;
+  padding: 0.7rem 3.5rem;
   border-radius: 12px;
   border: none;
   background-color: #90b531;
   color: #fff;
   text-shadow: none;
   box-shadow: none;
-  font-size: 2rem; }
+  font-size: 1.6rem; }
   .home-button a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 1; }
   .home-button:hover {
     background-color: #234300; }
 
