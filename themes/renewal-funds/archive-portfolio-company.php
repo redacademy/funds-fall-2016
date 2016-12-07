@@ -28,7 +28,6 @@ get_header();
 				$arg = array( 'taxonomy' => 'portfolio-company-year',
 								'hide_empty' => true, );
 								
-
 				$terms = get_terms( $arg );
 			?>
 
