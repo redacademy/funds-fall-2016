@@ -124,17 +124,6 @@ function add_user_id_to_story_post( $entry  ) {
 add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
 
 
-
-/*function populate_questionnaire_form_fields( $entry  ) {
-    //$post = get_post( $entry['post_id'] );
-
-    //$entries = [];
-
-    //add_entries( $entries, $form_id = 4 ); //GFAPI::
-}
-add_filter( 'gform_pre_render_4', 'populate_questionnaire_form_fields', 10, 2 );*/
-
-
 // Styling the Login page
 
 function custom_login() { ?>
