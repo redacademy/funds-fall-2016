@@ -58,7 +58,7 @@ get_header();
 									$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
 									?>
 									<a href="<?php echo get_permalink(); ?>">
-									<div class="story-thumbnail" style="<?php echo $thumbnail[2]; ?>px;background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;">
+									<div class="story-thumbnail" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;">
 									</div>
 									</a>
 								</div>

@@ -6,7 +6,7 @@
     width: 100%;
     z-index: 1;
     background-color: $color__brand-color-green;
-    height: 94px;
+    height: 96px;
 }
 .header-bar {   
     padding: 1rem 2rem;
@@ -18,8 +18,8 @@
 .site-branding {
     margin-left: 1rem;
     img {
-        height: 55px;
-        width: 120px;
+        height: 57px;
+        width: 122px;
     }
 }
 .nav-cancel, .nav-option {
@@ -27,10 +27,10 @@
 }
 .nav-btn {
     color: $color__background-body;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    right: 5%;
+    .fa {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 /*  after clicking nav-btn    */
@@ -47,13 +47,8 @@
         height: 200px;
     }
     .site-branding {
-        position: absolute;
-        transform: translate(-50%,-50%);
-        left: 50%;
-        top: 22%;
+        margin: 1.5rem auto;
         width: 230px;
-        text-align: center;
-        margin-left: 0;
         img {
             height: auto;
             width: 100%;
@@ -64,14 +59,13 @@
     }
     .nav-cancel {
         color: white;
-        width: 18px;
         display: block;
         position: absolute;
         transform: translate(-50%,-50%);
-        top: 10%;
-        right: 7%;
-        height: 30px;
-        width: 30px;
+        top: 3rem;
+        right: 1.6rem;
+        height: 28px;
+        width: 28px;
     }
     .nav-option {
         display: block;
@@ -94,7 +88,7 @@
             display: none;
         }
         img {
-            margin: 0.5rem 0.5rem;
+            margin: 1rem 0.5rem;
             height: 32px;
             width: 32px;
         }

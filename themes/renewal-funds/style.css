@@ -390,7 +390,7 @@ big {
 .page-template-feedback .textarea.medium {
   background-color: #d6d6cd;
   border-radius: 25px;
-  padding: 0 1rem; }
+  padding: 1rem 1.5rem; }
 
 .page-template-feedback .gform_footer {
   font-size: 1.6rem; }
@@ -672,7 +672,7 @@ a {
     .main-navigation .current_page_item > a,
     .main-navigation .current-menu-item > a,
     .main-navigation .current_page_ancestor > a {
-      border-bottom: 1px solid #b0aea5; } }
+      border-bottom: 3px solid #b0aea5; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -878,7 +878,7 @@ object {
   width: 100%;
   z-index: 1;
   background-color: #4b711c;
-  height: 94px; }
+  height: 96px; }
 
 .header-bar {
   padding: 1rem 2rem;
@@ -891,18 +891,17 @@ object {
 .site-branding {
   margin-left: 1rem; }
   .site-branding img {
-    height: 55px;
-    width: 120px; }
+    height: 57px;
+    width: 122px; }
 
 .nav-cancel, .nav-option {
   display: none; }
 
 .nav-btn {
-  color: #fff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  right: 5%; }
+  color: #fff; }
+  .nav-btn .fa {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
 /*  after clicking nav-btn    */
 @media (max-width: 1240px) {
@@ -918,13 +917,8 @@ object {
     .header-resize .header-bar {
       height: 200px; }
     .header-resize .site-branding {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 22%;
-      width: 230px;
-      text-align: center;
-      margin-left: 0; }
+      margin: 1.5rem auto;
+      width: 230px; }
       .header-resize .site-branding img {
         height: auto;
         width: 100%; }
@@ -932,14 +926,13 @@ object {
       display: none; }
     .header-resize .nav-cancel {
       color: white;
-      width: 18px;
       display: block;
       position: absolute;
       transform: translate(-50%, -50%);
-      top: 10%;
-      right: 7%;
-      height: 30px;
-      width: 30px; }
+      top: 3rem;
+      right: 1.6rem;
+      height: 28px;
+      width: 28px; }
     .header-resize .nav-option {
       display: block;
       background-color: #fff; }
@@ -958,7 +951,7 @@ object {
       .header-resize .main-navigation .menu-item-44 {
         display: none; }
       .header-resize .main-navigation img {
-        margin: 0.5rem 0.5rem;
+        margin: 1rem 0.5rem;
         height: 32px;
         width: 32px; }
       .header-resize .main-navigation span {
@@ -1070,21 +1063,22 @@ object {
 
 .welcome {
   text-align: center;
-  padding: 3rem 0; }
+  padding: 1.5rem 0; }
   @media (min-width: 1240px) {
     .welcome {
-      margin: 1.5rem 0; } }
+      margin: 1.5rem 0;
+      padding: 3rem 0; } }
   .welcome p {
     font-size: 2rem;
     line-height: 0;
-    padding: 1.5rem 0; }
+    padding: 1.5rem 0;
+    font-weight: 900; }
     @media (min-width: 641px) {
       .welcome p {
         font-size: 3rem; } }
     @media (min-width: 1240px) {
       .welcome p {
-        font-size: 4.5rem;
-        font-weight: bold; } }
+        font-size: 4.5rem; } }
 
 .green-text {
   color: #4b711c;
@@ -1226,6 +1220,7 @@ object {
 .page-header h1 {
   text-align: center; }
 
+<<<<<<< HEAD
 .acf-label {
   display: none; }
 
@@ -1240,6 +1235,18 @@ object {
 
 .acf-input-wrap > input {
   background: white !important; }
+
+.site-footer {
+  background-color: #536048;
+  height: 80px;
+  text-align: center;
+  color: white; }
+  .site-footer .site-info {
+    padding: 1.25rem 0; }
+  .site-footer p {
+    margin: 0;
+    padding: 0.5rem 0; }
+
 
 .thanks-page-wrapper {
   display: -ms-flexbox;
@@ -1363,10 +1370,32 @@ object {
 .single-story-wrapper {
   text-align: center; }
 
+.single-image-wrapper {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-size: cover;
+  height: 30vh; }
+  @media (min-width: 641px) {
+    .single-image-wrapper {
+      height: 60vh; } }
+  @media (min-width: 1240px) {
+    .single-image-wrapper {
+      height: 100vh; } }
+
 .single-image {
-  width: 100%;
-  height: 100vh;
+  height: 30vh;
   background-size: cover; }
+  @media (min-width: 641px) {
+    .single-image {
+      height: 60vh; } }
+  @media (min-width: 1240px) {
+    .single-image {
+      height: 100vh; } }
+
+.single-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-weight: 900; }
 
 .single-story-text {
   padding: 0 5rem;
