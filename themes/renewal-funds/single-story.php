@@ -18,7 +18,7 @@ get_header(); ?>
 			
         
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article class="single-story-wrapper" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php if ( has_post_thumbnail() ) : ?>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
-						<div class="story-title">
+						<div class="single-title">
 							<?php the_title(); ?>
 						</div>
 					</header><!-- .entry-header -->

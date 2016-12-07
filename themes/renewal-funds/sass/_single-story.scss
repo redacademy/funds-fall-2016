@@ -1,4 +1,4 @@
-.story img {
+.single-story img {
     display: none;
 }
 
@@ -25,18 +25,22 @@
 
 .single-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 2rem 0;
     font-weight: 900;
+    @include tablet {
+        font-size: 2.5rem;
+    }
 }
 
 .single-story-text {
-    padding: 0 5rem;
+    margin: 0 auto;
+    width: 70%;
     margin-bottom: 2rem;
+    text-align: left;
     @include tablet {
-        padding: 0 8rem;
+        font-size: 1.2rem;
     }
     @include desktop {
-        padding: 0 10rem;
     }
 }

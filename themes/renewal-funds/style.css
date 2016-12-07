@@ -1173,24 +1173,31 @@ object {
       flex-direction: column;
   width: 100%;
   max-width: 656px;
-  max-height: 656px; }
+  max-height: 656px;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
   @media (min-width: 1240px) {
     .trademark-wrapper {
       position: absolute;
       left: 280px;
-      top: 100px;
-      margin-bottom: 3rem; } }
+      top: 100px; } }
 
 .trademark-logo-wrapper {
   width: 100%;
   background-color: #4b711c; }
 
 .trademark-logo {
-  width: 60%;
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   padding-top: 1rem; }
+  @media (min-width: 641px) {
+    .trademark-logo {
+      padding-top: 2rem; } }
+  @media (min-width: 1240px) {
+    .trademark-logo {
+      width: 60%; } }
 
 .trademark-text-wrapper {
   background-color: #4b711c;
@@ -1198,6 +1205,9 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media (min-width: 641px) {
+    .trademark-text-wrapper {
+      padding: 2rem 0 3rem 0; } }
 
 .trademark-text {
   font-size: 1.25rem;
@@ -1214,8 +1224,7 @@ object {
   @media (min-width: 1240px) {
     .trademark-text {
       font-size: 1.8rem;
-      width: 70%;
-      margin: 3rem 0 5rem 0; } }
+      width: 70%; } }
 
 .home {
   position: relative; }
@@ -1223,7 +1232,7 @@ object {
 @media (min-width: 1240px) {
   .home .site-footer {
     position: absolute;
-    bottom: -800px;
+    bottom: -900px;
     width: 100%; } }
 
 .admin-bar .site-footer {
@@ -1363,7 +1372,7 @@ object {
   height: 200px;
   background-size: cover; }
 
-.story img {
+.single-story img {
   display: none; }
 
 .single-story-wrapper {
@@ -1386,16 +1395,18 @@ object {
 
 .single-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 2rem 0;
   font-weight: 900; }
+  @media (min-width: 641px) {
+    .single-title {
+      font-size: 2.5rem; } }
 
 .single-story-text {
-  padding: 0 5rem;
-  margin-bottom: 2rem; }
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 2rem;
+  text-align: left; }
   @media (min-width: 641px) {
     .single-story-text {
-      padding: 0 8rem; } }
-  @media (min-width: 1240px) {
-    .single-story-text {
-      padding: 0 10rem; } }
+      font-size: 1.2rem; } }
