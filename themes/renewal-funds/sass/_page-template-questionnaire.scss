@@ -41,7 +41,7 @@
 }
 
 .single-questionnaire .acf-form {
-    padding: 1rem 2rem;
+    padding: 0 3rem 1rem;
 }
 
 .single-questionnaire .acf-fields > .acf-field {
@@ -85,4 +85,9 @@
         background-color: $color__brand-color-dgreen;
     }
     }
+}
+
+.acf-input-wrap input {
+    font-size: 1.5rem !important;
+    font-weight: bold;
 }

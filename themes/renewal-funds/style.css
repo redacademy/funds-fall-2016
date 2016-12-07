@@ -1246,7 +1246,7 @@ object {
   text-align: center; }
 
 .single-questionnaire .acf-form {
-  padding: 1rem 2rem; }
+  padding: 0 3rem 1rem; }
 
 .single-questionnaire .acf-fields > .acf-field {
   border-top: none; }
@@ -1285,6 +1285,10 @@ object {
       text-decoration: none; }
     .acf-form-submit .acf-button:hover {
       background-color: #234300; }
+
+.acf-input-wrap input {
+  font-size: 1.5rem !important;
+  font-weight: bold; }
 
 .thanks-page-wrapper {
   display: -ms-flexbox;
