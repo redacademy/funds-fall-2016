@@ -60,3 +60,29 @@
         display: none;
     }
 }
+
+.acf-form-submit {
+    text-align: center;
+    .acf-button {
+        width: auto;
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 4rem;
+    border-radius: 12px;
+    border: none;
+    background-color: $color__brand-color-lgreen;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 1.6rem;
+    a {
+        color: white;
+        text-decoration: none;
+    }    
+    &:hover {
+        background-color: $color__brand-color-dgreen;
+    }
+    }
+}
