@@ -1,4 +1,4 @@
-.story img {
+.single-story img {
     display: none;
 }
 
@@ -9,17 +9,11 @@
 .single-image-wrapper {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%);
     background-size: cover;
-    height: 30vh;
-    @include tablet {
-        height: 60vh;
-    }
-    @include desktop {
-        height: 100vh;
-    }
 }
 
 .single-image {
-    height: 30vh;
+    padding-top: 50%;
+    max-height: 30vh;
     background-size: cover;
     @include tablet {
         height: 60vh;
@@ -31,18 +25,22 @@
 
 .single-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 2rem 0;
     font-weight: 900;
+    @include tablet {
+        font-size: 2.5rem;
+    }
 }
 
 .single-story-text {
-    padding: 0 5rem;
+    margin: 0 auto;
+    width: 70%;
     margin-bottom: 2rem;
+    text-align: left;
     @include tablet {
-        padding: 0 8rem;
+        font-size: 1.2rem;
     }
     @include desktop {
-        padding: 0 10rem;
     }
 }

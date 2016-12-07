@@ -145,13 +145,39 @@ add_action('login_enqueue_scripts','custom_login');
 function my_login_logo() { ?>
    <style type="text/css">
 
+        #login {
+            position: relative !important;
+        }
+
+        #loginform {
+            position: absolute !important;
+            top: 125px;
+        }
+
+        body.login {
+            background: white !important;
+            position: relative !important;
+            height: 200px;
+        }
+
+        #nav {
+            position: absolute !important;
+            top: 280px;
+            right: 20px;
+        }
+
+        #backtoblog {
+            display: none;
+        }
+
         .login-page-wrapper {
             float:left;
         }
 
         .login-image-wrapper {
-            visibility: hidden;
+            display: none;
             height: 0;
+            width: 0;
         }
 
         .login-image {
@@ -171,24 +197,24 @@ function my_login_logo() { ?>
             background-color: #4b711c;
         }
 
-        #login form {
-            min-height: 440px;
-            width: 100%;
+        #login_error {
+            position: absolute;
+            top: 116px;
         }
 
-        #rememberme {
-            display: none;
+        #login h1:before {
+            content: "Hello there,";
+            font-size: 3rem;
+            text-decoration: none;
+            color: #4b711c;
+            background-color: white;
+            padding: 7px 27px;
+            position: absolute;
+            top: 75px;
+            right: 1px;
         }
 
-        .forgetmenot label {
-            display: none;
-        }
-
-        #login h1 {
-            display: none;
-        }
-
-        #login .message {
+        #rememberme, .forgetmenot label, #login .message, #login h1 a {
             display: none;
         }
 
@@ -201,11 +227,6 @@ function my_login_logo() { ?>
         }
 
         #login #wp-submit {
-            width: auto;
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            align-items: center;
             border-radius: 12px;
             border: none;
             background-color: #90b531;
@@ -213,20 +234,22 @@ function my_login_logo() { ?>
             text-shadow: none;
             box-shadow: none;
             font-size: 1.6rem;
-            width: 175px;
-            height: 40px;
+            width: 70%;
+            margin-right: 56px;
+            margin-top: 50px;
+            height: auto !important;
+            line-height: normal !important;
         }
 
         #login form {
-                display: flex;
-                flex-flow: column wrap;
-                justify-content:center;
-                align-items: center;
+            box-shadow: none;
+            position: relative;
+            height: 200px;
             }
 
         @media screen and (min-width: 1240px) {
             .login-image-wrapper {
-                visibility: visible;
+                display: block;
                 width: 62%;
                 height: 100vh;
             }

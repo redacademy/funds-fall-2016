@@ -125,11 +125,12 @@
     width: 100%;
     max-width: 656px;
     max-height: 656px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
     @include desktop {
         position: absolute;
         left: 280px;
         top: 100px;
-        margin-bottom: 3rem;
     }
 }
 
@@ -139,24 +140,42 @@
 }
 
 .trademark-logo {
-    width: 60%;
+    width: 50%;
     display: flex;
     margin: 0 auto;
     padding-top: 1rem;
+    @include tablet {
+        padding-top: 2rem;
+    }
+    @include desktop {
+        width: 60%;
+    }
+}
+
+.trademark-text-wrapper {
+    background-color: $color__brand-color-green;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+        padding: 2rem 0 3rem 0;
+    }
 }
 
 .trademark-text {
-    background-color: $color__brand-color-green;
     font-size: 1.25rem;
     color: #fff;
-    padding: 2rem 3rem 3rem 3rem;
     line-height: 1.3;
+    text-align: left;
+    width: 60%;
+    margin: 2rem 0;
     text-align: center;
     @include tablet {
-        font-size: 2rem;
+        font-size: 1.65rem;
+        text-align: left;
     }
     @include desktop {
-        text-align: left;
+        font-size: 1.8rem;
+        width: 70%;
     }
 }
 
@@ -167,7 +186,7 @@
 .home .site-footer {
     @include desktop {
         position: absolute;
-        bottom: -800px;
+        bottom: -900px;
         width: 100%;
     }
 }
