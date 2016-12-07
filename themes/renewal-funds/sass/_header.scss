@@ -106,7 +106,7 @@
 @include desktop {
     .site-header {
         background-color: $color__brand-color-green;
-        height: 108.78px;
+        height: 110.78px;
         .header-container {
             width: 1240px;
             margin: 0 auto;
@@ -137,6 +137,7 @@
             .menu {
                 display: flex;
                 justify-content: flex-end;
+                padding-top: 0;
             }
             li {
                 padding: 2.4rem 0.75rem;

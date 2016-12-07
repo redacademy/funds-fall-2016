@@ -49,7 +49,7 @@
 			<?php
 			
 				acf_form( array('submit_value' => 'Update the post!',
-										'return' => '%notification-questionnaire%' ) ); ?>
+									'return' => '%notification-questionnaire%' ) ); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
