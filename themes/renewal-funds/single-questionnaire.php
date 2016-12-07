@@ -3,14 +3,15 @@
  *
  * Template Name: Questionnaire
  *
-**/
+**/?>
 
-get_header(); ?>
+<?php acf_form_head(); ?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary">
+		<div id="content" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 			<p>single-questionnaire.php</p>
 
 			<?php //get_template_part( 'template-parts/content', 'single' ); ?>
@@ -29,12 +30,12 @@ get_header(); ?>
 						$question = get_sub_field('question_name');
 						//echo '<label>' . $question . '</label>';
 
-						echo '<p>' . $question . '</p>';
+						//echo '<p>' . $question . '</p>';
 
 						$answer = get_sub_field('question_response');
 						//echo '<textarea rows="4">' . $answer . '</textarea>';
 
-						echo '<p>' . $answer . '</p>';
+						//echo '<p>' . $answer . '</p>';
 					endif;
 				endwhile;
 				//echo '<button>Submit</button>';
@@ -43,11 +44,17 @@ get_header(); ?>
 				// no layouts found
 			endif;
 
-			?>
+			?>			
+
+			<?php
+			
+				acf_form( array('submit_value' => 'Update the post!',
+										'return' => '%notification-questionnaire%' ) ); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
+		</div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+

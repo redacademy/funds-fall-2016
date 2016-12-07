@@ -1008,6 +1008,15 @@ object {
       .site-header .nav-option .menu-item-127, .site-header .nav-option .menu-item-126 {
         display: none; } }
 
+.site-footer {
+  background-color: #536048;
+  height: 40px;
+  text-align: center;
+  color: white; }
+  .site-footer p {
+    margin: 0;
+    padding: 0.5rem 0; }
+
 .not-found .page-header {
   text-align: center;
   color: #323432;
@@ -1217,14 +1226,20 @@ object {
 .page-header h1 {
   text-align: center; }
 
-.site-footer {
-  background-color: #536048;
-  height: 40px;
-  text-align: center;
-  color: white; }
-  .site-footer p {
-    margin: 0;
-    padding: 0.5rem 0; }
+.acf-label {
+  display: none; }
+
+.acf-field-taxonomy {
+  display: none; }
+
+.acf-fc-layout-handle {
+  display: none !important; }
+
+.acf-input-wrap input, .acf-input textarea {
+  border: none; }
+
+.acf-input-wrap > input {
+  background: white !important; }
 
 .thanks-page-wrapper {
   display: -ms-flexbox;
