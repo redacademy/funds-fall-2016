@@ -964,7 +964,7 @@ object {
 @media (min-width: 1240px) {
   .site-header {
     background-color: #4b711c;
-    height: 108.78px; }
+    height: 110.78px; }
     .site-header .header-container {
       width: 1240px;
       margin: 0 auto;
@@ -992,7 +992,8 @@ object {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+        padding-top: 0; }
       .site-header .nav-option li {
         padding: 2.4rem 0.75rem; }
       .site-header .nav-option a {
