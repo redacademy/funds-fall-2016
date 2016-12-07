@@ -145,18 +145,28 @@
     padding-top: 1rem;
 }
 
-.trademark-text {
+.trademark-text-wrapper {
     background-color: $color__brand-color-green;
+    display: flex;
+    justify-content: center;
+}
+
+.trademark-text {
     font-size: 1.25rem;
     color: #fff;
-    padding: 2rem 3rem 3rem 3rem;
     line-height: 1.3;
+    text-align: left;
+    width: 60%;
+    margin: 2rem 0;
     text-align: center;
     @include tablet {
-        font-size: 2rem;
+        font-size: 1.65rem;
+        text-align: left;
     }
     @include desktop {
-        text-align: left;
+        font-size: 1.8rem;
+        width: 70%;
+        margin: 3rem 0 5rem 0;
     }
 }
 

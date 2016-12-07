@@ -349,8 +349,7 @@ big {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 0 3rem;
-  margin-top: 3rem; }
+  padding: 0 3rem; }
   @media (min-width: 1240px) {
     .page-template-feedback .feedback-wrapper {
       padding: 0 1rem; } }
@@ -1003,9 +1002,11 @@ object {
 
 .site-footer {
   background-color: #536048;
-  height: 40px;
+  height: 80px;
   text-align: center;
   color: white; }
+  .site-footer .site-info {
+    padding: 1.25rem 0; }
   .site-footer p {
     margin: 0;
     padding: 0.5rem 0; }
@@ -1191,19 +1192,30 @@ object {
   margin: 0 auto;
   padding-top: 1rem; }
 
-.trademark-text {
+.trademark-text-wrapper {
   background-color: #4b711c;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.trademark-text {
   font-size: 1.25rem;
   color: #fff;
-  padding: 2rem 3rem 3rem 3rem;
   line-height: 1.3;
+  text-align: left;
+  width: 60%;
+  margin: 2rem 0;
   text-align: center; }
   @media (min-width: 641px) {
     .trademark-text {
-      font-size: 2rem; } }
+      font-size: 1.65rem;
+      text-align: left; } }
   @media (min-width: 1240px) {
     .trademark-text {
-      text-align: left; } }
+      font-size: 1.8rem;
+      width: 70%;
+      margin: 3rem 0 5rem 0; } }
 
 .home {
   position: relative; }
@@ -1220,7 +1232,6 @@ object {
 .page-header h1 {
   text-align: center; }
 
-<<<<<<< HEAD
 .acf-label {
   display: none; }
 
@@ -1235,18 +1246,6 @@ object {
 
 .acf-input-wrap > input {
   background: white !important; }
-
-.site-footer {
-  background-color: #536048;
-  height: 80px;
-  text-align: center;
-  color: white; }
-  .site-footer .site-info {
-    padding: 1.25rem 0; }
-  .site-footer p {
-    margin: 0;
-    padding: 0.5rem 0; }
-
 
 .thanks-page-wrapper {
   display: -ms-flexbox;
