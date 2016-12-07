@@ -11,17 +11,40 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<p>single-story.php</p>
 
-			<div class="single-story-wrapper container">
-			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-			<div class="single-image" style="background-image: url('<?php echo $thumb['0'];?>')">
-			</div>
+			<!--<div class="single-story-wrapper container">
+			<?php //$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+			<div class="single-image" style="background-image: url('<?php //echo $thumb['0'];?>')">
+			</div>-->
 			
         
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content', 'single' ); ?>
-				<div class="single-story-text">
-				<?php the_field('story_body'); ?>
-				</div>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php if ( has_post_thumbnail() ) : ?>
+
+							<?php
+								$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+							?>
+								<div class="single-image-wrapper">
+								<div class="single-image" style="<?php echo $thumbnail[2]; ?>px;background-image:url( <?php echo $thumbnail[0]; ?> );background-repeat:no-repeat;">
+								</div>
+								</div>
+
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
+
+						<div class="story-title">
+							<?php the_title(); ?>
+						</div>
+					</header><!-- .entry-header -->
+					
+					<div class="entry-content">
+						<div class="single-story-text">
+							<?php the_field('story_body'); ?>
+						</div>
+					</div><!-- .entry-content -->
+				</article><!-- #post-## -->
+				
 			<?php endwhile; // End of the loop. ?>
 			</div>
 

@@ -1065,21 +1065,22 @@ object {
 
 .welcome {
   text-align: center;
-  padding: 3rem 0; }
+  padding: 1.5rem 0; }
   @media (min-width: 1240px) {
     .welcome {
-      margin: 1.5rem 0; } }
+      margin: 1.5rem 0;
+      padding: 3rem 0; } }
   .welcome p {
     font-size: 2rem;
     line-height: 0;
-    padding: 1.5rem 0; }
+    padding: 1.5rem 0;
+    font-weight: 900; }
     @media (min-width: 641px) {
       .welcome p {
         font-size: 3rem; } }
     @media (min-width: 1240px) {
       .welcome p {
-        font-size: 4.5rem;
-        font-weight: bold; } }
+        font-size: 4.5rem; } }
 
 .green-text {
   color: #4b711c;
@@ -1358,10 +1359,32 @@ object {
 .single-story-wrapper {
   text-align: center; }
 
+.single-image-wrapper {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-size: cover;
+  height: 30vh; }
+  @media (min-width: 641px) {
+    .single-image-wrapper {
+      height: 60vh; } }
+  @media (min-width: 1240px) {
+    .single-image-wrapper {
+      height: 100vh; } }
+
 .single-image {
-  width: 100%;
-  height: 100vh;
+  height: 30vh;
   background-size: cover; }
+  @media (min-width: 641px) {
+    .single-image {
+      height: 60vh; } }
+  @media (min-width: 1240px) {
+    .single-image {
+      height: 100vh; } }
+
+.single-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-weight: 900; }
 
 .single-story-text {
   padding: 0 5rem;
