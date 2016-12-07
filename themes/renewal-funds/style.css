@@ -1269,7 +1269,7 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    padding: 0.7rem 4rem;
+    padding: 0.7rem 3.5rem;
     border-radius: 12px;
     border: none;
     background-color: #90b531;
@@ -1311,14 +1311,14 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0rem 4rem;
+  padding: 0.7rem 3.5rem;
   border-radius: 12px;
   border: none;
   background-color: #90b531;
   color: #fff;
   text-shadow: none;
   box-shadow: none;
-  font-size: 2rem; }
+  font-size: 1.6rem; }
   .home-button a {
     color: white;
     text-decoration: none; }
