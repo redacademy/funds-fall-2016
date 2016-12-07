@@ -1238,6 +1238,19 @@ object {
 .acf-input-wrap > input {
   background: white !important; }
 
+.single-questionnaire .acf-fields > .acf-field {
+  border-top: none; }
+
+.single-questionnaire .acf-hl {
+  display: none; }
+
+.single-questionnaire .acf-flexible-content .layout {
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+  .single-questionnaire .acf-flexible-content .layout .acf-fc-layout-controlls {
+    display: none; }
+
 .thanks-page-wrapper {
   display: -ms-flexbox;
   display: flex;

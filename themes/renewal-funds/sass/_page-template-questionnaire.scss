@@ -34,3 +34,20 @@
 #acf-field_58464ce3f2246-0-field_58464d37f2247 {
     //background: white;
 }
+
+.single-questionnaire .acf-fields > .acf-field {
+    border-top: none;
+}
+
+.single-questionnaire .acf-hl {
+    display: none;
+}
+
+.single-questionnaire .acf-flexible-content .layout {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    .acf-fc-layout-controlls {
+        display: none;
+    }
+}
