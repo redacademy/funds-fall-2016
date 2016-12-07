@@ -10,7 +10,7 @@
 
 	<div id="primary">
 		<div id="content" role="main">
-
+			<div class="container">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<p>single-questionnaire.php</p>
 
@@ -52,7 +52,7 @@
 									'return' => '%notification-questionnaire%' ) ); ?>
 
 		<?php endwhile; // End of the loop. ?>
-
+			</div> <!-- container -->
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
