@@ -22,6 +22,32 @@ get_header();
 		<div class="history-page-wrapper">
 			<h1>History</h1>
 
+			<?php //$terms = get_terms( array( 'taxonomy' => 'portfolio-company-year', ) ); //print_r($terms); ?>
+
+			<?php 
+				$arg = array( 'taxonomy' => 'portfolio-company-year',
+								'hide_empty' => true, );
+								
+
+				$terms = get_terms( $arg );
+			?>
+
+			<div class="portfolio-company-year-style">
+				<ul>
+					<?php foreach ( $terms as $term ) : ?>
+						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+					<?php endforeach; ?>
+				</ul>
+
+				<?php
+					the_archive_description( '<div e="taxonomy-description">', '</div>' );
+				?>
+			</div>
+			
+			
+
+
+			
 		<?php 
 			$user = wp_get_current_user(); 
 

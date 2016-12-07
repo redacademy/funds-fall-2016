@@ -29,7 +29,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
  */
 function red_starter_connection_types() {
     // portfolio-company to story
-    p2p_register_connection_type( array(
+    /*p2p_register_connection_type( array(
         'name' => 'portfolio_company_to_story',
         'from' => 'portfolio-company',
         'to' => 'story',
@@ -42,7 +42,7 @@ function red_starter_connection_types() {
         'from' => 'portfolio-company',
         'to' => 'questionnaire',
 		'admin_dropdown' => 'any'
-    ) );
+    ) );*/
 
     // portfolio-company to pc_user
     p2p_register_connection_type( array(
