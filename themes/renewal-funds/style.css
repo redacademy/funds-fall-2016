@@ -992,7 +992,8 @@ object {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+        padding-top: 0; }
       .site-header .nav-option li {
         padding: 2.4rem 0.75rem; }
       .site-header .nav-option a {
