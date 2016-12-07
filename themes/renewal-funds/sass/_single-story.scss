@@ -9,17 +9,11 @@
 .single-image-wrapper {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%);
     background-size: cover;
-    height: 30vh;
-    @include tablet {
-        height: 60vh;
-    }
-    @include desktop {
-        height: 100vh;
-    }
 }
 
 .single-image {
-    height: 30vh;
+    padding-top: 50%;
+    max-height: 30vh;
     background-size: cover;
     @include tablet {
         height: 60vh;

@@ -1371,17 +1371,11 @@ object {
 
 .single-image-wrapper {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
-  background-size: cover;
-  height: 30vh; }
-  @media (min-width: 641px) {
-    .single-image-wrapper {
-      height: 60vh; } }
-  @media (min-width: 1240px) {
-    .single-image-wrapper {
-      height: 100vh; } }
+  background-size: cover; }
 
 .single-image {
-  height: 30vh;
+  padding-top: 50%;
+  max-height: 30vh;
   background-size: cover; }
   @media (min-width: 641px) {
     .single-image {
