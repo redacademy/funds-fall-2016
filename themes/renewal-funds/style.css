@@ -1238,6 +1238,13 @@ object {
 .acf-input-wrap > input {
   background: white !important; }
 
+/* changes !!!!!*/
+.single-questionnaire h1 {
+  text-align: center; }
+
+.single-questionnaire .acf-form {
+  padding: 1rem 2rem; }
+
 .single-questionnaire .acf-fields > .acf-field {
   border-top: none; }
 
