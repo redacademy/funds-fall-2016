@@ -20,7 +20,24 @@
             </header><!-- .page-header -->
 
             <div class="">
-                <?php while ( have_posts() ) : the_post(); ?>
+                <?php 
+                    $user = wp_get_current_user();
+                    //$query = new WP_Query( 'p2p_to=' . $user->id );
+
+                    //echo $user->id;
+                    
+                    $story_posts = new WP_Query( array(
+										'connected_type' => 'story_to_user',
+										'connected_items' => $user->ID,
+										'suppress_filters' => false,
+										'nopaging' => true,
+										));
+                
+                    while ( $story_posts->have_posts() ) : $story_posts->the_post(); 
+                    
+                        //print_r(the_post()); 
+                    ?>
+
                     <div class="single-product-block">
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <header class="entry-header">
@@ -35,7 +52,7 @@
 
                                 <!--title and price-->
                                 <div class="product-info">
-                                    <div class="product-title"><?php //the_title(); ?></div>
+                                    <div class="product-title"><?php the_title(); ?></div>
                                 </div>
                             </header><!-- .entry-header -->
                         </article><!-- #post-## -->

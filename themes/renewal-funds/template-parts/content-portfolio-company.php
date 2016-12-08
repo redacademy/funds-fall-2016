@@ -8,6 +8,8 @@
                         'nopaging' => true
                 ) );
 
+     print_r($posts);           
+
     $pc_company_name = get_the_title($posts[0]);
 ?>
     <section class="container">
