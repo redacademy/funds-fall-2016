@@ -642,6 +642,9 @@ a {
     .main-navigation .current-menu-parent > a {
       border-bottom: 3px solid #b0aea5; } }
 
+.single-questionnaire .menu-item-object-questionnaire > a {
+  border-bottom: 3px solid #b0aea5; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
