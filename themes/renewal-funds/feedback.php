@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="feedback-page container">
+        <div class="feedback-page container wrap">
             <div class="feedback-wrapper">
                 <p class="feedback-green-text">How Can We Improve?</p>
                 <p class="feedback-text">We are constantly looking to improve our platform. Your feedback is valuable to us.</p>

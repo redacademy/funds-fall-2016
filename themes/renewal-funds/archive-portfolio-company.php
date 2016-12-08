@@ -49,7 +49,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
-					<div class="container">
+					<div class="container wrap">
 
 						<ul class="story-section-wrapper">
 							<li class="story-section">

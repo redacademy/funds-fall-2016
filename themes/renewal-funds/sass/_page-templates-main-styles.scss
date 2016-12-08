@@ -8,6 +8,12 @@
     outline: none;
 }
 
+body {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-stretch: normal;
+}
+
 // For Fonts
 // h1,h2,h3,h4,h5,h6 {
 //     font-family: 
@@ -26,6 +32,10 @@
     @include desktop {
         max-width: 1240px;
     }
+}
+
+.wrap {
+    padding: 2rem 0;
 }
 
 // to pad down for header

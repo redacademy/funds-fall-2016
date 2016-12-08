@@ -1,8 +1,4 @@
-.single-story img {
-    display: none;
-}
-
-.single-story-wrapper {
+.single-page-wrapper {
     text-align: center;
 }
 
@@ -25,7 +21,7 @@
 
 .single-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 2rem 0;
     font-weight: 900;
     @include tablet {
@@ -40,7 +36,6 @@
     text-align: left;
     @include tablet {
         font-size: 1.2rem;
-    }
-    @include desktop {
+        width: 50%;
     }
 }

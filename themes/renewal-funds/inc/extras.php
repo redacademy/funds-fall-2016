@@ -131,7 +131,6 @@ function custom_login() { ?>
         <div class="login-image-wrapper">
 
             <div class="login-image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/images/login.png" alt="Login Logo">
                 <div class="login-title">
                     <p>Investing For Change</p>
                 </div>
@@ -146,6 +145,7 @@ function my_login_logo() { ?>
    <style type="text/css">
 
         #login {
+            margin: 0 auto !important;
             position: relative !important;
         }
 
@@ -157,31 +157,42 @@ function my_login_logo() { ?>
         body.login {
             background: white !important;
             position: relative !important;
-            height: 200px;
-        }
 
+        }
+        .login-page-wrapper{
+            width: 70%;
+        }
         #nav {
             position: absolute !important;
-            top: 280px;
-            right: 20px;
+            top: 330px;
+            right: 26px;
+        }
+
+        .login #nav {
+            font-size: 1.15rem !important;
         }
 
         #backtoblog {
             display: none;
         }
 
-        .login-page-wrapper {
-            float:left;
-        }
-
         .login-image-wrapper {
             display: none;
-            height: 0;
-            width: 0;
+            height: 100%;
+            width: 100%;
         }
 
         .login-image {
+            background: url("<?php echo get_template_directory_uri()?>/assets/images/Login.png") no-repeat ;
+            background-size:cover;
+            height: 100%;
+            width: 100%;
             position: relative;
+        }
+
+        .login-image img {
+            height: 100%;
+            width: 100%;
         }
 
        .login-title p {
@@ -190,7 +201,7 @@ function my_login_logo() { ?>
             align-items: center;
             position: absolute;
             bottom: 100px;
-            right: -345px;
+            right: -0px;
             color: white;
             font-size: 2.5rem;
             padding: 3rem 1rem;
@@ -199,7 +210,9 @@ function my_login_logo() { ?>
 
         #login_error {
             position: absolute;
-            top: 116px;
+            top: 127px;
+            right: 80px;
+            padding: 0 !important;
         }
 
         #login h1:before {
@@ -208,14 +221,19 @@ function my_login_logo() { ?>
             text-decoration: none;
             color: #4b711c;
             background-color: white;
-            padding: 7px 27px;
             position: absolute;
             top: 75px;
-            right: 1px;
+            right: 50px;
+            font-weight: 400;
         }
 
         #rememberme, .forgetmenot label, #login .message, #login h1 a {
             display: none;
+        }
+
+        #loginform label {
+            font-size: 1.2rem;
+            color: black;
         }
 
         #login input {
@@ -224,6 +242,13 @@ function my_login_logo() { ?>
             padding: 2%;
             border-radius: 18px;
             background-color: #B4AFAF;
+            margin-bottom: 2rem;
+            text-indent: 10px;
+        }
+
+        #login input[type="text"] {
+            font-size: 1rem;
+            padding: 0.8rem 0;
         }
 
         #login #wp-submit {
@@ -244,19 +269,16 @@ function my_login_logo() { ?>
         #login form {
             box-shadow: none;
             position: relative;
-            height: 200px;
             }
 
         @media screen and (min-width: 1240px) {
             .login-image-wrapper {
                 display: block;
-                width: 62%;
-                height: 100vh;
+                width: 100%;
             }
 
-            #login {
-                display: flex;
-                flex-flow: column wrap;
+            .login {
+                display: flex !important;
             }
 
         }

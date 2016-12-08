@@ -18,7 +18,7 @@ get_header(); ?>
 			
         
 			<?php while ( have_posts() ) : the_post(); ?>
-				<article class="single-story-wrapper" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article class="single-page-wrapper" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php if ( has_post_thumbnail() ) : ?>
 
@@ -29,20 +29,22 @@ get_header(); ?>
 								<div class="single-image" style="<?php echo $thumbnail[2]; ?>px;background-image:url( <?php echo $thumbnail[0]; ?> );background-repeat:no-repeat;">
 								</div>
 								</div>
-
-							<?php the_post_thumbnail( 'large' ); ?>
+								
 						<?php endif; ?>
+					</header><!-- .entry-header -->
 
+					<div class="single-story-wrapper wrap">
 						<div class="single-title">
 							<?php the_title(); ?>
 						</div>
-					</header><!-- .entry-header -->
 					
-					<div class="entry-content">
-						<div class="single-story-text">
-							<?php the_field('story_body'); ?>
-						</div>
-					</div><!-- .entry-content -->
+					
+						<div class="entry-content">
+							<div class="single-story-text">
+								<?php the_field('story_body'); ?>
+							</div>
+						</div><!-- .entry-content -->
+					</div>
 				</article><!-- #post-## -->
 				
 			<?php endwhile; // End of the loop. ?>
