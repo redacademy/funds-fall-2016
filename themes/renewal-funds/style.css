@@ -1013,8 +1013,10 @@ object {
   margin: 2rem auto; }
 
 @media (min-width: 1240px) {
-  .content-container .not-found {
-    padding: 1rem 5rem; } }
+  .container .not-found {
+    padding: 1rem 5rem; }
+  .error-content {
+    padding: 0 2rem; } }
 
 /*--------------------------------------------------------------
 # Page Templates
