@@ -48,8 +48,7 @@
 
 			<?php
 			
-				acf_form( array('submit_value' => 'Submit',
-									'return' => '%notification-questionnaire%' ) ); ?>
+				acf_form( array( 'submit_value' => 'Submit', ) ); ?>
 
 		<?php endwhile; // End of the loop. ?>
 			</div> <!-- container -->

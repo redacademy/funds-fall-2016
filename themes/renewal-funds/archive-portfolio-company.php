@@ -58,9 +58,9 @@ get_header();
 										'nopaging' => true,
 										));	?>
 										
-			<!--<pre>
-				<?php //print_r( $story_posts );?>	
-			</pre>-->					
+			<pre>
+				<?php print_r( $story_posts );?>	
+			</pre>					
 			
 			<h2 class="container">Stories:</h2>
 
