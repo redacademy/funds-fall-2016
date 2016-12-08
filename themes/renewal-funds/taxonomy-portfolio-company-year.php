@@ -23,19 +23,34 @@
                 <?php 
                     $user = wp_get_current_user();
                     //$query = new WP_Query( 'p2p_to=' . $user->id );
-
-                    //echo $user->id;
                     
                     $story_posts = new WP_Query( array(
 										'connected_type' => 'story_to_user',
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
 										'nopaging' => true,
-										));
+										)); ?>
+
+                    <!--<pre>                         
+                        <?php //print_r($story_posts); ?>
+                    </pre>-->
+
+                    <?php /*$args = array(
+                                        'post_type' => 'story',
+                                        'p2p_to' => $user->id,
+                                        'post_status' => 'publish',
+                                        'orderby' => 'asc',
+                                        'posts_per_page' => 15
+                                        );*/
+
+                    //$story_posts = new WP_Query( $args ); ?>
+
+                    <pre>                         
+                        <?php print_r($story_posts); ?>
+                    </pre>
                 
-                    while ( $story_posts->have_posts() ) : $story_posts->the_post(); 
+                    <?php while ( $story_posts->have_posts() ) : $story_posts->the_post(); 
                     
-                        //print_r(the_post()); 
                     ?>
 
                     <div class="single-product-block">
