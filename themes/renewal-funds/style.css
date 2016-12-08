@@ -912,6 +912,9 @@ object {
       background-color: #fff; }
     .header-resize .main-navigation {
       height: 100%; }
+      .header-resize .main-navigation .menu {
+        overflow-y: scroll;
+        max-height: 500px; }
       .header-resize .main-navigation ul {
         display: -ms-flexbox;
         display: flex;

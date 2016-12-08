@@ -31,11 +31,3 @@
     
 
 })(jQuery);
-
-(function($){
-        $('.sub-menu').hide();
-        $('#menu-item-44').on('click',function(event){
-                                            event.preventDefault();
-        $('.sub-menu').show();
-    });
-})(jQuery);//
