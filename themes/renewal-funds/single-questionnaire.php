@@ -5,9 +5,8 @@
  *
 **/?>
 
-
-<?php get_header(); ?>
 <?php acf_form_head(); ?>
+<?php get_header(); ?>
 
 	<div id="primary">
 		<div id="content" role="main">
@@ -49,7 +48,8 @@
 
 			<?php
 			
-				acf_form( array( 'submit_value' => 'Submit', ) ); ?>
+				acf_form( array( 'submit_value' => 'Submit',
+									'return' => get_template_directory_uri() . '/notification-questionnaire/') ); ?>
 
 		<?php endwhile; // End of the loop. ?>
 			</div> <!-- container -->

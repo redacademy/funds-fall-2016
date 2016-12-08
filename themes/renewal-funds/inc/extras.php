@@ -95,6 +95,7 @@ function red_starter_remove_admin_bar() {
 }
 add_action('after_setup_theme', 'red_starter_remove_admin_bar');
 
+
 /*
 *
 * Adds logout functionality to header
@@ -110,6 +111,7 @@ function add_login_logout_link($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 
+
 /*
 *
 * Add post-to-post user to a posted story
@@ -122,6 +124,19 @@ function add_user_id_to_story_post( $entry  ) {
     p2p_type( 'story_to_user' )->connect( $post->ID, $user->ID, array('date' => current_time('mysql')) );
 }
 add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
+
+
+/*
+*
+* Fixes redirect error for acf form submit
+*
+*/
+function brandpage_form_head(){
+  acf_form_head();
+}
+add_action( 'init', 'brandpage_form_head' );
+
+
 
 
 // Styling the Login page
