@@ -2,25 +2,21 @@
 
 .welcome {
     text-align: center;
-    @include desktop {
-        margin: 1.5rem 0;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 0;
+    @include tablet {
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
     }
-    p {
-        font-size: 2rem;
-        line-height: 0;
-        @include tablet {
-            font-size: 3rem;
-        }
-        @include desktop {
-            font-size: 4.5rem;
-        }
+    @include desktop {
+        font-size: 4rem;
     }
 }
 
 .green-text {
     color: $color__brand-color-green;
     font-weight: 900;
-    font-size: 1rem;
 }
 
 .main-dashboard-nav {
@@ -28,7 +24,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-
     @include desktop {
         margin-bottom: 2rem;
     }
@@ -43,13 +38,16 @@
         width: 25%;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         max-width: 160px;
         text-align: center;
-        font-weight: bold;
+        font-weight: 500;
         line-height: 1.1;
-        margin: 1.3rem 0;
-
+        margin: 1rem 0;
+        @include tablet {
+            font-size: 2rem;
+            max-width: 250px;
+        }
         @include desktop {
             font-size: 2.5rem;
             max-width: 280px;
@@ -105,8 +103,7 @@
     visibility: hidden;
     height: 0px;
     @include desktop {
-        width: 800px;
-        height: 650px;
+        width: 750px;
         visibility: visible;
         position: absolute;
         left: -265px;
@@ -128,37 +125,11 @@
     }
 }
 
-.trademark-logo-wrapper {
-    width: 100%;
-    background-color: $color__brand-color-green;
-}
-
 .trademark-logo {
     width: 100%;
     display: flex;
     margin: 0 auto;
-}
-
-.trademark-text-wrapper {
-    background-color: $color__brand-color-green;
-    display: flex;
-    justify-content: center;
-    @include tablet {
-        padding: 2rem 0 3rem 0;
-    }
-}
-
-.trademark-text {
-    font-size: 1.25rem;
-    color: #fff;
-    line-height: 1.3;
-    @include tablet {
-        font-size: 1.65rem;
-    }
-    @include desktop {
-        width: 80%;
-        font-size: 1.8rem;
-    }
+    max-height: 600px;
 }
 
 .home {
@@ -166,10 +137,11 @@
 }
 
 .home .site-footer {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
     @include desktop {
-        position: absolute;
-        bottom: -900px;
-        width: 100%;
+        bottom: -800px;
     }
 }
 

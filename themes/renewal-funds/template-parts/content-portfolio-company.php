@@ -32,7 +32,7 @@
                         <a href="<?php echo get_post_type_archive_link('questionnaire'); ?>"><div class="nav-icon">
                             <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/fill_questionnaire_icon.png" alt="Fill Quest logo">
                         </div></a>
-                        <p>Respond Questionnaire</p>
+                        <p>Respond to Questionnaire</p>
                     </div>
 
                     <div class="nav-icon-wrapper">
@@ -54,19 +54,14 @@
 
         <!--Trademark Section only in desktop-->
         <div class="trademark-section">
+
             <div class="trademark-image-wrapper">
                 <img class="trademark-image" src="<?php echo get_template_directory_uri()?>/assets/images/dashboard-background.png" alt="Renewal Slogan logo">
             </div>
-
             <div class="trademark-wrapper">
-                <div class="trademark-logo-wrapper">
                     <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/images/trademark.png" alt="Renewal Slogan logo">
-                </div>
-
-                <!--<div class="trademark-text-wrapper">
-                    <p class="trademark-text">We want to help tell your story, showing the difference our partners make in the world is important to us. Here, you will be able to respond to questionnaires, edit your profile, view your history, share your story, and stay in touch with us.</p>
-                </div>-->
             </div>
+            
         </div>
         
     </section>

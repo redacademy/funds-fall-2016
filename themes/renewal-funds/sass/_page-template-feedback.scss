@@ -41,19 +41,9 @@
 // Gravity Form
 .page-template-feedback {
 
-.feedback-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 3rem;
-    @include desktop {
-    padding: 0 1rem;
+    p {
+        margin: 0;
     }
-}
-
-.gform_heading {
-    display: none;
-}
 
 .feedback-page {
     @include desktop {
@@ -61,25 +51,45 @@
     }
 }
 
+.feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gform_heading {
+    display: none;
+}
+
 .feedback-green-text {
     color: $color__brand-color-green;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     text-align: center;
-    // margin-bottom: 1rem;
+    font-weight: 500;
+    margin: 2rem auto;
     @include tablet {
-        font-size: 2rem;
+        font-size: 2.75rem;
+    }
+    @include desktop {
+        font-size: 2.55rem;
+    }
+}
+
+.feedback-info {
+    width: 70%;
+    font-size: 1.25rem;
+    text-align: center;
+    @include tablet {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+    @include desktop {
+        width: 75%;
     }
 }
 
 .feedback-text {
-    font-size: 1.25rem;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    @include tablet {
-        font-size: 1.5rem;
-        padding: 0 1.8rem;
-    }
+    padding: 0 2rem;
 }
 
 .gform_wrapper .textarea.medium {
@@ -97,6 +107,10 @@
 
 .gform_footer {
     font-size: 1.6rem;
+}
+
+.gform_wrapper .top_label {
+    margin: 0 !important;
 }
 }
 

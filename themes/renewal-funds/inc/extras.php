@@ -122,10 +122,10 @@ add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
 * Fixes redirect error for acf form submit
 *
 */
-function brandpage_form_head(){
-  acf_form_head();
-}
-add_action( 'init', 'brandpage_form_head' );
+// function brandpage_form_head(){
+//     acf_form_head();
+// }
+// add_action( 'init', 'brandpage_form_head' );
 
 
 
@@ -189,7 +189,7 @@ function my_login_logo() { ?>
         }
 
         .login-image {
-            background: url("<?php echo get_template_directory_uri()?>/assets/images/Login.png") no-repeat ;
+            background: url("<?php echo get_template_directory_uri()?>/assets/images/login.png") no-repeat ;
             background-size:cover;
             height: 100%;
             width: 100%;
@@ -254,7 +254,7 @@ function my_login_logo() { ?>
 
         #login input[type="text"] {
             font-size: 1rem;
-            padding: 0.8rem 0;
+            padding: 0.75rem 0;
         }
 
         #login #wp-submit {
@@ -298,7 +298,7 @@ function login_function() {
     add_filter( 'gettext', 'username_change', 20, 3 );
     function username_change( $translated_text, $text, $domain ) 
     {
-        if ($text === 'Username or Email') 
+        if ($text === 'Username or Email Address') 
         {
             $translated_text = 'Email Address';
         }
