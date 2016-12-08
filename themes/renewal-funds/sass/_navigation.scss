@@ -91,10 +91,16 @@ a {
 	@include desktop {
 	.current_page_item > a,
 	.current-menu-item > a,
-	.current_page_ancestor > a {
+	.current_page_ancestor > a,
+	.current-menu-parent >a {
   		border-bottom: 3px solid $color__brand-color-gray;
 		}
 	}
+}
+.single-questionnaire .menu-item-object-questionnaire >a,
+.single-story .menu-item-object-portfolio-company >a,
+.tax-portfolio-company-year .menu-item-object-portfolio-company >a {
+	border-bottom: 3px solid $color__brand-color-gray;
 }
 
 /* Small menu. */

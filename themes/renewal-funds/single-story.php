@@ -8,13 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-		
-			<!--<div class="single-story-wrapper container">
-			<?php //$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-			<div class="single-image" style="background-image: url('<?php //echo $thumb['0'];?>')">
-			</div>-->
-			
+		<main id="main" class="site-main" role="main">		
         
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article class="single-page-wrapper" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

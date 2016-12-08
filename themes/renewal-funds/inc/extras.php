@@ -92,7 +92,7 @@ add_action('after_setup_theme', 'red_starter_remove_admin_bar');
 * Adds logout functionality to header
 *
 */
-function add_login_logout_link($items, $args) {         
+function red_starter_add_login_logout_link($items, $args) {         
     ob_start();         
     wp_loginout('index.php');         
     $loginoutlink = ob_get_contents();     
@@ -100,7 +100,7 @@ function add_login_logout_link($items, $args) {
     $items .= '<li><img src="<?php echo get_template_directory_uri() ?>/assets/icons/svg/logout_icon.svg" />'. $loginoutlink .'</li>';     
     return $items; 
 }
-add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+add_filter('wp_nav_menu_items', 'red_starter_add_login_logout_link', 10, 2);
 
 
 /*
@@ -108,13 +108,13 @@ add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 * Add post-to-post user to a posted story
 *
 */
-function add_user_id_to_story_post( $entry  ) {
+function red_starter_add_user_id_to_story_post( $entry  ) {
     $post = get_post( $entry['post_id'] );
     $user = wp_get_current_user(); 
 
     p2p_type( 'story_to_user' )->connect( $post->ID, $user->ID, array('date' => current_time('mysql')) );
 }
-add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
+add_action( 'gform_after_submission_3', 'red_starter_add_user_id_to_story_post', 10, 2 );
 
 
 /*
@@ -122,10 +122,41 @@ add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
 * Fixes redirect error for acf form submit
 *
 */
+<<<<<<< HEAD
 // function brandpage_form_head(){
 //     acf_form_head();
 // }
 // add_action( 'init', 'brandpage_form_head' );
+=======
+function red_starter_form_head(){
+    acf_form_head();
+}
+add_action( 'init', 'red_starter_form_head' );
+
+
+/*
+*
+* Function to remove “Category:”, “Tag:”, “Author:”, “Archives:” and “Other taxonomy name:” in the archive title
+*
+*/
+function red_starter_theme_archive_title( $title ) {
+	if ( is_category() ) {
+		$title = single_cat_title( '', false );
+	} elseif ( is_tag() ) {
+		$title = single_tag_title( '', false );
+	} elseif ( is_author() ) {
+		$title = '<span class="vcard">' . get_the_author() . '</span>';
+	} elseif ( is_post_type_archive() ) {
+		$title = post_type_archive_title( '', false );
+	} elseif ( is_tax() ) {
+		$title = single_term_title( '', false );
+	}
+
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'red_starter_theme_archive_title' );
+
+>>>>>>> 84c4a4d3e7885035bf03541010bd7a64e61f141d
 
 
 
