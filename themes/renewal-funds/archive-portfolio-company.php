@@ -56,7 +56,7 @@ get_header();
 										
 			<!--<pre>
 				<?php //print_r( $story_posts );?>	
-			</pre>-->			
+			</pre>-->	
 			
 			<h2 class="container">Stories:</h2>
 
