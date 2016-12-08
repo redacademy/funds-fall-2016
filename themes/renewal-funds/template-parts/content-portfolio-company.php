@@ -77,12 +77,12 @@
 
             <div class="trademark-wrapper">
                 <div class="trademark-logo-wrapper">
-                    <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/icons/svg/renewal_funds_icon.svg" alt="Renewal Slogan logo">
+                    <img class="trademark-logo" src="<?php echo get_template_directory_uri()?>/assets/images/trademark.png" alt="Renewal Slogan logo">
                 </div>
 
-                <div class="trademark-text-wrapper">
+                <!--<div class="trademark-text-wrapper">
                     <p class="trademark-text">We want to help tell your story, showing the difference our partners make in the world is important to us. Here, you will be able to respond to questionnaires, edit your profile, view your history, share your story, and stay in touch with us.</p>
-                </div>
+                </div>-->
             </div>
         </div>
         

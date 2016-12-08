@@ -134,16 +134,9 @@
 }
 
 .trademark-logo {
-    width: 50%;
+    width: 100%;
     display: flex;
     margin: 0 auto;
-    padding-top: 1rem;
-    @include tablet {
-        padding-top: 2rem;
-    }
-    @include desktop {
-        width: 60%;
-    }
 }
 
 .trademark-text-wrapper {
@@ -159,14 +152,12 @@
     font-size: 1.25rem;
     color: #fff;
     line-height: 1.3;
-    width: 60%;
-    margin: 2rem 0;
     @include tablet {
         font-size: 1.65rem;
     }
     @include desktop {
+        width: 80%;
         font-size: 1.8rem;
-        width: 70%;
     }
 }
 
