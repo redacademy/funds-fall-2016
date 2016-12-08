@@ -63,9 +63,9 @@
     display: none;
     @include tablet {
     display: block;
-    // min-height: 175px;
-    // max-height: 175px;
-    // overflow: scroll;
+    min-height: 150px;
+    max-height: 150px;
+    overflow: hidden;
     }
 }
 
