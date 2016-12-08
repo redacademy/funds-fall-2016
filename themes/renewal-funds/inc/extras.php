@@ -122,10 +122,11 @@ add_action( 'gform_after_submission_3', 'red_starter_add_user_id_to_story_post',
 * Fixes redirect error for acf form submit
 *
 */
-function red_starter_form_head(){
-    acf_form_head();
-}
-add_action( 'init', 'red_starter_form_head' );
+
+// function red_starter_form_head(){
+//     acf_form_head();
+// }
+// add_action( 'init', 'red_starter_form_head' );
 
 
 /*
@@ -150,11 +151,6 @@ function red_starter_theme_archive_title( $title ) {
 }
 add_filter( 'get_the_archive_title', 'red_starter_theme_archive_title' );
 
-
-
-
-
-
 // Styling the Login page
 
 function custom_login() { ?>
@@ -173,148 +169,11 @@ function custom_login() { ?>
 add_action('login_enqueue_scripts','custom_login');
 
 function my_login_logo() { ?>
-   <style type="text/css">
 
-        #login {
-            margin: 0 auto !important;
-            position: relative !important;
-        }
+   <?php
+	wp_enqueue_style( 'login_styles', get_template_directory_uri(). '../login/login-page.css' );
+    ?>
 
-        #loginform {
-            position: absolute !important;
-            top: 125px;
-        }
-
-        body.login {
-            background: white !important;
-            position: relative !important;
-
-        }
-        .login-page-wrapper{
-            width: 70%;
-        }
-        #nav {
-            position: absolute !important;
-            top: 330px;
-            right: 26px;
-        }
-
-        .login #nav {
-            font-size: 1.15rem !important;
-        }
-
-        #backtoblog {
-            display: none;
-        }
-
-        .login-image-wrapper {
-            display: none;
-            height: 100%;
-            width: 100%;
-        }
-
-        .login-image {
-            background: url("<?php echo get_template_directory_uri()?>/assets/images/login.png") no-repeat ;
-            background-size:cover;
-            height: 100%;
-            width: 100%;
-            position: relative;
-        }
-
-        .login-image img {
-            height: 100%;
-            width: 100%;
-        }
-
-       .login-title p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 100px;
-            right: -0px;
-            color: white;
-            font-size: 2.5rem;
-            padding: 3rem 1rem;
-            background-color: #4b711c;
-        }
-
-        #login_error {
-            position: absolute;
-            top: 127px;
-            right: 80px;
-            padding: 0 !important;
-        }
-
-        #login h1:before {
-            content: "Hello there,";
-            font-size: 3rem;
-            text-decoration: none;
-            color: #4b711c;
-            background-color: white;
-            position: absolute;
-            top: 75px;
-            right: 50px;
-            font-weight: 400;
-        }
-
-        #rememberme, .forgetmenot label, #login .message, #login h1 a {
-            display: none;
-        }
-
-        #loginform label {
-            font-size: 1.2rem;
-            color: black;
-        }
-
-        #login input {
-            width: 90%;
-            margin: 0 auto;
-            padding: 2%;
-            border-radius: 18px;
-            background-color: #B4AFAF;
-            margin-bottom: 2rem;
-            text-indent: 10px;
-        }
-
-        #login input[type="text"] {
-            font-size: 1rem;
-            padding: 0.75rem 0;
-        }
-
-        #login #wp-submit {
-            border-radius: 12px;
-            border: none;
-            background-color: #90b531;
-            color: #fff;
-            text-shadow: none;
-            box-shadow: none;
-            font-size: 1.6rem;
-            width: 70%;
-            margin-right: 56px;
-            margin-top: 50px;
-            height: auto !important;
-            line-height: normal !important;
-        }
-
-        #login form {
-            box-shadow: none;
-            position: relative;
-            }
-
-        @media screen and (min-width: 1240px) {
-            .login-image-wrapper {
-                display: block;
-                width: 100%;
-            }
-
-            .login {
-                display: flex !important;
-            }
-
-        }
-
-   </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
