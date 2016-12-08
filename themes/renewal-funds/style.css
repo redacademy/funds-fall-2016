@@ -642,7 +642,9 @@ a {
     .main-navigation .current-menu-parent > a {
       border-bottom: 3px solid #b0aea5; } }
 
-.single-questionnaire .menu-item-object-questionnaire > a {
+.single-questionnaire .menu-item-object-questionnaire > a,
+.single-story .menu-item-object-portfolio-company > a,
+.tax-portfolio-company-year .menu-item-object-portfolio-company > a {
   border-bottom: 3px solid #b0aea5; }
 
 /* Small menu. */
