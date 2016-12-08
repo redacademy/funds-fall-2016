@@ -1,12 +1,6 @@
 <?php
     $user = wp_get_current_user(); 
 
-    //echo print_r($user);
-
-    //$user_login = $user->ID;
-
-    //echo $user_login;
-
     $posts = get_posts( array(
                         'connected_type' => 'portfolio_to_user',
                         'connected_items' => $user->ID,
@@ -14,18 +8,7 @@
                         'nopaging' => true
                 ) );
 
-    //echo print_r($posts[0]);
-
-    $pc_company_name;
-
-    //foreach ($posts as $post) {
-        //$pc_company_name = $post->post_title;
-    //}
-
     $pc_company_name = get_the_title($posts[0]);
-
-    //echo $pc_company_name;
-
 ?>
     <section class="container">
         <div class="welcome-page-wrapper wrap">

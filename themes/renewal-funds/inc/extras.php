@@ -29,7 +29,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
  */
 function red_starter_connection_types() {
     // portfolio-company to story
-    p2p_register_connection_type( array(
+    /*p2p_register_connection_type( array(
         'name' => 'portfolio_company_to_story',
         'from' => 'portfolio-company',
         'to' => 'story',
@@ -42,7 +42,7 @@ function red_starter_connection_types() {
         'from' => 'portfolio-company',
         'to' => 'questionnaire',
 		'admin_dropdown' => 'any'
-    ) );
+    ) );*/
 
     // portfolio-company to pc_user
     p2p_register_connection_type( array(
@@ -74,15 +74,6 @@ function red_starter_connection_types() {
 add_action( 'p2p_init', 'red_starter_connection_types' );
 
 
-/*function blockusers_init() {
-if ( is_admin() && !current_user_can( 'administrator' ) &&! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
-    wp_redirect( home_url() );
-    exit;
-    }
-}
-add_action( 'init', 'blockusers_init' );*/
-
-
 /*
  *
  * Removes front end admin bar
@@ -94,6 +85,7 @@ function red_starter_remove_admin_bar() {
     }
 }
 add_action('after_setup_theme', 'red_starter_remove_admin_bar');
+
 
 /*
 *
@@ -110,6 +102,7 @@ function add_login_logout_link($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
 
+
 /*
 *
 * Add post-to-post user to a posted story
@@ -122,6 +115,19 @@ function add_user_id_to_story_post( $entry  ) {
     p2p_type( 'story_to_user' )->connect( $post->ID, $user->ID, array('date' => current_time('mysql')) );
 }
 add_action( 'gform_after_submission_3', 'add_user_id_to_story_post', 10, 2 );
+
+
+/*
+*
+* Fixes redirect error for acf form submit
+*
+*/
+function brandpage_form_head(){
+  acf_form_head();
+}
+add_action( 'init', 'brandpage_form_head' );
+
+
 
 
 // Styling the Login page
