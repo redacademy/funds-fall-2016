@@ -14,42 +14,28 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 			<p>single-questionnaire.php</p>
 
-			<?php //get_template_part( 'template-parts/content', 'single' ); ?>
+			<header class="entry-header">
+				<h1><?php the_title(); ?></h1>
+			</header><!-- .entry-header -->
 
-			<h1><?php the_title(); ?></h1>
-
-			<?php 
-
-			// check if the flexible content field has rows of data
-			if( have_rows('questionnaire_item') ):
-				//echo '<form>';
-				// loop through the rows of data
-				while ( have_rows('questionnaire_item') ) : the_row();
-					// check current row layout
-					if( get_row_layout() === 'questionnaire_question' ):
-						$question = get_sub_field('question_name');
-						//echo '<label>' . $question . '</label>';
-
-						//echo '<p>' . $question . '</p>';
-
-						$answer = get_sub_field('question_response');
-						//echo '<textarea rows="4">' . $answer . '</textarea>';
-
-						//echo '<p>' . $answer . '</p>';
+			<div class="entry-content">
+				<?php // check if the flexible content field has rows of data
+					if( have_rows('questionnaire_item') ):
+						// loop through the rows of data
+						while ( have_rows('questionnaire_item') ) : the_row();
+							// check current row layout
+							if( get_row_layout() === 'questionnaire_question' ):
+								$question = get_sub_field('question_name');
+								$answer = get_sub_field('question_response');
+							endif;
+						endwhile;
+					else :
+						// no layouts found
 					endif;
-				endwhile;
-				//echo '<button>Submit</button>';
-				//echo '</form>';
-			else :
-				// no layouts found
-			endif;
-
-			?>			
-
-			<?php
-			
-				acf_form( array( 'submit_value' => 'Submit',
-									'return' => get_template_directory_uri() . '/notification-questionnaire/') ); ?>
+				
+					acf_form( array( 'submit_value' => 'Submit',
+										'return' => get_template_directory_uri() . '/notification-questionnaire/') ); ?>
+			</div><!-- .entry-content -->
 
 		<?php endwhile; // End of the loop. ?>
 			</div> <!-- container -->

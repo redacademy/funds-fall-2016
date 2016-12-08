@@ -74,15 +74,6 @@ function red_starter_connection_types() {
 add_action( 'p2p_init', 'red_starter_connection_types' );
 
 
-/*function blockusers_init() {
-if ( is_admin() && !current_user_can( 'administrator' ) &&! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
-    wp_redirect( home_url() );
-    exit;
-    }
-}
-add_action( 'init', 'blockusers_init' );*/
-
-
 /*
  *
  * Removes front end admin bar

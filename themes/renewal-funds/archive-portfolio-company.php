@@ -25,6 +25,8 @@ get_header();
 			<?php //$terms = get_terms( array( 'taxonomy' => 'portfolio-company-year', ) ); //print_r($terms); ?>
 
 			<?php 
+				$user = wp_get_current_user(); 
+
 				$arg = array( 'taxonomy' => 'portfolio-company-year',
 								'hide_empty' => true, );
 								
