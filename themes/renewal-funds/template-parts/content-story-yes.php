@@ -1,4 +1,4 @@
-<p>content-story-yes.php</p>
+<!--<p>content-story-yes.php</p>-->
 
 <?php gravity_form( $id_or_title = 3, 
 							$display_title = false, 

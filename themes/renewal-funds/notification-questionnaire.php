@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="thanks-page-wrapper">
 
         <div class="thanks-msg">
-            <p>Thanks for Filing in the Questionnaire!</p>
+            <p>Thanks for Filling in the Questionnaire!</p>
         </div>
 
         <div class="thanks-image-wrapper">
