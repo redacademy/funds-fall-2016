@@ -122,12 +122,6 @@ add_action( 'gform_after_submission_3', 'red_starter_add_user_id_to_story_post',
 * Fixes redirect error for acf form submit
 *
 */
-<<<<<<< HEAD
-// function brandpage_form_head(){
-//     acf_form_head();
-// }
-// add_action( 'init', 'brandpage_form_head' );
-=======
 function red_starter_form_head(){
     acf_form_head();
 }
@@ -156,7 +150,7 @@ function red_starter_theme_archive_title( $title ) {
 }
 add_filter( 'get_the_archive_title', 'red_starter_theme_archive_title' );
 
->>>>>>> 84c4a4d3e7885035bf03541010bd7a64e61f141d
+
 
 
 
