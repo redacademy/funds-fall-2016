@@ -5,8 +5,9 @@
  *
 **/?>
 
-<?php acf_form_head(); ?>
+
 <?php get_header(); ?>
+<?php acf_form_head(); ?>
 
 	<div id="primary">
 		<div id="content" role="main">
