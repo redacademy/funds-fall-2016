@@ -14,16 +14,17 @@ get_header(); ?>
                 </div>
             </div>
 
-        <div class="feedback-page container wrap">
+        <div class="feedback-page container">
+
             <div class="feedback-wrapper">
                 <p class="feedback-green-text">How Can We Improve?</p>
-                <p class="feedback-text">We are constantly looking to improve our platform. Your feedback is valuable to us.</p>
-            </div>
+                <p class="feedback-info">We are constantly looking to improve our platform. Your feedback is valuable to us.</p>
 
                 <div class="feedback-form-wrapper">
                     <?php echo get_field('feedback_form');?>
                 </div>
             </div>
+
         </div>
     </main><!-- #main -->
 </div><!-- #primary -->

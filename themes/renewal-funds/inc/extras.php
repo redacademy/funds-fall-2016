@@ -154,6 +154,7 @@ add_filter( 'get_the_archive_title', 'red_starter_theme_archive_title' );
 
 
 
+
 // Styling the Login page
 
 function custom_login() { ?>
@@ -213,7 +214,7 @@ function my_login_logo() { ?>
         }
 
         .login-image {
-            background: url("<?php echo get_template_directory_uri()?>/assets/images/Login.png") no-repeat ;
+            background: url("<?php echo get_template_directory_uri()?>/assets/images/login.png") no-repeat ;
             background-size:cover;
             height: 100%;
             width: 100%;
@@ -278,7 +279,7 @@ function my_login_logo() { ?>
 
         #login input[type="text"] {
             font-size: 1rem;
-            padding: 0.8rem 0;
+            padding: 0.75rem 0;
         }
 
         #login #wp-submit {
@@ -322,7 +323,7 @@ function login_function() {
     add_filter( 'gettext', 'username_change', 20, 3 );
     function username_change( $translated_text, $text, $domain ) 
     {
-        if ($text === 'Username or Email') 
+        if ($text === 'Username or Email Address') 
         {
             $translated_text = 'Email Address';
         }

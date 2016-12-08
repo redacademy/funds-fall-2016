@@ -40,5 +40,8 @@ body {
 
 // to pad down for header
 .site-content {
+    padding-top: 96px;
+    @include desktop {
     padding-top: $desktop-content-padding;
+    }
 }

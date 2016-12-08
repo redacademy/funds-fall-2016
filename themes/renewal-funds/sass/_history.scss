@@ -63,9 +63,9 @@
     display: none;
     @include tablet {
     display: block;
-    }
-    @include desktop {
-        font-size: 1.75rem;
+    // min-height: 175px;
+    // max-height: 175px;
+    // overflow: scroll;
     }
 }
 
