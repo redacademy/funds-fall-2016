@@ -606,6 +606,23 @@ textarea {
   background-color: #d6d6cd;
   border-radius: 25px;
   border: 1px solid #ccc;
+  padding: 1rem 1.5rem;
+  -webkit-border-radius: 25px;
+  -webkit-padding: 1rem 1.5rem;
+  -moz-border-radius: 25px;
+  -moz-padding: 1rem 1.5rem;
+  -o-border-radius: 25px;
+  -o-padding: 1rem 1.5rem;
+  -ms-border-radius: 25px;
+  -ms-padding: 1rem 1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none; }
+
+.post-type-archive-story select {
+  border-radius: 25px;
+  border: 1px solid #ccc;
   padding: 1rem 1.5rem; }
 
 @media (min-width: 1240px) {
