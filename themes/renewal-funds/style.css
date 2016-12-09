@@ -926,7 +926,7 @@ object {
       height: 100%; }
       .header-resize .main-navigation .menu {
         overflow-y: auto;
-        height: 100%; }
+        height: 402px; }
       .header-resize .main-navigation ul {
         display: -ms-flexbox;
         display: flex;

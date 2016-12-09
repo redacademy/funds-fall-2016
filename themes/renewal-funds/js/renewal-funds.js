@@ -1,5 +1,6 @@
 // js file for renewal funds
 (function( $ ) {
+    
     // navigation functions
     $( '.nav-btn' ).on('click',function( event ){
         event.preventDefault();
