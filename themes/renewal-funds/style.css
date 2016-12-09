@@ -654,10 +654,11 @@ a {
     .main-navigation .current-menu-parent > a {
       border-bottom: 3px solid #b0aea5; } }
 
-.single-questionnaire .menu-item-object-questionnaire > a,
-.single-story .menu-item-object-portfolio-company > a,
-.tax-portfolio-company-year .menu-item-object-portfolio-company > a {
-  border-bottom: 3px solid #b0aea5; }
+@media (min-width: 1240px) {
+  .single-questionnaire .menu-item-object-questionnaire > a,
+  .single-story .menu-item-object-portfolio-company > a,
+  .tax-portfolio-company-year .menu-item-object-portfolio-company > a {
+    border-bottom: 3px solid #b0aea5; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -923,6 +924,9 @@ object {
       background-color: #fff; }
     .header-resize .main-navigation {
       height: 100%; }
+      .header-resize .main-navigation .menu {
+        overflow-y: auto;
+        height: 100%; }
       .header-resize .main-navigation ul {
         display: -ms-flexbox;
         display: flex;
@@ -1025,8 +1029,10 @@ object {
   margin: 2rem auto; }
 
 @media (min-width: 1240px) {
-  .content-container .not-found {
-    padding: 1rem 5rem; } }
+  .container .not-found {
+    padding: 1rem 5rem; }
+  .error-content {
+    padding: 0 2rem; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1331,8 +1337,10 @@ body {
 
 .story-section {
   display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem; }
+  display: flex; }
+  @media (min-width: 641px) {
+    .story-section {
+      margin-bottom: 2rem; } }
 
 .story-image-wrapper {
   display: none;
@@ -1356,7 +1364,7 @@ body {
     margin: 0; }
 
 .story-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 900;
   text-decoration: none;
   color: #234300; }
@@ -1379,6 +1387,9 @@ body {
   width: 200px;
   height: 200px;
   background-size: cover; }
+
+.quest-wrapper {
+  padding-left: 260px; }
 
 .single-page-wrapper {
   text-align: center; }
