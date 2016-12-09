@@ -128,7 +128,7 @@ add_action('login_enqueue_scripts','rf_custom_login');
 function rf_login_logo() { ?>
 
    <?php
-	wp_enqueue_style( 'login_styles', get_template_directory_uri(). '../build/css/login-page.css' );
+	wp_enqueue_style( 'login_styles', get_template_directory_uri() . '/assets/css/login-page.css' );
     ?>
 
 <?php }
