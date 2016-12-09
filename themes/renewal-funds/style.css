@@ -548,6 +548,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.post-type-archive-story li {
+  padding-bottom: 1.5rem; }
+
 .post-type-archive-story .gform_body {
   padding: 0.5rem 3rem; }
 
