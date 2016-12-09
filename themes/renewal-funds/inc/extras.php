@@ -22,60 +22,6 @@ add_filter( 'body_class', 'rf_body_classes' );
 
 
 /*
-*
-* Adds relational connection between posts and pages
-*
-*/
-function rf_connection_types() {
-    // portfolio-company to story
-    /*p2p_register_connection_type( array(
-        'name' => 'portfolio_company_to_story',
-        'from' => 'portfolio-company',
-        'to' => 'story',
-        'admin_dropdown' => 'any'
-    ) );
-
-    // portfolio-company to questionnaire
-    p2p_register_connection_type( array(
-        'name' => 'portfolio_company_to_questionnaire',
-        'from' => 'portfolio-company',
-        'to' => 'questionnaire',
-        'admin_dropdown' => 'any'
-    ) );*/
-
-    // portfolio-company to pc_user
-    p2p_register_connection_type( array(
-        'name' => 'portfolio_to_user', //
-        'from' => 'portfolio-company',
-        'to' => 'user',
-        'to_query_vars' => array( 'role' => 'pc_user' ),
-        'admin_dropdown' => 'any'
-    ) );
-
-    // story to pc_user
-    p2p_register_connection_type( array(
-        'name' => 'story_to_user',
-        'from' => 'story',
-        'to' => 'user',
-        'to_query_vars' => array( 'role' => 'pc_user' ),
-        'admin_dropdown' => 'any'
-    ) );
-
-    // questionnaire to pc_user
-    p2p_register_connection_type( array(
-        'name' => 'questionnaire_to_user',
-        'from' => 'questionnaire',
-        'to' => 'user',
-        'to_query_vars' => array( 'role' => 'pc_user' ),
-        'admin_dropdown' => 'any'
-    ) );
-}
-
-// post 2 post connections
-add_action( 'p2p_init', 'rf_connection_types' );
-
-
-/*
  *
  * Removes front end admin bar
  *
