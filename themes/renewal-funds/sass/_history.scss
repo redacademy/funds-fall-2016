@@ -22,7 +22,9 @@
 
 .story-section {
     display: flex;
+    @include tablet {
     margin-bottom: 2rem;
+    }
 }
 
 .story-image-wrapper {
@@ -48,7 +50,7 @@
 }
 
 .story-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 900;
     text-decoration: none;
     color: $color__brand-color-dgreen;
@@ -73,4 +75,8 @@
     width: 200px;
     height: 200px;
     background-size: cover;
+}
+
+.quest-wrapper {
+    padding-left: 260px;
 }

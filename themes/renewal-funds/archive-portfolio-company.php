@@ -53,14 +53,15 @@ get_header();
 										
 			<!--<pre>
 				<?php //print_r( $story_posts );?>	
-			</pre>-->	
+			</pre>-->
+			<div class="history-page-wrapper">
 			
 			<h2 class="container">Stories:</h2>
 
 			<?php if ( $story_posts->have_posts() ) : ?>
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
-					<div class="container wrap">
+					<div class="container">
 
 						<ul class="story-section-wrapper">
 							<li class="story-section">
@@ -100,7 +101,7 @@ get_header();
 			<h2>Questionnaires</h2>
 
 			<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
-				<div>
+				<div class="quest-wrapper">
 					<a href="<?php echo get_permalink(); ?>">
 						<?php the_title(); ?>
 					</a>
@@ -108,6 +109,7 @@ get_header();
 			<?php endwhile;
 
 			wp_reset_postdata(); ?> 
+			</div>
 		
 		</main><!-- #main -->
 	</div><!-- #primary -->
