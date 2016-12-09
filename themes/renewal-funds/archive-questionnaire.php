@@ -2,14 +2,13 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<p>archive-questionnaire.php</p>
+		<!--<p>archive-questionnaire.php</p>-->
 
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">

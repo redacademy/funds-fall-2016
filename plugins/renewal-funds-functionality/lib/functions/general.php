@@ -24,6 +24,8 @@ class RF_General {
       // Customize post type UI
       add_filter( 'post_updated_messages', array( $this, 'set_updated_messages' ) );
 
+      // post 2 post connections
+     add_action( 'p2p_init', array( $this, 'rf_connection_types') );
    }
 
    /**
@@ -138,6 +140,55 @@ class RF_General {
       return $messages;
    }
 
+   /*
+    *
+    * Adds relational connection between posts and pages
+    *
+    */
+   public function rf_connection_types() {
+        // portfolio-company to story
+        /*p2p_register_connection_type( array(
+            'name' => 'portfolio_company_to_story',
+            'from' => 'portfolio-company',
+            'to' => 'story',
+            'admin_dropdown' => 'any'
+        ) );
+
+        // portfolio-company to questionnaire
+        p2p_register_connection_type( array(
+            'name' => 'portfolio_company_to_questionnaire',
+            'from' => 'portfolio-company',
+            'to' => 'questionnaire',
+            'admin_dropdown' => 'any'
+        ) );*/
+
+        // portfolio-company to pc_user
+        p2p_register_connection_type( array(
+            'name' => 'portfolio_to_user', //
+            'from' => 'portfolio-company',
+            'to' => 'user',
+            'to_query_vars' => array( 'role' => 'pc_user' ),
+            'admin_dropdown' => 'any'
+        ) );
+
+        // story to pc_user
+        p2p_register_connection_type( array(
+            'name' => 'story_to_user',
+            'from' => 'story',
+            'to' => 'user',
+            'to_query_vars' => array( 'role' => 'pc_user' ),
+            'admin_dropdown' => 'any'
+        ) );
+
+        // questionnaire to pc_user
+        p2p_register_connection_type( array(
+            'name' => 'questionnaire_to_user',
+            'from' => 'questionnaire',
+            'to' => 'user',
+            'to_query_vars' => array( 'role' => 'pc_user' ),
+            'admin_dropdown' => 'any'
+        ) );
+    }
 }
 
 new RF_General();

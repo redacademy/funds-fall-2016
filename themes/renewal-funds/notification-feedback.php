@@ -1,12 +1,14 @@
 <?php 
-/* 
+/*
+*
 * Template Name: Notification Feedback 
+*
 */ 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<p>notification-feedback.php</p>
+		<!--<p>notification-feedback.php</p>-->
 
         <div class="thanks-page-wrapper">
 

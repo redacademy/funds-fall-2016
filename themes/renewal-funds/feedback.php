@@ -1,5 +1,9 @@
-<?php /* Template Name: Feedback Page */
-
+<?php
+/*
+ *
+ * Template Name: Feedback Page
+ *
+ */
 get_header(); ?>
 
 <div id="primary-feedback" class="content-area-feedback">

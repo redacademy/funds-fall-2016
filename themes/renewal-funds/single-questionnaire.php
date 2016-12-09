@@ -3,10 +3,9 @@
  *
  * Template Name: Questionnaire
  *
-**/?>
-
-<?php acf_form_head(); ?>
-<?php get_header(); ?>
+*/
+ 	acf_form_head();
+	get_header(); ?>
 
 	<div id="primary">
 		<div id="content" role="main">

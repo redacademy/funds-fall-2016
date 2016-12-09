@@ -654,10 +654,11 @@ a {
     .main-navigation .current-menu-parent > a {
       border-bottom: 3px solid #b0aea5; } }
 
-.single-questionnaire .menu-item-object-questionnaire > a,
-.single-story .menu-item-object-portfolio-company > a,
-.tax-portfolio-company-year .menu-item-object-portfolio-company > a {
-  border-bottom: 3px solid #b0aea5; }
+@media (min-width: 1240px) {
+  .single-questionnaire .menu-item-object-questionnaire > a,
+  .single-story .menu-item-object-portfolio-company > a,
+  .tax-portfolio-company-year .menu-item-object-portfolio-company > a {
+    border-bottom: 3px solid #b0aea5; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -923,6 +924,9 @@ object {
       background-color: #fff; }
     .header-resize .main-navigation {
       height: 100%; }
+      .header-resize .main-navigation .menu {
+        overflow-y: auto;
+        height: 100%; }
       .header-resize .main-navigation ul {
         display: -ms-flexbox;
         display: flex;
@@ -1025,8 +1029,10 @@ object {
   margin: 2rem auto; }
 
 @media (min-width: 1240px) {
-  .content-container .not-found {
-    padding: 1rem 5rem; } }
+  .container .not-found {
+    padding: 1rem 5rem; }
+  .error-content {
+    padding: 0 2rem; } }
 
 /*--------------------------------------------------------------
 # Page Templates

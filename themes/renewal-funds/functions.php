@@ -1,10 +1,9 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * RF Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
@@ -107,3 +106,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+require get_template_directory() . '/inc/hide-default-posts.php';

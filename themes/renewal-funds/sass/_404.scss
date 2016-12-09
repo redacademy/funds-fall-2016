@@ -33,7 +33,10 @@
 }
 
 @include desktop {
-    .content-container .not-found {
+    .container .not-found {
         padding: 1rem 5rem;
+    }
+    .error-content {
+        padding: 0 2rem;
     }
 }
