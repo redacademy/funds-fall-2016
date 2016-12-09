@@ -123,10 +123,10 @@ add_action( 'gform_after_submission_3', 'red_starter_add_user_id_to_story_post',
 *
 */
 
-// function red_starter_form_head(){
-//     acf_form_head();
-// }
-// add_action( 'init', 'red_starter_form_head' );
+function red_starter_form_head(){
+     acf_form_head();
+}
+add_action( 'init', 'red_starter_form_head' );
 
 
 /*
