@@ -73,8 +73,9 @@
     }
     .main-navigation {
         height: 100%;
-        .menu {overflow-y: auto;
-        height: 100%;}
+        .menu {
+            overflow-y: auto;
+        }
         ul {
             display: flex;
             flex-direction: column;
@@ -82,6 +83,7 @@
         li {
             width: 100%;
             border-bottom: 3px solid $color__brand-color-lgray;
+            height: 64px;
         }
         a {
             color: $color__text-main;
@@ -95,10 +97,19 @@
             width: 32px;
         }
         span {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            padding: 1.3rem 0;
+        }
+        .logout {
+            img {
+                margin-left: 12px;
+            }
+            a {
             position: absolute;
             transform: translate(0,-50%);
             top: 50%;
+            left: 48px;
+            }
         }
     }
 }
