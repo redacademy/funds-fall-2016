@@ -12,7 +12,7 @@
         $( '.site-header' ).removeClass( 'header-resize' );
     });
 
-    $( '.acf-input-wrap input' ).prop( "disabled", true ); 
+    $( '.acf-input-wrap input' ).prop( 'disabled', true ); 
 
     //$( '.acf-form' ).css( 'background-color: white'); 
 })(jQuery);
