@@ -103,13 +103,13 @@
 
         #login input[type="text"] {
             font-size: 1rem;
-            padding: 0.75rem 0;
+            padding: 0.7rem 0;
         }
 
         #login #wp-submit {
             border-radius: 12px;
             border: none;
-            background-color: #90b531;
+            background-color: red;
             color: #fff;
             text-shadow: none;
             box-shadow: none;
