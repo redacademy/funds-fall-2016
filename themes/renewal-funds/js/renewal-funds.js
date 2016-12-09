@@ -13,13 +13,6 @@
     });
 
     $( '.acf-input-wrap input' ).prop( "disabled", true ); 
+
+    //$( '.acf-form' ).css( 'background-color: white'); 
 })(jQuery);
-
-(function($){
-    $( '.sub-menu' ).hide();
-
-    $( '#menu-item-44' ).on( 'click',function( event ){
-        event.preventDefault();
-        $('.sub-menu').show();
-    });
-})(jQuery);//
