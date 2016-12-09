@@ -22,6 +22,8 @@
     var scrollbarHeight = height - 200;
     // console.log(scrollbarHeight);
     // $('.header-resize .main-navigation .menu').css('max-height', scrollbarHeight);
+
+    $(window).resize(function(){location.reload();});
     
     //$( '.acf-form' ).css( 'background-color: white'); 
 })(jQuery);
