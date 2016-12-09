@@ -48,6 +48,12 @@
     font-weight: 900;
     text-decoration: none;
     color: $color__brand-color-dgreen;
+    &:hover {
+        color: $color__brand-color-olive;
+    }
+    &:visited {
+        color: $color__brand-color-dgreen;
+    }
     @include desktop {
     font-size: 2rem;
     }

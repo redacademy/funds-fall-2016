@@ -1379,6 +1379,10 @@ body {
   font-weight: 900;
   text-decoration: none;
   color: #234300; }
+  .story-title:hover {
+    color: #536048; }
+  .story-title:visited {
+    color: #234300; }
   @media (min-width: 1240px) {
     .story-title {
       font-size: 2rem; } }
