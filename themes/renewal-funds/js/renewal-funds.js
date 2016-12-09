@@ -23,7 +23,10 @@
     // console.log(scrollbarHeight);
     // $('.header-resize .main-navigation .menu').css('max-height', scrollbarHeight);
 
-    $(window).resize(function(){location.reload();});
+    $(window).resize(function(){
+        $( '.site-header' ).removeClass( 'header-resize' );
+        scrollbarHeight = $(window).height() - 200;
+    });
     
     //$( '.acf-form' ).css( 'background-color: white'); 
 })(jQuery);
