@@ -14,32 +14,32 @@ get_header();
 		<p>archive-portfolio-company.php</p>
 
 		<!--portfolio company year -->
-		<header class="page-header">	
+		<!--<header class="page-header">	
 			<div class="history-page-wrapper">
-				<h1>History</h1>
+				<h1>History</h1>-->
 
 				<?php 
-					$user = wp_get_current_user(); 
+					/*$user = wp_get_current_user(); 
 
 					$arg = array( 'taxonomy' => 'portfolio-company-year',
 									'hide_empty' => true, );
 									
-					$terms = get_terms( $arg );
+					$terms = get_terms( $arg );*/
 				?>
 
-				<div class="portfolio-company-year-style">
+				<!--<div class="portfolio-company-year-style">
 					<ul>
-						<?php foreach ( $terms as $term ) : ?>
-							<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
-						<?php endforeach; ?>
+						<?php //foreach ( $terms as $term ) : ?>
+							<li><a href="<?php //echo get_term_link($term); ?>"><?php //echo $term->name; ?></a></li>
+						<?php //endforeach; ?>
 					</ul>
 
 					<?php
-						the_archive_description( '<div e="taxonomy-description">', '</div>' );
+						//the_archive_description( '<div e="taxonomy-description">', '</div>' );
 					?>
-				</div>
+				</div>-->
 			
-		</header><!-- .page-header -->	
+		<!--</header>-->
 
 
 		<!-- portfolio company items by user id -->
@@ -69,11 +69,10 @@ get_header();
 							<li class="story-section">
 								<div class="story-image-wrapper">
 									<?php
-									$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+										$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
 									?>
 									<a href="<?php echo get_permalink(); ?>">
-									<div class="story-thumbnail" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;">
-									</div>
+										<div class="story-thumbnail" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;"></div>
 									</a>
 								</div>
 								
