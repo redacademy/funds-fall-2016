@@ -23,7 +23,6 @@ class RF_General {
 
       // Customize post type UI
       add_filter( 'post_updated_messages', array( $this, 'set_updated_messages' ) );
-
    }
 
    /**
@@ -137,7 +136,6 @@ class RF_General {
 
       return $messages;
    }
-
 }
 
 new RF_General();
