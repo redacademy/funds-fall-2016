@@ -48,6 +48,7 @@
 .feedback-page {
     @include desktop {
     width: 35%;
+    margin-left: 2rem;
     }
 }
 
@@ -62,7 +63,7 @@
 }
 
 .feedback-green-text {
-    color: $color__brand-color-green;
+    color: black;
     font-size: 2rem;
     text-align: center;
     font-weight: 500;

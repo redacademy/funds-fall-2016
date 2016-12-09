@@ -347,7 +347,8 @@ big {
 
 @media (min-width: 1240px) {
   .page-template-feedback .feedback-page {
-    width: 35%; } }
+    width: 35%;
+    margin-left: 2rem; } }
 
 .page-template-feedback .feedback-wrapper {
   display: -ms-flexbox;
@@ -361,7 +362,7 @@ big {
   display: none; }
 
 .page-template-feedback .feedback-green-text {
-  color: #4b711c;
+  color: black;
   font-size: 2rem;
   text-align: center;
   font-weight: 500;
@@ -1047,6 +1048,16 @@ body {
   font-style: normal;
   font-stretch: normal; }
 
+.page-header {
+  font-size: 1.25rem;
+  font-weight: 900; }
+  @media (min-width: 641px) {
+    .page-header {
+      font-size: 1.5rem; } }
+  @media (min-width: 1240px) {
+    .page-header {
+      font-size: 2rem; } }
+
 .container {
   max-width: 656px;
   margin: 0 auto; }
@@ -1319,11 +1330,6 @@ body {
 .history-page-wrapper {
   text-align: center;
   font-size: 1.5rem; }
-  .history-page-wrapper h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    text-align: center;
-    padding: 2rem; }
   @media (min-width: 641px) {
     .history-page-wrapper {
       text-align: left;
@@ -1386,10 +1392,21 @@ body {
 .story-thumbnail {
   width: 200px;
   height: 200px;
-  background-size: cover; }
+  background-size: cover;
+  border: 1px solid #b0aea5; }
 
-.quest-wrapper {
-  padding-left: 260px; }
+@media (min-width: 641px) {
+  .quest-wrapper {
+    padding-left: 235px;
+    font-size: 1.3rem;
+    font-weight: 900; } }
+
+@media (min-width: 1240px) {
+  .quest-wrapper {
+    font-size: 2rem; } }
+
+.quest-wrapper a {
+  text-decoration: none; }
 
 .single-page-wrapper {
   text-align: center; }
@@ -1412,7 +1429,7 @@ body {
 .single-title {
   text-align: center;
   font-size: 1.8rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   font-weight: 900; }
   @media (min-width: 641px) {
     .single-title {
