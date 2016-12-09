@@ -12,6 +12,7 @@ get_header();
 		<p>archive-portfolio-company.php</p>
 
 		<!--portfolio company year -->
+		<div class="history-page-wrapper wrap container">
 		<header class="page-header">	
 			<h1>History</h1>
 
@@ -54,7 +55,7 @@ get_header();
 			<!--<pre>
 				<?php //print_r( $story_posts );?>	
 			</pre>-->
-			<div class="history-page-wrapper">
+			
 			
 			<h2 class="container">Stories:</h2>
 
@@ -97,18 +98,19 @@ get_header();
 											'suppress_filters' => false,
 											'nopaging' => true,
 											));	?>
+			<div class="wrap container">
+				<h2 class="container">Questionnaires</h2>
 
-			<h2>Questionnaires</h2>
+				<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+					<div class="quest-wrapper">
+						<a class="story-title" href="<?php echo get_permalink(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</div>
+				<?php endwhile;
 
-			<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
-				<div class="quest-wrapper">
-					<a href="<?php echo get_permalink(); ?>">
-						<?php the_title(); ?>
-					</a>
+				wp_reset_postdata(); ?> 
 				</div>
-			<?php endwhile;
-
-			wp_reset_postdata(); ?> 
 			</div>
 		
 		</main><!-- #main -->

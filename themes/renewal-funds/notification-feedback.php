@@ -10,10 +10,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<!--<p>notification-feedback.php</p>-->
 
-        <div class="thanks-page-wrapper">
+        <div class="thanks-page-wrapper wrap container">
 
-        <div class="thanks-msg">
-            <p>Thanks for your Feedback!</p>
+        <div class="page-header">
+            <h1>Thanks for your Feedback!</h1>
         </div>
 
         <div class="thanks-image-wrapper">

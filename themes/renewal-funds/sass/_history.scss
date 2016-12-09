@@ -1,12 +1,6 @@
 .history-page-wrapper {
     text-align: center;
     font-size: 1.5rem;
-    h1 {
-        font-size: 2.5rem;
-        margin: 0;
-        text-align: center;
-        padding: 2rem;
-        }
     @include tablet {
         text-align: left;
         max-width: 1240px;
@@ -54,6 +48,12 @@
     font-weight: 900;
     text-decoration: none;
     color: $color__brand-color-dgreen;
+    &:hover {
+        color: $color__brand-color-olive;
+    }
+    &:visited {
+        color: $color__brand-color-dgreen;
+    }
     @include desktop {
     font-size: 2rem;
     }
@@ -75,8 +75,19 @@
     width: 200px;
     height: 200px;
     background-size: cover;
+    border: 1px solid $color__brand-color-gray;
 }
 
 .quest-wrapper {
-    padding-left: 260px;
+    @include tablet {
+    padding-left: 235px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    }
+    @include desktop {
+        font-size: 2rem;
+    }
+    a {
+        text-decoration: none;
+    }
 }

@@ -3,7 +3,7 @@
 	<div class="page-content">
     <div class="thanks-page-wrapper">
 
-        <div class="error-header">
+        <div class="page-header">
             <p>Hmmm...</p>
             <span class="error-header-message"><p>seems like there's no stories yet</p></span>
         </div>

@@ -19,8 +19,8 @@
         }
         #nav {
             position: absolute !important;
-            top: 330px;
-            right: 26px;
+            top: 324px;
+            right: 5px;
         }
 
         .login #nav {
@@ -78,7 +78,7 @@
             background-color: white;
             position: absolute;
             top: 75px;
-            right: 50px;
+            right: 40px;
             font-weight: 400;
         }
 
@@ -92,7 +92,7 @@
         }
 
         #login input {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             padding: 2%;
             border-radius: 18px;
@@ -115,8 +115,7 @@
             box-shadow: none;
             font-size: 1.6rem;
             width: 70%;
-            margin-right: 56px;
-            margin-top: 50px;
+            margin: 25px 45px 0 0;
             height: auto !important;
             line-height: normal !important;
         }
