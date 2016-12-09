@@ -9,32 +9,32 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<!--<p>archive-portfolio-company.php</p>-->
+		<p>archive-portfolio-company.php</p>
 
 		<!--portfolio company year -->
 		<header class="page-header">	
 			<h1>History</h1>
 
 			<?php 
-				/*$user = wp_get_current_user(); 
+				$user = wp_get_current_user(); 
 
 				$arg = array( 'taxonomy' => 'portfolio-company-year',
 								'hide_empty' => true, );
 								
-				$terms = get_terms( $arg );*/
+				$terms = get_terms( $arg );
 			?>
 
-			<!--<div class="portfolio-company-year-style">
+			<div class="portfolio-company-year-style">
 				<ul>
-					<?php //foreach ( $terms as $term ) : ?>
-						<li><a href="<?php //echo get_term_link($term); ?>"><?php //echo $term->name; ?></a></li>
-					<?php //endforeach; ?>
+					<?php foreach ( $terms as $term ) : ?>
+						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+					<?php endforeach; ?>
 				</ul>
 
 				<?php
-					//the_archive_description( '<div e="taxonomy-description">', '</div>' );
+					the_archive_description( '<div e="taxonomy-description">', '</div>' );
 				?>
-			</div>-->
+			</div>
 			
 		</header>
 
