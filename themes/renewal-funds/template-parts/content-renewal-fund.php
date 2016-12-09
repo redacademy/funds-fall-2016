@@ -1,7 +1,7 @@
 
 <?php
 get_header(); ?>
-<p>content-renewal-fund.php</p>
+<!--<p>content-renewal-fund.php</p>-->
 
 <section class="welcome-page container">
 

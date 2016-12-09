@@ -1,10 +1,9 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * RF Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :

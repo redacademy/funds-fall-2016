@@ -1,9 +1,9 @@
 <?php
- /**
+ /*
  *
  * Template Name: Portfolio Company
  *
-**/
+*/
 get_header(); ?>
 
 	<div id="primary" class="content-area">
