@@ -73,8 +73,7 @@
     }
     .main-navigation {
         height: 100%;
-        .menu {overflow-y: auto;
-        height: 402px;}
+        .menu {overflow-y: auto;}
         ul {
             display: flex;
             flex-direction: column;
