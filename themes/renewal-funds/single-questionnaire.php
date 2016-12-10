@@ -9,11 +9,11 @@
 
 	<div id="primary">
 		<div id="content" role="main">
-			<div class="container">
+			<div class="container wrap">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<!--<p>single-questionnaire.php</p>-->
 
-			<header class="entry-header">
+			<header class="page-header">
 				<h1><?php the_title(); ?></h1>
 			</header><!-- .entry-header -->
 

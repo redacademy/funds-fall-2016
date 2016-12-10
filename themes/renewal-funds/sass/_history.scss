@@ -38,6 +38,11 @@
     @include tablet {
         margin-left: 2rem;
     }
+    a {
+        &:hover {
+        color: $color__brand-color-olive;
+    }
+    }
     ul {
         margin: 0;
     }
@@ -48,9 +53,6 @@
     font-weight: 900;
     text-decoration: none;
     color: $color__brand-color-dgreen;
-    &:hover {
-        color: $color__brand-color-olive;
-    }
     &:visited {
         color: $color__brand-color-dgreen;
     }

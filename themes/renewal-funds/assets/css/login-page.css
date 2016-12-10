@@ -68,6 +68,8 @@
             top: 127px;
             right: 80px;
             padding: 0 !important;
+            border: none !important;
+            color: red;
         }
 
         #login h1:before {
