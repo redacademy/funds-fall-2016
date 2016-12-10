@@ -85,10 +85,9 @@ get_header();
 						</ul>
 
 					</div>
-				<?php endwhile; 	
+				<?php endwhile;
 
 				wp_reset_postdata();
-
 			endif;
 
 			// questionnaires
@@ -99,7 +98,7 @@ get_header();
 											'nopaging' => true,
 											));	?>
 			<div class="wrap container">
-				<h2 class="container">Questionnaires</h2>
+				<h2 class="container">Questionnaires:</h2>
 
 				<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
 					<div class="quest-wrapper">

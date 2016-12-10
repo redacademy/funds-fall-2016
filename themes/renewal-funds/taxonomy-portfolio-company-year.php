@@ -20,7 +20,7 @@ get_header(); ?>
             </header><!-- .page-header -->
 
             <div class="stories">
-                <h2>Stories</h2>
+                <h2>Stories:</h2>
                 <?php 
                 $user = wp_get_current_user();
                 $story_posts = new WP_Query( array(
