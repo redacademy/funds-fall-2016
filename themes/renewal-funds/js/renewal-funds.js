@@ -16,7 +16,6 @@
 
     $( '.acf-input-wrap input' ).prop( 'disabled', true ); 
 
-    
     var height = $(window).height();
     // console.log(height);
     var scrollbarHeight = height - 200;
