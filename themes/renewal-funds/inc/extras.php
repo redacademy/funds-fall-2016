@@ -40,12 +40,12 @@ add_action('after_setup_theme', 'rf_remove_admin_bar');
 *
 */
 function rf_add_login_logout_link($items, $args) {         
-    ob_start();         
+    ob_start(); 
     wp_loginout('index.php');         
-    $loginoutlink = ob_get_contents();    
-    ob_end_clean();         
-    $items .= '<li class="logout"><img src="' . get_template_directory_uri() . '/assets/icons/svg/logout_icon.svg" />' . $loginoutlink . '</li>';     
-    return $items; 
+    $loginoutlink = ob_get_contents(); 
+    ob_end_clean();
+    $items .= '<li class="logout"><img src="' . get_template_directory_uri() . '/assets/icons/svg/logout_icon.svg" />' . $loginoutlink . '</li>';
+    return $items;
 }
 add_filter('wp_nav_menu_items', 'rf_add_login_logout_link', 10, 2);
 
@@ -69,7 +69,6 @@ add_action( 'gform_after_submission_3', 'rf_add_user_id_to_story_post', 10, 2 );
 * Fixes redirect error for acf form submit
 *
 */
-
 function rf_form_head(){
      acf_form_head();
 }
@@ -101,7 +100,7 @@ add_filter( 'get_the_archive_title', 'rf_theme_archive_title' );
 
 /*
 *
-* Styling the Login page
+* Styling the login page
 *
 */
 function rf_custom_login() { ?>
@@ -127,8 +126,8 @@ add_action('login_enqueue_scripts','rf_custom_login');
 */
 function rf_login_logo() { ?>
 
-   <?php
-	wp_enqueue_style( 'login_styles', get_template_directory_uri() . '/assets/css/login-page.css' );
+    <?php
+	    wp_enqueue_style( 'login_styles', get_template_directory_uri() . '/assets/css/login-page.css' );
     ?>
 
 <?php }

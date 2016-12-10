@@ -46,8 +46,9 @@ get_header(); ?>
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
 										'nopaging' => true,
-										//'orderby' => 'asc',
-										//'posts_per_page' => 3,
+										'orderby' => 'post_date',
+                               			'order' => 'DESC',
+										'posts_per_page' => 5,
 										));	
 										
 			wp_reset_postdata();
@@ -58,8 +59,9 @@ get_header(); ?>
 											'connected_items' => $user->ID,
 											'suppress_filters' => false,
 											'nopaging' => true,
-											//'orderby' => 'desc',
-											//'posts_per_page' => 3,
+											'orderby' => 'post_date',
+                               				'order' => 'DESC',
+											'posts_per_page' => 5,
 											));	
 
 			wp_reset_postdata();								

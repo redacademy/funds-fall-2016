@@ -8,7 +8,7 @@
                         'nopaging' => true
                 ) );
 
-     //print_r($posts);           
+    wp_reset_postdata();     
 
     $pc_company_name = get_the_title($posts[0]);
 ?>
@@ -29,9 +29,31 @@
                         </div></a>
                         <p>Share your Story</p>
                     </div>
+                    
+                    <?php 
+
+                        $questionnaire_posts = new WP_Query( array(
+                                                'connected_type' => 'questionnaire_to_user',
+                                                'connected_items' => $user->ID,
+                                                'suppress_filters' => false,
+                                                'nopaging' => true,
+                                                'posts_per_page' => 1,
+                                                ) ); 
+                                                
+                        wp_reset_postdata();
+
+                        //if( $questionnaire_posts->have_posts() ){
+                            //wp_redirect( get_permalink( $questionnaire_posts->post->ID ) );
+                            //exit;
+                        //}
+
+                        // get_post_type_archive_link('questionnaire')
+
+                        ; 
+                     ?>
 
                     <div class="nav-icon-wrapper">
-                        <a href="<?php echo get_post_type_archive_link('questionnaire'); ?>"><div class="nav-icon">
+                        <a href="<?php echo get_permalink( $questionnaire_posts->post->ID ) ; ?>"><div class="nav-icon">
                             <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/fill_questionnaire_icon.png" alt="Fill Quest logo">
                         </div></a>
                         <p>Respond to Questionnaire</p>
