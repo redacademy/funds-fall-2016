@@ -87,3 +87,28 @@
     font-size: 1.5rem !important;
     font-weight: bold;
 }
+
+.post-type-archive-questionnaire {
+
+    .entry-header {
+        a {
+            text-align: center;
+            color: $color__brand-color-dgreen;
+            &:hover {
+                color: $color__brand-color-olive;
+            }
+            &visited {
+                color: $color__brand-color-dgreen;
+            }
+        }
+    }
+    .entry-title {
+        text-align: center;
+    }
+
+    .site-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -81,11 +81,11 @@
     font-size: 1.2rem;
     text-align: center;
     @include tablet {
-        width: 50%;
-        font-size: 1.5rem;
+        width: 60%;
+        font-size: 1.75rem;
     }
     @include desktop {
-        width: 75%;
+        width: 100%;
     }
 }
 

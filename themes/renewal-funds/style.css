@@ -380,11 +380,11 @@ big {
   text-align: center; }
   @media (min-width: 641px) {
     .page-template-feedback .feedback-info {
-      width: 50%;
-      font-size: 1.5rem; } }
+      width: 60%;
+      font-size: 1.75rem; } }
   @media (min-width: 1240px) {
     .page-template-feedback .feedback-info {
-      width: 75%; } }
+      width: 100%; } }
 
 .page-template-feedback .feedback-text {
   padding: 0 2rem; }
@@ -1281,6 +1281,22 @@ body {
 .acf-input-wrap input {
   font-size: 1.5rem !important;
   font-weight: bold; }
+
+.post-type-archive-questionnaire .entry-header a {
+  text-align: center;
+  color: #234300; }
+  .post-type-archive-questionnaire .entry-header a:hover {
+    color: #536048; }
+  .post-type-archive-questionnaire .entry-header avisited {
+    color: #234300; }
+
+.post-type-archive-questionnaire .entry-title {
+  text-align: center; }
+
+.post-type-archive-questionnaire .site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .thanks-page-wrapper {
   display: -ms-flexbox;
