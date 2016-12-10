@@ -19,15 +19,16 @@ get_header(); ?>
                 ?>
             </header><!-- .page-header -->
 
-            <div class="stories">
-                <h2>Stories</h2>
-                <?php 
+            <?php 
                 $user = wp_get_current_user();
+
+                // stories
                 $story_posts = new WP_Query( array(
                                                 'connected_type' => 'story_to_user',
                                                 'connected_items' => $user->ID,
                                                 'suppress_filters' => false,
                                                 'nopaging' => true,
+                                                'orderby' => 'desc',
                                                 'tax_query' => array(
                                                                     array(
                                                                         'taxonomy' => 'portfolio-company-year',
@@ -36,41 +37,16 @@ get_header(); ?>
                                                                     ),
                                                                 ),
                                                 ) );
-            
-                while ( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
 
-                    <div class="">
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <header class="entry-header">
-                                <!--images and url-->
-                                <div class="thumbnail-wrapper">
-                                    <a href="<?php //echo get_permalink(); ?> ">
-                                        <?php //if ( has_post_thumbnail() ) : ?>
-                                            <?php //the_post_thumbnail( 'large' ); ?>
-                                        <?php //endif; ?>
-                                    </a>
-                                </div>
+                wp_reset_postdata();
 
-                                <!--title and price-->
-                                <div class="">
-                                    <div class=""><?php the_title(); ?></div>
-                                </div>
-                            </header><!-- .entry-header -->
-                        </article><!-- #post-## -->
-                    </div><!--  -->
-
-                <?php endwhile; ?>
-            </div><!-- stories -->
-
-            <div class="questionnaires">
-                <h2>Questionnaires:</h2>
-                <?php 
-                $user = wp_get_current_user();
-                $story_posts = new WP_Query( array(
+                // quesionnaires
+                $questionnaire_posts = new WP_Query( array(
                                                 'connected_type' => 'questionnaire_to_user',
                                                 'connected_items' => $user->ID,
                                                 'suppress_filters' => false,
                                                 'nopaging' => true,
+                                                'orderby' => 'desc',
                                                 'tax_query' => array(
                                                                     array(
                                                                         'taxonomy' => 'portfolio-company-year',
@@ -78,34 +54,62 @@ get_header(); ?>
                                                                         'terms' => get_the_archive_description(),
                                                                     ),
                                                                 ),
-                                                ) );
-            
-                    while ( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
+                                                ) ); 
+                                                
+                wp_reset_postdata(); ?>
 
-                    <div class="">
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <header class="entry-header">
-                                <!--images and url-->
-                                <div class="thumbnail-wrapper">
-                                    <a href="<?php //echo get_permalink(); ?> ">
-                                        <?php //if ( has_post_thumbnail() ) : ?>
-                                            <?php //the_post_thumbnail( 'large' ); ?>
-                                        <?php //endif; ?>
-                                    </a>
-                                </div>
+                <!-- portfolio company items by user id and taxonomy -->
+                <div class="stories">
+                    
+                <?php if ( $story_posts->have_posts() ) : ?>
+				<h2 class="container">Stories:</h2>
 
-                                <!--title and price-->
-                                <div class="">
-                                    <div class=""><?php the_title(); ?></div>
-                                </div>
-                            </header><!-- .entry-header -->
-                        </article><!-- #post-## -->
-                    </div><!--  -->
+				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
+					<div class="container">
 
-                <?php endwhile; ?>
-            </div><!-- stories -->
-            
-            <?php //the_posts_navigation(); ?>
+						<ul class="story-section-wrapper">
+							<li class="story-section">
+								<div class="story-image-wrapper">
+									<?php
+										$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+									?>
+									<a href="<?php echo get_permalink(); ?>">
+										<div class="story-thumbnail" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;"></div>
+									</a>
+								</div>
+								
+								<div class="story-wrapper">
+									<a class="story-title" href="<?php echo get_permalink(); ?>">
+										<?php the_title(); ?>
+									</a>
+									<p class="story-text"><?php the_field('story_body'); ?></p>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+				<?php endwhile;
+				
+			endif; 
+
+			// questionnaires ?>
+
+			<div class="wrap container">
+				<?php if( $questionnaire_posts->have_posts() ) : ?>
+					<h2 class="container">Questionnaires:</h2>
+
+					<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+						<div class="quest-wrapper">
+							<a class="story-title" href="<?php echo get_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</div>
+					<?php endwhile;
+				endif; ?>	
+			</div>
+                
+
+                
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>

@@ -3,16 +3,14 @@
  * The template for displaying archive pages.
  *
  */
+get_header(); ?>
 
-get_header(); 
-	//$portfolio_company = get_queried_object(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+	<p>archive-portfolio-company.php</p>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-		<p>archive-portfolio-company.php</p>
-
-		<!--portfolio company year -->
-		<div class="history-page-wrapper wrap container">
+	<!--portfolio company year -->
+	<div class="history-page-wrapper wrap container">
 		<header class="page-header">	
 			<h1>History</h1>
 
@@ -35,10 +33,8 @@ get_header();
 				<?php
 					the_archive_description( '<div e="taxonomy-description">', '</div>' );
 				?>
-			</div>
-			
+			</div>		
 		</header>
-
 
 		<!-- portfolio company items by user id -->
 		<?php 
@@ -50,16 +46,26 @@ get_header();
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
 										'nopaging' => true,
-										));	?>
+										//'orderby' => 'asc',
+										//'posts_per_page' => 3,
+										));	
 										
-			<!--<pre>
-				<?php //print_r( $story_posts );?>	
-			</pre>-->
-			
-			
-			<h2 class="container">Stories:</h2>
+			wp_reset_postdata();
 
-			<?php if ( $story_posts->have_posts() ) : ?>
+			// questionnaires
+			$questionnaire_posts = new WP_Query( array(
+											'connected_type' => 'questionnaire_to_user',
+											'connected_items' => $user->ID,
+											'suppress_filters' => false,
+											'nopaging' => true,
+											//'orderby' => 'desc',
+											//'posts_per_page' => 3,
+											));	
+
+			wp_reset_postdata();								
+			
+			if ( $story_posts->have_posts() ) : ?>
+				<h2 class="container">Stories:</h2>
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
 					<div class="container">
@@ -85,35 +91,28 @@ get_header();
 						</ul>
 
 					</div>
-				<?php endwhile; 	
-
-				wp_reset_postdata();
-
-			endif;
-
-			// questionnaires
-			$questionnaire_posts = new WP_Query( array(
-											'connected_type' => 'questionnaire_to_user',
-											'connected_items' => $user->ID,
-											'suppress_filters' => false,
-											'nopaging' => true,
-											));	?>
-			<div class="wrap container">
-				<h2 class="container">Questionnaires</h2>
-
-				<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
-					<div class="quest-wrapper">
-						<a class="story-title" href="<?php echo get_permalink(); ?>">
-							<?php the_title(); ?>
-						</a>
-					</div>
 				<?php endwhile;
+				
+			endif; 
 
-				wp_reset_postdata(); ?> 
-				</div>
+			// questionnaires ?>
+
+			<div class="wrap container">
+				<?php if( $questionnaire_posts->have_posts() ) : ?>
+					<h2 class="container">Questionnaires:</h2>
+
+					<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+						<div class="quest-wrapper">
+							<a class="story-title" href="<?php echo get_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</div>
+					<?php endwhile;
+				endif; ?>	
 			</div>
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
+		</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
