@@ -27,7 +27,7 @@ add_filter( 'body_class', 'rf_body_classes' );
  *
  */
 function rf_remove_admin_bar() {
-    if (!current_user_can('administrator') && !is_admin()) {
+    if ( (!current_user_can('administrator') && !is_admin()) || (!current_user_can('rf_user') && !is_admin()) ) {
         show_admin_bar(false);
     }
 }
@@ -150,3 +150,41 @@ function rf_login_function() {
     }
 }
 add_action( 'login_head', 'rf_login_function' );
+
+
+
+// Replaces a custom URL placeholder with the URL to the latest post
+function replace_placeholder_nav_menu_item_with_latest_post( $items, $menu, $args ) {
+ 
+    // Loop through the menu items looking for placeholder(s)
+    foreach ( $items as $item ) {
+ 
+        // Is this the placeholder we're looking for?
+        if ( '#latestquestionnaire' != $item->url )
+            continue;
+ 
+        // Get the latest post
+        //$latestpost = get_posts( array(
+            //'numberposts' => 1,
+        //) );
+
+        $user = wp_get_current_user(); 
+        $latest_questionnaire = new WP_Query( array(
+                                        'connected_type' => 'questionnaire_to_user',
+                                        'connected_items' => $user->ID,
+                                        'suppress_filters' => false,
+                                        'nopaging' => true,
+                                        'posts_per_page' => 1,
+                                        ) );
+ 
+        if ( empty( $latest_questionnaire ) )
+            continue;
+ 
+        // Replace the placeholder with the real URL
+        $item->url = get_permalink( $latest_questionnaire->post->ID );
+    }
+ 
+    // Return the modified (or maybe unmodified) menu items array
+    return $items;
+}
+add_filter( 'wp_get_nav_menu_items', 'replace_placeholder_nav_menu_item_with_latest_post', 10, 3 );
