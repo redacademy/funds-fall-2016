@@ -163,11 +163,7 @@ function replace_placeholder_nav_menu_item_with_latest_post( $items, $menu, $arg
         if ( '#latestquestionnaire' != $item->url )
             continue;
  
-        // Get the latest post
-        //$latestpost = get_posts( array(
-            //'numberposts' => 1,
-        //) );
-
+        // Get the latest questionnaire
         $user = wp_get_current_user(); 
         $latest_questionnaire = new WP_Query( array(
                                         'connected_type' => 'questionnaire_to_user',
