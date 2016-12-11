@@ -4,10 +4,7 @@
  *
  */
 
-get_header(); 
-
-	
-?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -16,7 +13,6 @@ get_header();
 		<?php 
 			$user = wp_get_current_user();
 
-			// quesionnaires
 			$questionnaire_posts = new WP_Query( array(
 											'connected_type' => 'questionnaire_to_user',
 											'connected_items' => $user->ID,
@@ -43,8 +39,6 @@ get_header();
 				?>
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
