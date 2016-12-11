@@ -11,9 +11,7 @@ get_header(); ?>
 
 			<?php 
 				// conditional logic to migrate to custom teplate part on user role
-				if( current_user_can( 'rf_user' ) || current_user_can( 'administrator' ) ):
-					get_template_part( 'template-parts/content', 'renewal-fund' );
-				elseif ( current_user_can( 'pc_user') ) :
+				if ( current_user_can( 'pc_user') ) :
 					get_template_part( 'template-parts/content', 'portfolio-company' );
 				endif; 
 			?>

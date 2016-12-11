@@ -22,12 +22,37 @@ add_filter( 'body_class', 'rf_body_classes' );
 
 
 /*
+ * 
+ * Set the URL to redirect to on login.
+ *
+ */
+function rf_force_login_redirect() {
+  return site_url( '/wp-admin/' );
+}
+add_filter('v_forcelogin_redirect', 'rf_force_login_redirect', 10, 1);
+
+
+/*
+*
+* Force non admin to home page
+*
+*/
+function rf_force_to_home_page() {
+if ( is_admin() && !current_user_can( 'administrator' ) && !current_user_can( 'rf_user' ) &&! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+    wp_redirect( home_url() );
+    exit;
+    }
+}
+add_action( 'init', 'rf_force_to_home_page' );
+
+
+/*
  *
  * Removes front end admin bar
  *
  */
 function rf_remove_admin_bar() {
-    if ( (!current_user_can('administrator') && !is_admin()) || (!current_user_can('rf_user') && !is_admin()) ) {
+    if ( !current_user_can('administrator') && !current_user_can('rf_user') && !is_admin() ) {
         show_admin_bar(false);
     }
 }
