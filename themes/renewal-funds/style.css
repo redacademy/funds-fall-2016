@@ -1055,7 +1055,8 @@ body {
 
 .page-header {
   font-size: 1.25rem;
-  font-weight: 900; }
+  font-weight: 900;
+  text-align: center; }
   .page-header h1 {
     margin: 0 0 2rem 0; }
   @media (min-width: 641px) {
@@ -1417,8 +1418,7 @@ body {
   background-size: cover;
   border: 1px solid #b0aea5; }
   .story-thumbnail:hover {
-    background-color: #C5C5C5;
-    background-blend-mode: multiply; }
+    background-color: #C5C5C5; }
 
 .questionnaire-wrapper {
   padding-top: 2rem; }
