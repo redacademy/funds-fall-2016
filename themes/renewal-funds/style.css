@@ -1056,6 +1056,8 @@ body {
 .page-header {
   font-size: 1.25rem;
   font-weight: 900; }
+  .page-header h1 {
+    margin: 0 0 2rem 0; }
   @media (min-width: 641px) {
     .page-header {
       font-size: 1.5rem; } }
@@ -1414,6 +1416,12 @@ body {
   height: 200px;
   background-size: cover;
   border: 1px solid #b0aea5; }
+  .story-thumbnail:hover {
+    background-color: #C5C5C5;
+    background-blend-mode: multiply; }
+
+.questionnaire-wrapper {
+  padding-top: 2rem; }
 
 @media (min-width: 641px) {
   .quest-wrapper {
