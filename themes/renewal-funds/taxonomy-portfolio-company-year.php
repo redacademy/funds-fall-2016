@@ -11,12 +11,14 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
         <!--<p>taxonomy-portfolio-company-year.php</p>-->
 
+        <div class="wrap">
+
         <?php if ( have_posts() ) : ?>
             <header class="page-header">
                 <h1>History</h1>
                 
                 <?php
-                    the_archive_title( '<h2 class="page-title">', '</h2>' );
+                    the_archive_title( '<h2 class="page-header">', '</h2>' );
                     //the_archive_description( '<div class="taxonomy-description">', '</div>' );
                 ?>
             </header><!-- .page-header -->
@@ -114,6 +116,8 @@ get_header(); ?>
             <?php else : ?>
                 <?php get_template_part( 'template-parts/content', 'none' ); ?>
             <?php endif; ?>
+
+            </div>
 
         </main><!-- #main -->
     </div><!-- #primary -->

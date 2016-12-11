@@ -7,7 +7,6 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-	<!--<p>archive-portfolio-company.php</p>-->
 
 	<!--portfolio company year -->
 	<div class="history-page-wrapper wrap container">
@@ -98,7 +97,7 @@ get_header(); ?>
 
 			// questionnaires ?>
 
-			<div class="wrap container">
+			<div class="questionnaire-wrapper container">
 				<?php if( $questionnaire_posts->have_posts() ) : ?>
 					<h2 class="container">Questionnaires:</h2>
 
