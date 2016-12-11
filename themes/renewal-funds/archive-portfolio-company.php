@@ -7,6 +7,10 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+<<<<<<< HEAD
+=======
+	<!--<p>archive-portfolio-company.php</p>-->
+>>>>>>> d765730cd49995d7ad4ebe6aaea7566e9229264e
 
 	<!--portfolio company year -->
 	<div class="history-page-wrapper wrap container">
@@ -45,8 +49,9 @@ get_header(); ?>
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
 										'nopaging' => true,
-										//'orderby' => 'asc',
-										//'posts_per_page' => 3,
+										'orderby' => 'post_date',
+                               			'order' => 'DESC',
+										'posts_per_page' => 5,
 										));	
 										
 			wp_reset_postdata();
@@ -57,8 +62,9 @@ get_header(); ?>
 											'connected_items' => $user->ID,
 											'suppress_filters' => false,
 											'nopaging' => true,
-											//'orderby' => 'desc',
-											//'posts_per_page' => 3,
+											'orderby' => 'post_date',
+                               				'order' => 'DESC',
+											'posts_per_page' => 5,
 											));	
 
 			wp_reset_postdata();								
@@ -91,8 +97,9 @@ get_header(); ?>
 
 					</div>
 				<?php endwhile;
-				
-			endif; 
+			else : ?>
+				<p>No stories or questionnaires for this year</p>
+			<?php endif; 
 
 			// questionnaires ?>
 

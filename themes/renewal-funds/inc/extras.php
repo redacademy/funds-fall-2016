@@ -22,12 +22,37 @@ add_filter( 'body_class', 'rf_body_classes' );
 
 
 /*
+ * 
+ * Set the URL to redirect to on login.
+ *
+ */
+function rf_force_login_redirect() {
+  return site_url( '/wp-admin/' );
+}
+add_filter('v_forcelogin_redirect', 'rf_force_login_redirect', 10, 1);
+
+
+/*
+*
+* Force non admin to home page
+*
+*/
+function rf_force_to_home_page() {
+if ( is_admin() && !current_user_can( 'administrator' ) && !current_user_can( 'rf_user' ) &&! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+    wp_redirect( home_url() );
+    exit;
+    }
+}
+add_action( 'init', 'rf_force_to_home_page' );
+
+
+/*
  *
  * Removes front end admin bar
  *
  */
 function rf_remove_admin_bar() {
-    if (!current_user_can('administrator') && !is_admin()) {
+    if ( !current_user_can('administrator') && !current_user_can('rf_user') && !is_admin() ) {
         show_admin_bar(false);
     }
 }
@@ -40,12 +65,12 @@ add_action('after_setup_theme', 'rf_remove_admin_bar');
 *
 */
 function rf_add_login_logout_link($items, $args) {         
-    ob_start();         
+    ob_start(); 
     wp_loginout('index.php');         
-    $loginoutlink = ob_get_contents();    
-    ob_end_clean();         
-    $items .= '<li class="logout"><img src="' . get_template_directory_uri() . '/assets/icons/svg/logout_icon.svg" />' . $loginoutlink . '</li>';     
-    return $items; 
+    $loginoutlink = ob_get_contents(); 
+    ob_end_clean();
+    $items .= '<li class="logout"><img src="' . get_template_directory_uri() . '/assets/icons/svg/logout_icon.svg" />' . $loginoutlink . '</li>';
+    return $items;
 }
 add_filter('wp_nav_menu_items', 'rf_add_login_logout_link', 10, 2);
 
@@ -69,7 +94,6 @@ add_action( 'gform_after_submission_3', 'rf_add_user_id_to_story_post', 10, 2 );
 * Fixes redirect error for acf form submit
 *
 */
-
 function rf_form_head(){
      acf_form_head();
 }
@@ -101,7 +125,7 @@ add_filter( 'get_the_archive_title', 'rf_theme_archive_title' );
 
 /*
 *
-* Styling the Login page
+* Styling the login page
 *
 */
 function rf_custom_login() { ?>
@@ -127,8 +151,8 @@ add_action('login_enqueue_scripts','rf_custom_login');
 */
 function rf_login_logo() { ?>
 
-   <?php
-	wp_enqueue_style( 'login_styles', get_template_directory_uri() . '/assets/css/login-page.css' );
+    <?php
+	    wp_enqueue_style( 'login_styles', get_template_directory_uri() . '/assets/css/login-page.css' );
     ?>
 
 <?php }
@@ -151,3 +175,37 @@ function rf_login_function() {
     }
 }
 add_action( 'login_head', 'rf_login_function' );
+
+
+
+// Replaces a custom URL placeholder with the URL to the latest post
+function replace_placeholder_nav_menu_item_with_latest_post( $items, $menu, $args ) {
+ 
+    // Loop through the menu items looking for placeholder(s)
+    foreach ( $items as $item ) {
+ 
+        // Is this the placeholder we're looking for?
+        if ( '#latestquestionnaire' != $item->url )
+            continue;
+ 
+        // Get the latest questionnaire
+        $user = wp_get_current_user(); 
+        $latest_questionnaire = new WP_Query( array(
+                                        'connected_type' => 'questionnaire_to_user',
+                                        'connected_items' => $user->ID,
+                                        'suppress_filters' => false,
+                                        'nopaging' => true,
+                                        'posts_per_page' => 1,
+                                        ) );
+ 
+        if ( empty( $latest_questionnaire ) )
+            continue;
+ 
+        // Replace the placeholder with the real URL
+        $item->url = get_permalink( $latest_questionnaire->post->ID );
+    }
+ 
+    // Return the modified (or maybe unmodified) menu items array
+    return $items;
+}
+add_filter( 'wp_get_nav_menu_items', 'replace_placeholder_nav_menu_item_with_latest_post', 10, 3 );
