@@ -94,8 +94,9 @@ get_header(); ?>
 
 					</div>
 				<?php endwhile;
-				
-			endif; 
+			else : ?>
+				<p>No stories or questionnaires for this year</p>
+			<?php endif; 
 
 			// questionnaires ?>
 
