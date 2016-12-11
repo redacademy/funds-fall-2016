@@ -1236,7 +1236,6 @@ body {
 .acf-input-wrap > input {
   background: white !important; }
 
-/* changes !!!!!*/
 .single-questionnaire h1 {
   text-align: center; }
 
@@ -1429,6 +1428,22 @@ body {
 
 .quest-wrapper a {
   text-decoration: none; }
+
+.portfolio-company-year-style {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .portfolio-company-year-style ul {
+    margin: 0;
+    padding: 0; }
+    .portfolio-company-year-style ul li {
+      display: inline;
+      padding-right: 2rem; }
+    .portfolio-company-year-style ul li:last-child {
+      padding-right: 0; }
+  .portfolio-company-year-style a {
+    text-decoration: none; }
 
 .single-page-wrapper {
   text-align: center; }

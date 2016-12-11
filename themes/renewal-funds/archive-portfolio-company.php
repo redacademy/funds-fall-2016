@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-	<p>archive-portfolio-company.php</p>
+	<!--<p>archive-portfolio-company.php</p>-->
 
 	<!--portfolio company year -->
 	<div class="history-page-wrapper wrap container">

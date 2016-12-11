@@ -93,3 +93,26 @@
         text-decoration: none;
     }
 }
+
+.portfolio-company-year-style {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline;
+            padding-right: 2rem;
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
