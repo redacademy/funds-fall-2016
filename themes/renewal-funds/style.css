@@ -391,15 +391,16 @@ big {
   padding: 0 2rem; }
 
 .page-template-feedback .gform_wrapper .textarea.medium {
+  background-color: #d6d6cd;
+  border-radius: 25px;
+  padding: 1rem 1.5rem;
   height: 200px; }
   @media (min-width: 641px) {
     .page-template-feedback .gform_wrapper .textarea.medium {
       height: 270px; } }
 
-.page-template-feedback .textarea.medium {
-  background-color: #d6d6cd;
-  border-radius: 25px;
-  padding: 1rem 1.5rem; }
+.page-template-feedback .gform_wrapper .invalid {
+  border: 2px solid #790000; }
 
 .page-template-feedback .gform_footer {
   font-size: 1.6rem; }

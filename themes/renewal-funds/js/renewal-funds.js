@@ -26,12 +26,15 @@
 
     $('.page-template-feedback .gform_button').on('click',function(event){
         var content = $('.textarea').val().length;
-        if (content !== 0 ){
-            event.default();
-        } else( content === 0 ) {
-            event.preventDefault();
-            $('.page-template-feedback .textarea.medium').css('border','2px solid #790000');
+        if (content === 0 ){
+            $('.page-template-feedback .textarea.medium').addClass('invalid');
+        } else {
+            $('.page-template-feedback .textarea.medium').removeClass('invalid');
         }
+    });
+
+    $('.page-template-feedback .gform_button').on('click',function(event){
+        
     });
 
 })(jQuery);
