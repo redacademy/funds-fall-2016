@@ -1,5 +1,7 @@
 # Renewal Funds Community Project - WordPress, PHP, CSS/SASS JQuery
 
+
+
 ![alt tag](./screenshot.png)
 
 This project was intended to provide a replacement business system for the proess of capturing impact statements from portfolio 
@@ -18,9 +20,7 @@ The designs and business processes were proved by the UX/UI team at Red Academy.
 - PHP
 - HTML5
 - CSS3/SASS
-- JavaScript
 - JQuery
-- GULP
 
 ##Personal Learnings
 
