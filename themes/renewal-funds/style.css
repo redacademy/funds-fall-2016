@@ -3,11 +3,11 @@ Theme Name: Renewal Funds
 Theme URI: http://underscores.me/
 Author: Team Renewal Funds
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A WordPress theme for Renewal Funds.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Text Domain: renewal-funds
 
 This theme, like WordPress, is licensed under the GPL.
@@ -347,7 +347,8 @@ big {
 
 @media (min-width: 1240px) {
   .page-template-feedback .feedback-page {
-    width: 35%; } }
+    width: 35%;
+    margin-left: 2rem; } }
 
 .page-template-feedback .feedback-wrapper {
   display: -ms-flexbox;
@@ -361,11 +362,12 @@ big {
   display: none; }
 
 .page-template-feedback .feedback-green-text {
-  color: #4b711c;
+  color: black;
   font-size: 2rem;
   text-align: center;
   font-weight: 500;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  padding-top: 10px; }
   @media (min-width: 641px) {
     .page-template-feedback .feedback-green-text {
       font-size: 2.75rem; } }
@@ -379,11 +381,11 @@ big {
   text-align: center; }
   @media (min-width: 641px) {
     .page-template-feedback .feedback-info {
-      width: 50%;
-      font-size: 1.5rem; } }
+      width: 60%;
+      font-size: 1.75rem; } }
   @media (min-width: 1240px) {
     .page-template-feedback .feedback-info {
-      width: 75%; } }
+      width: 100%; } }
 
 .page-template-feedback .feedback-text {
   padding: 0 2rem; }
@@ -554,6 +556,12 @@ textarea {
 .post-type-archive-story .gform_body {
   padding: 0.5rem 3rem; }
 
+.post-type-archive-story .gfield {
+  padding-bottom: 2rem; }
+
+.post-type-archive-story .gfield_label {
+  padding-bottom: 0.5rem; }
+
 .post-type-archive-story #gform_fields_3 li.gfield.gfield_error {
   background-color: white;
   border-top: none;
@@ -569,7 +577,7 @@ textarea {
   background-color: #d6d6cd;
   border-radius: 25px;
   border: 1px solid #ccc;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   -webkit-border-radius: 25px;
   -webkit-padding: 1rem 1.5rem;
   -moz-border-radius: 25px;
@@ -1023,11 +1031,11 @@ object {
   text-align: center;
   padding: 0.5rem 2rem 1rem 2rem; }
   .not-found .page-content img {
-    height: 87px;
-    width: 87px; }
+    width: 140px; }
   .not-found .page-content p {
     font-size: 1.25rem;
-    color: #323432; }
+    color: #323432;
+    padding: 0 2rem; }
 
 .error-content a {
   text-decoration: none;
@@ -1055,7 +1063,25 @@ body {
   font-style: normal;
   font-stretch: normal; }
 
+.page-header {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 2px; }
+  .page-header h1 {
+    margin: 0; }
+    @media (min-width: 641px) {
+      .page-header h1 {
+        margin: 0 0 2rem 0; } }
+  @media (min-width: 641px) {
+    .page-header {
+      font-size: 1.5rem; } }
+  @media (min-width: 1240px) {
+    .page-header {
+      font-size: 1.75rem; } }
+
 .container {
+  min-width: 350px;
   max-width: 656px;
   margin: 0 auto; }
   @media (min-width: 641px) {
@@ -1228,12 +1254,8 @@ body {
 .acf-input-wrap > input {
   background: white !important; }
 
-/* changes !!!!!*/
 .single-questionnaire h1 {
   text-align: center; }
-
-.single-questionnaire .acf-form {
-  padding: 0 3rem 1rem; }
 
 .single-questionnaire .acf-fields > .acf-field {
   border-top: none; }
@@ -1277,15 +1299,27 @@ body {
   font-size: 1.5rem !important;
   font-weight: bold; }
 
+.post-type-archive-questionnaire .entry-header a {
+  text-align: center;
+  color: #234300; }
+  .post-type-archive-questionnaire .entry-header a:hover {
+    color: #536048; }
+  .post-type-archive-questionnaire .entry-header avisited {
+    color: #234300; }
+
+.post-type-archive-questionnaire .entry-title {
+  text-align: center; }
+
+.post-type-archive-questionnaire .site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
 .thanks-page-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-flow: column;
+      flex-flow: column; }
 
 .thanks-msg {
   font-size: 3rem;
@@ -1294,7 +1328,11 @@ body {
 
 .thanks-image-wrapper {
   padding: 3rem 0;
-  max-width: 250px; }
+  max-width: 180px;
+  margin: 0 auto; }
+  @media (min-width: 641px) {
+    .thanks-image-wrapper {
+      max-width: 250px; } }
 
 .home-button {
   width: auto;
@@ -1320,24 +1358,38 @@ body {
   .home-button:hover {
     background-color: #234300; }
 
+.error-header {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: center; }
+  .error-header h1 {
+    margin: 0; }
+  @media (min-width: 641px) {
+    .error-header {
+      font-size: 1.5rem; } }
+  @media (min-width: 1240px) {
+    .error-header {
+      font-size: 1.75rem; } }
+
 .error-header-message p {
   color: black;
-  font-size: 2rem; }
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 0 2rem; }
+  @media (min-width: 641px) {
+    .error-header-message p {
+      font-size: 1.5rem; } }
 
 .history-page-wrapper {
   text-align: center;
   font-size: 1.5rem; }
-  .history-page-wrapper h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    text-align: center;
-    padding: 2rem; }
   @media (min-width: 641px) {
     .history-page-wrapper {
       text-align: left;
       max-width: 1240px;
-      margin: 0 auto;
-      padding: 0 2rem; } }
+      margin: 0 auto; } }
 
 .story-section-wrapper {
   margin: 0;
@@ -1345,7 +1397,8 @@ body {
 
 .story-section {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 1rem; }
   @media (min-width: 641px) {
     .story-section {
       margin-bottom: 2rem; } }
@@ -1368,14 +1421,24 @@ body {
   @media (min-width: 641px) {
     .story-wrapper {
       margin-left: 2rem; } }
+  .story-wrapper a:hover {
+    color: #536048; }
   .story-wrapper ul {
     margin: 0; }
 
+.history-title {
+  font-size: 1.75rem; }
+  @media (min-width: 641px) {
+    .history-title {
+      margin-bottom: 1rem; } }
+
 .story-title {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 900;
   text-decoration: none;
   color: #234300; }
+  .story-title:visited {
+    color: #234300; }
   @media (min-width: 1240px) {
     .story-title {
       font-size: 2rem; } }
@@ -1394,10 +1457,46 @@ body {
 .story-thumbnail {
   width: 200px;
   height: 200px;
-  background-size: cover; }
+  background-size: cover;
+  border: 1px solid #b0aea5; }
+  .story-thumbnail:hover {
+    background-color: #C5C5C5;
+    background-blend-mode: multiply; }
 
-.quest-wrapper {
-  padding-left: 260px; }
+.questionnaire-wrapper {
+  padding-top: 2rem; }
+
+@media (min-width: 641px) {
+  .quest-wrapper {
+    padding-left: 235px;
+    font-size: 1.3rem;
+    font-weight: 900; } }
+
+@media (min-width: 1240px) {
+  .quest-wrapper {
+    font-size: 2rem; } }
+
+.quest-wrapper a {
+  text-decoration: none; }
+
+.portfolio-company-year-style {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .portfolio-company-year-style ul {
+    margin: 0;
+    padding: 0; }
+    .portfolio-company-year-style ul li {
+      display: inline;
+      padding-right: 2rem; }
+    .portfolio-company-year-style ul li:last-child {
+      padding-right: 0; }
+  .portfolio-company-year-style a {
+    text-decoration: none;
+    color: #234300; }
+    .portfolio-company-year-style a:hover {
+      color: #536048; }
 
 .single-page-wrapper {
   text-align: center; }
@@ -1408,7 +1507,7 @@ body {
 
 .single-image {
   padding-top: 50%;
-  max-height: 30vh;
+  max-height: 40vh;
   background-size: cover; }
   @media (min-width: 641px) {
     .single-image {
@@ -1420,7 +1519,7 @@ body {
 .single-title {
   text-align: center;
   font-size: 1.8rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   font-weight: 900; }
   @media (min-width: 641px) {
     .single-title {

@@ -3,11 +3,11 @@ Theme Name: Renewal Funds
 Theme URI: http://underscores.me/
 Author: Team Renewal Funds
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A WordPress theme for Renewal Funds.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Text Domain: renewal-funds
 
 This theme, like WordPress, is licensed under the GPL.
@@ -66,7 +66,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "header";
 @import "footer";
-@import "login-page";
 @import "404";
 @import "page-templates-main-styles";
 @import "custom-template-part-dash";

@@ -10,7 +10,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<p><?php printf( esc_html( '© 2016 Renewal Funds' )); ?></p>
+					<p>&copy; 2016 Renewal Funds</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

@@ -1,17 +1,10 @@
 .history-page-wrapper {
     text-align: center;
     font-size: 1.5rem;
-    h1 {
-        font-size: 2.5rem;
-        margin: 0;
-        text-align: center;
-        padding: 2rem;
-        }
     @include tablet {
         text-align: left;
         max-width: 1240px;
         margin: 0 auto;
-        padding: 0 2rem;
     }
 }
 
@@ -22,6 +15,7 @@
 
 .story-section {
     display: flex;
+    margin-bottom: 1rem;
     @include tablet {
     margin-bottom: 2rem;
     }
@@ -44,16 +38,31 @@
     @include tablet {
         margin-left: 2rem;
     }
+    a {
+        &:hover {
+        color: $color__brand-color-olive;
+    }
+    }
     ul {
         margin: 0;
     }
 }
 
+.history-title {
+    font-size: 1.75rem;
+    @include tablet {
+    margin-bottom: 1rem;
+    }
+}
+
 .story-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 900;
     text-decoration: none;
     color: $color__brand-color-dgreen;
+    &:visited {
+        color: $color__brand-color-dgreen;
+    }
     @include desktop {
     font-size: 2rem;
     }
@@ -75,8 +84,55 @@
     width: 200px;
     height: 200px;
     background-size: cover;
+    border: 1px solid $color__brand-color-gray;
+    &:hover {
+    background-color: #C5C5C5;
+    background-blend-mode: multiply;
+    }
+}
+
+.questionnaire-wrapper {
+    padding-top: 2rem;
 }
 
 .quest-wrapper {
-    padding-left: 260px;
+    @include tablet {
+    padding-left: 235px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    }
+    @include desktop {
+        font-size: 2rem;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.portfolio-company-year-style {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline;
+            padding-right: 2rem;
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $color__brand-color-dgreen;
+    &:hover {
+        color: $color__brand-color-olive;
+    }
+    }
+
 }

@@ -4,82 +4,122 @@
  * The template for displaying all pages.
  *
  */    
-    
-    get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <p>taxonomy-portfolio-company-year.php</p>
+get_header(); ?>
 
-            <?php if ( have_posts() ) : ?>
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+        <!--<p>taxonomy-portfolio-company-year.php</p>-->
+
+        <div class="wrap">
+
+        <?php if ( have_posts() ) : ?>
             <header class="page-header">
+                <h1>History</h1>
+                
                 <?php
-                    the_archive_title( '<h1 class="page-title">', '</h1>' );
-                    the_archive_description( '<div class="taxonomy-description">', '</div>' );
+                    the_archive_title( '<h2 class="page-header">', '</h2>' );
+                    //the_archive_description( '<div class="taxonomy-description">', '</div>' );
                 ?>
             </header><!-- .page-header -->
 
-            <div class="">
-                <?php 
-                    $user = wp_get_current_user();
-                    //$query = new WP_Query( 'p2p_to=' . $user->id );
+            <?php 
+                $user = wp_get_current_user();
+
+                // stories
+                $story_posts = new WP_Query( array(
+                                                'connected_type' => 'story_to_user',
+                                                'connected_items' => $user->ID,
+                                                'suppress_filters' => false,
+                                                'nopaging' => true,
+                                                'orderby' => 'post_date',
+                               			        'order' => 'DESC',
+                                                'tax_query' => array(
+                                                                    array(
+                                                                        'taxonomy' => 'portfolio-company-year',
+                                                                        'field' => 'slug',
+                                                                        'terms' => get_the_archive_description(),
+                                                                    ),
+                                                                ),
+                                                ) );
+
+                wp_reset_postdata();
+
+                // quesionnaires
+                $questionnaire_posts = new WP_Query( array(
+                                                'connected_type' => 'questionnaire_to_user',
+                                                'connected_items' => $user->ID,
+                                                'suppress_filters' => false,
+                                                'nopaging' => true,
+                                                'orderby' => 'post_date',
+                               			        'order' => 'DESC',
+                                                'tax_query' => array(
+                                                                    array(
+                                                                        'taxonomy' => 'portfolio-company-year',
+                                                                        'field' => 'slug',
+                                                                        'terms' => get_the_archive_description(),
+                                                                    ),
+                                                                ),
+                                                ) ); 
+                                                
+                wp_reset_postdata(); ?>
+
+                <!-- portfolio company items by user id and taxonomy -->
+                <div class="stories">
                     
-                    $story_posts = new WP_Query( array(
-										'connected_type' => 'story_to_user',
-										'connected_items' => $user->ID,
-										'suppress_filters' => false,
-										'nopaging' => true,
-										)); ?>
+                <?php if ( $story_posts->have_posts() ) : ?>
+				<h2 class="container">Stories:</h2>
 
-                    <!--<pre>                         
-                        <?php //print_r($story_posts); ?>
-                    </pre>-->
+                    <?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
+                        <div class="container">
 
-                    <?php /*$args = array(
-                                        'post_type' => 'story',
-                                        'p2p_to' => $user->id,
-                                        'post_status' => 'publish',
-                                        'orderby' => 'asc',
-                                        'posts_per_page' => 15
-                                        );*/
+                            <ul class="story-section-wrapper">
+                                <li class="story-section">
+                                    <div class="story-image-wrapper">
+                                        <?php
+                                            $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
+                                        ?>
+                                        <a href="<?php echo get_permalink(); ?>">
+                                            <div class="story-thumbnail" style="background-image:url(<?php echo $thumbnail[0]; ?>);background-repeat:no-repeat;"></div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="story-wrapper">
+                                        <a class="story-title" href="<?php echo get_permalink(); ?>">
+                                            <?php the_title(); ?>
+                                        </a>
+                                        <p class="story-text"><?php the_field('story_body'); ?></p>
+                                    </div>
+                                </li>
+                            </ul>
 
-                    //$story_posts = new WP_Query( $args ); ?>
+                        </div>
+                    <?php endwhile;
+			    endif; 
 
-                    <pre>                         
-                        <?php print_r($story_posts); ?>
-                    </pre>
-                
-                    <?php while ( $story_posts->have_posts() ) : $story_posts->the_post(); 
+                // questionnaires ?>
+
+                <div class="wrap container">
+                    <?php if( $questionnaire_posts->have_posts() ) : ?>
+                        <h2 class="container">Questionnaires:</h2>
+
+                        <?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+                            <div class="quest-wrapper">
+                                <a class="story-title" href="<?php echo get_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                            </div>
+                        <?php endwhile;
+                    endif; ?>	
+                </div>
                     
-                    ?>
-
-                    <div class="single-product-block">
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <header class="entry-header">
-                                <!--images and url-->
-                                <div class="thumbnail-wrapper">
-                                    <a href="<?php //echo get_permalink(); ?> ">
-                                        <?php //if ( has_post_thumbnail() ) : ?>
-                                            <?php //the_post_thumbnail( 'large' ); ?>
-                                        <?php //endif; ?>
-                                    </a>
-                                </div>
-
-                                <!--title and price-->
-                                <div class="product-info">
-                                    <div class="product-title"><?php the_title(); ?></div>
-                                </div>
-                            </header><!-- .entry-header -->
-                        </article><!-- #post-## -->
-                    </div><!-- .single-product-block -->
-                <?php endwhile; ?>
-            </div><!--  -->
-                <?php the_posts_navigation(); ?>
             <?php else : ?>
                 <?php get_template_part( 'template-parts/content', 'none' ); ?>
             <?php endif; ?>
 
+            </div>
+
         </main><!-- #main -->
-	</div><!-- #primary -->
+    </div><!-- #primary -->
 
     <?php get_footer(); ?>
