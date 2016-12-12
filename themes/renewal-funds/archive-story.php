@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ *
  *
  */
 
@@ -31,26 +31,15 @@ get_header(); ?>
 											'nopaging'  => true ) ); ?>
 																	
 			<?php if ( $story_posts->have_posts() ) : ?>
-				
 				<header class="page-header">
 					<h1>Share Your Story</h1>
-					<?php
-						//the_archive_title( '<h1 class="page-title">', '</h1>' );
-						//the_archive_description( '<div class="taxonomy-description">', '</div>' );
-					?>
 				</header><!-- .page-header -->
 
-				<?php /* Start the Loop */ ?>
-				<?php //while ( have_posts() ) : the_post(); ?>
-					<?php
-						get_template_part( 'template-parts/content', 'story-yes' );
-					?>
-				<?php //endwhile; ?>
-
-				<?php //the_posts_navigation(); ?>
-			<?php else : ?>
-				<?php get_template_part( 'template-parts/content', 'story-no' ); ?>
-			<?php endif; ?>
+				<?php /* Start the Loop */
+					get_template_part( 'template-parts/content', 'story-yes' );
+			else :
+					get_template_part( 'template-parts/content', 'story-no' );
+			endif; ?>
 			</div> <!-- content-container -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
