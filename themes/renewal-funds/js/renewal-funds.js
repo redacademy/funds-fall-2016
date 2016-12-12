@@ -23,8 +23,7 @@
         var content = $('.textarea').val().length;
         if (content === 0 ){
             event.preventDefault();
-            $('.page-template-feedback .textarea.medium').css('border','1px solid #ccc');
-
+            $('.page-template-feedback .textarea.medium').css('border','2px solid red');
         }
         else{
             return event;
