@@ -19,7 +19,6 @@ get_header(); ?>
                 
                 <?php
                     the_archive_title( '<h2 class="page-header">', '</h2>' );
-                    //the_archive_description( '<div class="taxonomy-description">', '</div>' );
                 ?>
             </header><!-- .page-header -->
 
