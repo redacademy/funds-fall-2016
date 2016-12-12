@@ -22,7 +22,7 @@ get_header(); ?>
 				$terms = get_terms( $arg );
 			?>
 
-			<div class="portfolio-company-year-style">
+			<div class="portfolio-company-year-style wrap">
 				<ul>
 					<?php foreach ( $terms as $term ) : ?>
 						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
@@ -66,7 +66,7 @@ get_header(); ?>
 			wp_reset_postdata();								
 			
 			if ( $story_posts->have_posts() ) : ?>
-				<h2 class="container">Stories:</h2>
+				<h2 class="history-title container">Stories:</h2>
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
 					<div class="container">
@@ -99,7 +99,7 @@ get_header(); ?>
 
 			<div class="questionnaire-wrapper container">
 				<?php if( $questionnaire_posts->have_posts() ) : ?>
-					<h2 class="container">Questionnaires:</h2>
+					<h2 class="history-title container">Questionnaires:</h2>
 
 					<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
 						<div class="quest-wrapper">

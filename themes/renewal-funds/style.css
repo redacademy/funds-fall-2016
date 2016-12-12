@@ -1058,15 +1058,19 @@ body {
   font-weight: 900;
   text-align: center; }
   .page-header h1 {
-    margin: 0 0 2rem 0; }
+    margin: 0; }
+    @media (min-width: 641px) {
+      .page-header h1 {
+        margin: 0 0 2rem 0; } }
   @media (min-width: 641px) {
     .page-header {
       font-size: 1.5rem; } }
   @media (min-width: 1240px) {
     .page-header {
-      font-size: 2rem; } }
+      font-size: 1.75rem; } }
 
 .container {
+  min-width: 350px;
   max-width: 656px;
   margin: 0 auto; }
   @media (min-width: 641px) {
@@ -1343,9 +1347,29 @@ body {
   .home-button:hover {
     background-color: #234300; }
 
+.error-header {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: center; }
+  .error-header h1 {
+    margin: 0; }
+  @media (min-width: 641px) {
+    .error-header {
+      font-size: 1.5rem; } }
+  @media (min-width: 1240px) {
+    .error-header {
+      font-size: 1.75rem; } }
+
 .error-header-message p {
   color: black;
-  font-size: 2rem; }
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 0 2rem; }
+  @media (min-width: 641px) {
+    .error-header-message p {
+      font-size: 1.5rem; } }
 
 .history-page-wrapper {
   text-align: center;
@@ -1362,7 +1386,8 @@ body {
 
 .story-section {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 1rem; }
   @media (min-width: 641px) {
     .story-section {
       margin-bottom: 2rem; } }
@@ -1390,8 +1415,14 @@ body {
   .story-wrapper ul {
     margin: 0; }
 
+.history-title {
+  font-size: 1.75rem; }
+  @media (min-width: 641px) {
+    .history-title {
+      margin-bottom: 1rem; } }
+
 .story-title {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 900;
   text-decoration: none;
   color: #234300; }
@@ -1418,7 +1449,8 @@ body {
   background-size: cover;
   border: 1px solid #b0aea5; }
   .story-thumbnail:hover {
-    background-color: #C5C5C5; }
+    background-color: #C5C5C5;
+    background-blend-mode: multiply; }
 
 .questionnaire-wrapper {
   padding-top: 2rem; }

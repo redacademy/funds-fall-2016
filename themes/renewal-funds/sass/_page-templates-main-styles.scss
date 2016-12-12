@@ -19,17 +19,21 @@ body {
     font-weight: 900;
     text-align: center;
     h1 {
-        margin: 0 0 2rem 0;
+        margin: 0;
+        @include tablet {
+            margin: 0 0 2rem 0;
+        }
     }
     @include tablet {
         font-size: 1.5rem;
     }
     @include desktop {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 }
 
 .container {
+    min-width: 350px;
     max-width: 656px;
     margin: 0 auto;
     @include tablet {
