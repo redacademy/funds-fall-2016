@@ -99,6 +99,7 @@ get_header(); ?>
 
                 // questionnaires ?>
 
+<<<<<<< HEAD
                 <div class="wrap container">
                     <?php if( $questionnaire_posts->have_posts() ) : ?>
                         <h2 class="history-title container">Questionnaires:</h2>
@@ -112,6 +113,27 @@ get_header(); ?>
                         <?php endwhile;
                     endif; ?>	
                 </div>
+=======
+                <div class="questionnaire-wrapper container">
+				<?php if( $questionnaire_posts->have_posts() ) : ?>
+					<h2 class="history-title container">Questionnaires:</h2>
+
+					<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+						<div class="container">
+							<ul class="questionnaire-section-wrapper">
+								<li class="questionnaire-section">
+									<div class="quest-wrapper">
+										<a class="story-title" href="<?php echo get_permalink(); ?>">
+											<?php the_title(); ?>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					<?php endwhile;
+				endif; ?>	
+			</div>
+>>>>>>> a6bbbd7fc7fbd5523863ce4ab90f812be1646dd2
                     
             <?php else : ?>
                 <?php get_template_part( 'template-parts/content', 'none' ); ?>
