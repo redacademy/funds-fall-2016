@@ -1,10 +1,9 @@
 <section>
-    <p>content-story-no.php</p>
 	<div class="page-content">
-    <div class="thanks-page-wrapper">
+    <div class="thanks-page-wrapper container wrap">
 
-        <div class="page-header">
-            <p>Hmmm...</p>
+        <div class="error-header">
+            <h1>Hmmm...</h1>
             <span class="error-header-message"><p>seems like there's no stories yet</p></span>
         </div>
 
@@ -12,7 +11,7 @@
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/create_questionnaire_icon.png" alt="create questionnaire logo">
         </div>
 
-        <div class="error-message">
+        <div class="error-header-message">
             <p>Showing the difference our partners make in the world is important to us.</p>
         </div>
 

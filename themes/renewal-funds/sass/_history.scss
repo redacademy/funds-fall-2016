@@ -15,6 +15,7 @@
 
 .story-section {
     display: flex;
+    margin-bottom: 1rem;
     @include tablet {
     margin-bottom: 2rem;
     }
@@ -47,8 +48,15 @@
     }
 }
 
+.history-title {
+    font-size: 1.75rem;
+    @include tablet {
+    margin-bottom: 1rem;
+    }
+}
+
 .story-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 900;
     text-decoration: none;
     color: $color__brand-color-dgreen;
@@ -79,6 +87,7 @@
     border: 1px solid $color__brand-color-gray;
     &:hover {
     background-color: #C5C5C5;
+    background-blend-mode: multiply;
     }
 }
 
