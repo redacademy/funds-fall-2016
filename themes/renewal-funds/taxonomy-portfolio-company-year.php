@@ -68,7 +68,7 @@ get_header(); ?>
                 <div class="stories">
                     
                 <?php if ( $story_posts->have_posts() ) : ?>
-				<h2 class="container">Stories:</h2>
+				<h2 class="history-title container">Stories:</h2>
 
                     <?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
                         <div class="container">
@@ -101,7 +101,7 @@ get_header(); ?>
 
                 <div class="wrap container">
                     <?php if( $questionnaire_posts->have_posts() ) : ?>
-                        <h2 class="container">Questionnaires:</h2>
+                        <h2 class="history-title container">Questionnaires:</h2>
 
                         <?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
                             <div class="quest-wrapper">

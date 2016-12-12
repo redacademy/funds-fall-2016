@@ -1391,6 +1391,31 @@ body {
       max-width: 1240px;
       margin: 0 auto; } }
 
+.portfolio-company-year-style {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .portfolio-company-year-style ul {
+    margin: 0;
+    padding: 0; }
+    .portfolio-company-year-style ul li {
+      display: inline;
+      padding-right: 2rem; }
+    .portfolio-company-year-style ul li:last-child {
+      padding-right: 0; }
+  .portfolio-company-year-style a {
+    text-decoration: none;
+    color: #234300; }
+    .portfolio-company-year-style a:hover {
+      color: #536048; }
+
+.history-title {
+  font-size: 1.75rem; }
+  @media (min-width: 641px) {
+    .history-title {
+      margin-bottom: 1rem; } }
+
 .story-section-wrapper {
   margin: 0;
   padding: 0; }
@@ -1425,12 +1450,6 @@ body {
     color: #536048; }
   .story-wrapper ul {
     margin: 0; }
-
-.history-title {
-  font-size: 1.75rem; }
-  @media (min-width: 641px) {
-    .history-title {
-      margin-bottom: 1rem; } }
 
 .story-title {
   font-size: 1.25rem;
@@ -1477,26 +1496,8 @@ body {
     font-size: 2rem; } }
 
 .quest-wrapper a {
-  text-decoration: none; }
-
-.portfolio-company-year-style {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .portfolio-company-year-style ul {
-    margin: 0;
-    padding: 0; }
-    .portfolio-company-year-style ul li {
-      display: inline;
-      padding-right: 2rem; }
-    .portfolio-company-year-style ul li:last-child {
-      padding-right: 0; }
-  .portfolio-company-year-style a {
-    text-decoration: none;
-    color: #234300; }
-    .portfolio-company-year-style a:hover {
-      color: #536048; }
+  text-decoration: none;
+  margin-bottom: 1rem; }
 
 .single-page-wrapper {
   text-align: center; }
