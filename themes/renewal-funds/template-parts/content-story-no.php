@@ -17,7 +17,7 @@
             </div>
 
             <div class="home-button">
-                <a href="<?php echo get_page_link( get_page_by_title('Story Upload')->ID ); ?>">Add Story</a>
+                <a href="<?php echo get_page_link( get_page_by_title('Story Upload')->ID ); ?>">Create</a>
             </div>
 
         </div>
