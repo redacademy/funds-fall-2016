@@ -28,8 +28,8 @@
         var content = $('.textarea').val().length;
         if (content === 0 ){
             $('.page-template-feedback .textarea.medium').addClass('invalid');
-            if (('.page-template-feedback .textarea.medium').hasClass('invalid')){
-                event.preventDefault();
+            if (('#input_2_1').hasClass('invalid')){
+                $('.page-template-feedback .gform_button').preventDefault();
             }
         } else {
             $('.page-template-feedback .textarea.medium').removeClass('invalid');

@@ -551,14 +551,11 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.post-type-archive-story li, .page-template-story-upload li {
-  padding-bottom: 1.5rem; }
+.post-type-archive-story li:not(:last-child), .page-template-story-upload li:not(:last-child) {
+  padding-bottom: 2rem; }
 
 .post-type-archive-story .gform_body, .page-template-story-upload .gform_body {
   padding: 0.5rem 3rem; }
-
-.post-type-archive-story .gfield, .page-template-story-upload .gfield {
-  padding-bottom: 2rem; }
 
 .post-type-archive-story .gfield_label, .page-template-story-upload .gfield_label {
   padding-bottom: 0.5rem; }
