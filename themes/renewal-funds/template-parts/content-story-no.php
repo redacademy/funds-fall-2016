@@ -9,7 +9,7 @@
             </div>
 
             <div class="thanks-image-wrapper">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/create_questionnaire_icon.png" alt="create questionnaire logo">
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/png/sharestory_icon.png" alt="create questionnaire logo">
             </div>
 
             <div class="error-header-message">

@@ -1308,12 +1308,8 @@ body {
 .thanks-page-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-flow: column;
+      flex-flow: column; }
 
 .thanks-msg {
   font-size: 3rem;
@@ -1322,7 +1318,11 @@ body {
 
 .thanks-image-wrapper {
   padding: 3rem 0;
-  max-width: 250px; }
+  max-width: 180px;
+  margin: 0 auto; }
+  @media (min-width: 641px) {
+    .thanks-image-wrapper {
+      max-width: 250px; } }
 
 .home-button {
   width: auto;
