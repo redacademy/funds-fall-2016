@@ -28,6 +28,9 @@
         var content = $('.textarea').val().length;
         if (content === 0 ){
             $('.page-template-feedback .textarea.medium').addClass('invalid');
+            if (('.page-template-feedback .textarea.medium').hasClass('invalid')){
+                event.preventDefault();
+            }
         } else {
             $('.page-template-feedback .textarea.medium').removeClass('invalid');
         }
