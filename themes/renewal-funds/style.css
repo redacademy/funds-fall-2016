@@ -1402,17 +1402,32 @@ body {
       padding: 0 0 2rem 0; } }
   .portfolio-company-year-style ul {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex; }
     .portfolio-company-year-style ul li {
-      display: inline;
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
     .portfolio-company-year-style ul li:last-child {
       padding-right: 0; }
+      .portfolio-company-year-style ul li:last-child img {
+        display: none; }
   .portfolio-company-year-style a {
     text-decoration: none;
     color: #234300; }
     .portfolio-company-year-style a:hover {
       color: #536048; }
+
+.line img {
+  width: 15px;
+  margin-left: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .history-title {
   font-size: 1.75rem;
