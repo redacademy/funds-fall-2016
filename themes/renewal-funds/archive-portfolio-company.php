@@ -25,7 +25,7 @@ get_header(); ?>
 			<div class="portfolio-company-year-style wrap">
 				<ul>
 					<?php foreach ( $terms as $term ) : ?>
-						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?><span>-</span></a></li>
 					<?php endforeach; ?>
 				</ul>
 
