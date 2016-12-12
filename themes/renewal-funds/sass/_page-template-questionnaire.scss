@@ -12,15 +12,10 @@
 
 .acf-input-wrap input, .acf-input textarea {
     border: none;
-    //background: white;
 }
 
 .acf-input-wrap > input {
     background: white !important;
-}
-
-.single-questionnaire h1 {
-    text-align: center;
 }
 
 .single-questionnaire .acf-fields > .acf-field {
@@ -69,6 +64,12 @@
 .acf-input-wrap input {
     font-size: 1.5rem !important;
     font-weight: bold;
+}
+
+@include desktop {
+    .single-questionnaire .entry-content {
+        padding: 0 5rem;
+    }
 }
 
 .post-type-archive-questionnaire {

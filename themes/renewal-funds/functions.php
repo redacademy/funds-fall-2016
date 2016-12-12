@@ -35,7 +35,7 @@ function rf_setup() {
 	) );
 
 }
-endif; // red_starter_setup
+endif; // rf_setup
 add_action( 'after_setup_theme', 'rf_setup' );
 
 /**

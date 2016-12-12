@@ -8,7 +8,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="container">
+			<div class="container wrap">
 			
 				<header class="page-header">
 					<h1>Share Your Story</h1>
