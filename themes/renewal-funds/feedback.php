@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="feedback-page container">
 
             <div class="feedback-wrapper">
-                <p class="feedback-green-text">How Can We Improve?</p>
+                <h1 class="feedback-green-text">How Can We Improve?</h1>
                 <p class="feedback-info">We are constantly looking to improve our platform. Your feedback is valuable to us.</p>
 
                 <div class="feedback-form-wrapper">

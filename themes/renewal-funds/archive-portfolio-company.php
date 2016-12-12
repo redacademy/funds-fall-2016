@@ -3,41 +3,37 @@
  * The template for displaying archive pages.
  *
  */
+get_header(); ?>
 
-get_header(); 
-	//$portfolio_company = get_queried_object(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-		<!--<p>archive-portfolio-company.php</p>-->
-
-		<!--portfolio company year -->
+	<!--portfolio company year -->
+	<div class="history-page-wrapper wrap container">
 		<header class="page-header">	
 			<h1>History</h1>
 
 			<?php 
-				/*$user = wp_get_current_user(); 
+				$user = wp_get_current_user(); 
 
 				$arg = array( 'taxonomy' => 'portfolio-company-year',
 								'hide_empty' => true, );
 								
-				$terms = get_terms( $arg );*/
+				$terms = get_terms( $arg );
 			?>
 
-			<!--<div class="portfolio-company-year-style">
+			<div class="portfolio-company-year-style wrap">
 				<ul>
-					<?php //foreach ( $terms as $term ) : ?>
-						<li><a href="<?php //echo get_term_link($term); ?>"><?php //echo $term->name; ?></a></li>
-					<?php //endforeach; ?>
+					<?php foreach ( $terms as $term ) : ?>
+						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+					<?php endforeach; ?>
 				</ul>
 
 				<?php
-					//the_archive_description( '<div e="taxonomy-description">', '</div>' );
+					the_archive_description( '<div e="taxonomy-description">', '</div>' );
 				?>
-			</div>-->
-			
+			</div>		
 		</header>
-
 
 		<!-- portfolio company items by user id -->
 		<?php 
@@ -49,16 +45,28 @@ get_header();
 										'connected_items' => $user->ID,
 										'suppress_filters' => false,
 										'nopaging' => true,
-										));	?>
+										'orderby' => 'post_date',
+                               			'order' => 'DESC',
+										'posts_per_page' => 5,
+										));	
 										
-			<!--<pre>
-				<?php //print_r( $story_posts );?>	
-			</pre>-->
-			<div class="history-page-wrapper">
-			
-			<h2 class="container">Stories:</h2>
+			wp_reset_postdata();
 
-			<?php if ( $story_posts->have_posts() ) : ?>
+			// questionnaires
+			$questionnaire_posts = new WP_Query( array(
+											'connected_type' => 'questionnaire_to_user',
+											'connected_items' => $user->ID,
+											'suppress_filters' => false,
+											'nopaging' => true,
+											'orderby' => 'post_date',
+                               				'order' => 'DESC',
+											'posts_per_page' => 5,
+											));	
+
+			wp_reset_postdata();								
+			
+			if ( $story_posts->have_posts() ) : ?>
+				<h2 class="history-title container">Stories:</h2>
 
 				<?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
 					<div class="container">
@@ -84,34 +92,27 @@ get_header();
 						</ul>
 
 					</div>
-				<?php endwhile; 	
+				<?php endwhile;
+			endif; 
 
-				wp_reset_postdata();
+			// questionnaires ?>
 
-			endif;
+			<div class="questionnaire-wrapper container">
+				<?php if( $questionnaire_posts->have_posts() ) : ?>
+					<h2 class="history-title container">Questionnaires:</h2>
 
-			// questionnaires
-			$questionnaire_posts = new WP_Query( array(
-											'connected_type' => 'questionnaire_to_user',
-											'connected_items' => $user->ID,
-											'suppress_filters' => false,
-											'nopaging' => true,
-											));	?>
-
-			<h2>Questionnaires</h2>
-
-			<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
-				<div class="quest-wrapper">
-					<a href="<?php echo get_permalink(); ?>">
-						<?php the_title(); ?>
-					</a>
-				</div>
-			<?php endwhile;
-
-			wp_reset_postdata(); ?> 
+					<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
+						<div class="quest-wrapper">
+							<a class="story-title" href="<?php echo get_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</div>
+					<?php endwhile;
+				endif; ?>	
 			</div>
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
+		</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

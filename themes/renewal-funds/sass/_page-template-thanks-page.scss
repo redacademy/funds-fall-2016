@@ -1,8 +1,6 @@
 .thanks-page-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    flex-flow: column;
 }
 
 .thanks-msg {
@@ -13,7 +11,11 @@
 
 .thanks-image-wrapper {
     padding: 3rem 0;
-    max-width: 250px;
+    max-width: 180px;
+    margin: 0 auto;
+    @include tablet {
+        max-width: 250px;
+    }
 }
 
 .home-button {

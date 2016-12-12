@@ -14,16 +14,27 @@ body {
     font-stretch: normal;
 }
 
-// For Fonts
-// h1,h2,h3,h4,h5,h6 {
-//     font-family: 
-// }
-
-// body {
-
-// }
+.page-header {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    h1 {
+        margin: 0;
+        @include tablet {
+            margin: 0 0 2rem 0;
+        }
+    }
+    @include tablet {
+        font-size: 1.5rem;
+    }
+    @include desktop {
+        font-size: 1.75rem;
+    }
+}
 
 .container {
+    min-width: 350px;
     max-width: 656px;
     margin: 0 auto;
     @include tablet {

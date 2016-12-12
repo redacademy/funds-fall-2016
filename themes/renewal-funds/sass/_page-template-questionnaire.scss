@@ -6,20 +6,8 @@
     display: none;
 }
 
-.acf-form {
-    //border: none !important;
-}
-
 .acf-fc-layout-handle {
      display: none !important;
-}
-
-//.acf-fc-layout-handle {
-    //display: none;
-//}
-
-.acf-fc-layout-handle + .ui-sortable-handle {
-    //display: none;
 }
 
 .acf-input-wrap input, .acf-input textarea {
@@ -31,17 +19,8 @@
     background: white !important;
 }
 
-#acf-field_58464ce3f2246-0-field_58464d37f2247 {
-    //background: white;
-}
-
-/* changes !!!!!*/
 .single-questionnaire h1 {
     text-align: center;
-}
-
-.single-questionnaire .acf-form {
-    padding: 0 3rem 1rem;
 }
 
 .single-questionnaire .acf-fields > .acf-field {
@@ -65,29 +44,53 @@
     text-align: center;
     .acf-button {
         width: auto;
-    display: flex;
-    margin: 2rem auto;
-    justify-content: center;
-    align-items: center;
-    padding: 0.7rem 3.5rem;
-    border-radius: 12px;
-    border: none;
-    background-color: $color__brand-color-lgreen;
-    color: #fff;
-    text-shadow: none;
-    box-shadow: none;
-    font-size: 1.6rem;
-    a {
-        color: white;
-        text-decoration: none;
-    }    
-    &:hover {
-        background-color: $color__brand-color-dgreen;
-    }
+        display: flex;
+        margin: 2rem auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem 3.5rem;
+        border-radius: 12px;
+        border: none;
+        background-color: $color__brand-color-lgreen;
+        color: #fff;
+        text-shadow: none;
+        box-shadow: none;
+        font-size: 1.6rem;
+        a {
+            color: white;
+            text-decoration: none;
+        }    
+        &:hover {
+            background-color: $color__brand-color-dgreen;
+        }
     }
 }
 
 .acf-input-wrap input {
     font-size: 1.5rem !important;
     font-weight: bold;
+}
+
+.post-type-archive-questionnaire {
+    .entry-header {
+        a {
+            text-align: center;
+            color: $color__brand-color-dgreen;
+            &:hover {
+                color: $color__brand-color-olive;
+            }
+            &visited {
+                color: $color__brand-color-dgreen;
+            }
+        }
+    }
+    .entry-title {
+        text-align: center;
+    }
+
+    .site-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
