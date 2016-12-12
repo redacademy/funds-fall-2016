@@ -1,45 +1,58 @@
-# RED Starter
+# Renewal Funds Community Project - WordPress, PHP, CSS/SASS JQuery
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+![alt tag](./screenshot.png)
 
-Download me, add me to your `wp-content` directory, rename me, and and start themin'!
+This project was intended to provide a replacement business system for the proess of capturing impact statements from portfolio 
+companies for the investment firm Renewal Funds.
 
-## Using with VVV
+The business process called for the creation of a number of portfolio companies for a particular financial year and for those portfolio companies
+to login to the application and provide impact statements, which consist of a collecton of stories, answered questionnaires and images.
 
-To get Browsersync working from within you VVV virtual machine (as configured this theme's `gulpfile.js`), you're going to need a bit of initial configuration.
+The application consists of a Wordpress back-end, used by Renewal Funds employees, and a web front-end, used by the portfolio companies.
 
-### 1. Add port forwarding to your Vagrantfile
+The designs and business processes were proved by the UX/UI team at Red Academy.
 
-Just like with ScotchBox, we're going to need to set up port forwarding in our `Vagrantfile` so that `localhost:3000` on your VM can talk to `localhost:3000` on your host machine.
+##Technologies Used
 
-Add the following line under the "Port Forwarding" section in your VVV `Vagrantfile`
+- WordPress
+- PHP
+- HTML5
+- CSS3/SASS
+- JavaScript
+- JQuery
+- GULP
 
-```ruby
-config.vm.network "forwarded_port", guest: 3000, host: 3000
-```
+##Personal Learnings
 
-Be sure to `vagrant reload` after this!
+This project allowed me to explore the use of WordPress to create a content management system 
+website with a user accessible back end UI.  Required functionality necessitated investigation
+ and use of the WordPress template hierarchy for appropriate archive and other page types.
 
-### 2. Install Gulp inside VVV
+Use was made of plugins for third party functionality as well as development of custom widgets
+and post types for various data components.
 
-Unlike ScotchBox, VVV doesn't come with Gulp pre-installed.
+This project made heavy use of CSS and SASS for presentational styling. The design specification required particular attention to be made to flexbox for positioning.
 
-To install Gulp, `vagrant up` then `vagrant ssh` and run the following command:
+GULP was used to add developer functionality for task automation in the creation of minified JS and CSS files.
 
-```bash
-sudo npm install --global gulp-cli
-```
+##References
+http://www.wordpress.org/
 
-### 3. Install the dev dependencies
+##Known Issues
 
-Next you'll need to run `npm install` inside your theme directory next to install the node modules you'll need for Gulp, etc.
+The end product website was tested in all major browsers.  
 
-You may have better luck with the package installation if you run `npm install` from your **host** machine (not from within the VM). This means that you will need to have Node installed on your actual computer to do this.
+An issue with WordPress Theme check giving a warning of a slug naming violation to the Text Domain 
+name was unable to be resolved at this time.
 
-### 4. Update the proxy in `gulpfile.js`
+##To Do
+- Add custom theme screenshot.
+- Complete navigation transition.
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy.
+## Setup / Installation
 
-Now you should be able to `vagrant ssh` into your cd into `/vagrant/www/YOUR_SITE_DIR/htdocs/wp-content/themes/YOUR_THEME_DIR` and run `gulp` to get Browsersync up and running.
+##### Install
+`> npm i`
 
-Note that you will have to manually navigate to `localhost:3000` to see your site (it won't automatically launch in your browser).
+##### Run
+`> gulp`

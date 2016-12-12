@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ *
  *
  */
 
@@ -46,8 +46,6 @@ get_header(); ?>
 						get_template_part( 'template-parts/content', 'story-yes' );
 					?>
 				<?php //endwhile; ?>
-
-				<?php //the_posts_navigation(); ?>
 			<?php else : ?>
 				<?php get_template_part( 'template-parts/content', 'story-no' ); ?>
 			<?php endif; ?>

@@ -1,11 +1,11 @@
 <section>
-    <p>content-story-no.php</p>
+    <!--<p>content-story-no.php</p>-->
 	<div class="page-content">
     <div class="thanks-page-wrapper">
 
         <div class="page-header">
             <p>Hmmm...</p>
-            <span class="error-header-message"><p>seems like there's no stories yet</p></span>
+            <span class="error-header-message"><p>seems like there're' no stories yet</p></span>
         </div>
 
         <div class="thanks-image-wrapper">
