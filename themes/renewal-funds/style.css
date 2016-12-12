@@ -1251,9 +1251,6 @@ body {
 .acf-input-wrap > input {
   background: white !important; }
 
-.single-questionnaire h1 {
-  text-align: center; }
-
 .single-questionnaire .acf-fields > .acf-field {
   border-top: none; }
 
@@ -1295,6 +1292,10 @@ body {
 .acf-input-wrap input {
   font-size: 1.5rem !important;
   font-weight: bold; }
+
+@media (min-width: 1240px) {
+  .single-questionnaire .entry-content {
+    padding: 0 5rem; } }
 
 .post-type-archive-questionnaire .entry-header a {
   text-align: center;
