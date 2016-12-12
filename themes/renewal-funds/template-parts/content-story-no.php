@@ -2,6 +2,7 @@
     <!--<p>content-story-no.php</p>-->
 	<div class="page-content">
         <div class="thanks-page-wrapper container wrap">
+
             <div class="error-header">
                 <h1>Hmmm...</h1>
                 <span class="error-header-message"><p>seems like there're no stories yet</p></span>
@@ -18,6 +19,7 @@
             <div class="home-button">
                 <a href="<?php echo get_page_link( get_page_by_title('Story Upload')->ID ); ?>">Add Story</a>
             </div>
+
         </div>
     </div><!-- .page-content -->
 </section>
