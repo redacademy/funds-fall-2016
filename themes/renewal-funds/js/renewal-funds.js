@@ -18,7 +18,7 @@
 
     $(window).resize(function(){
         $( '.site-header' ).removeClass( 'header-resize' );
-        scrollbarHeight = $(window).height() - 200;
+        var scrollbarHeight = $(window).height() - 200;
     });
 
     $( '.acf-input-wrap input' ).prop( 'disabled', true ); 
@@ -28,7 +28,7 @@
         var content = $('.textarea').val().length;
         if (content === 0 ){
             event.preventDefault();
-            $('.page-template-feedback .textarea.medium').css('border','2px solid red');
+            $('.page-template-feedback .textarea.medium').css('border','2px solid #790000');
         }
     });
 
