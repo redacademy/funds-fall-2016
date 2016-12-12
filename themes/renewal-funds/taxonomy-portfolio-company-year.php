@@ -68,7 +68,7 @@ get_header(); ?>
                 <div class="stories">
                     
                 <?php if ( $story_posts->have_posts() ) : ?>
-				<h2 class="container">Stories:</h2>
+				<h2 class="history-title container">Stories:</h2>
 
                     <?php while( $story_posts->have_posts() ) : $story_posts->the_post(); ?>
                         <div class="container">

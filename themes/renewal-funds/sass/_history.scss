@@ -8,6 +8,47 @@
     }
 }
 
+.portfolio-company-year-style {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    @include tablet {
+        padding: 0 0 2rem 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline;
+            padding-right: 2rem;
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $color__brand-color-dgreen;
+    &:hover {
+        color: $color__brand-color-olive;
+    }
+    }
+
+}
+
+.history-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    @include desktop {
+        font-size: 2.3rem;
+    }
+}
+
+// Story Section
 .story-section-wrapper {
     margin: 0;
     padding: 0;
@@ -48,13 +89,6 @@
     }
 }
 
-.history-title {
-    font-size: 1.75rem;
-    @include tablet {
-    margin-bottom: 1rem;
-    }
-}
-
 .story-title {
     font-size: 1.25rem;
     font-weight: 900;
@@ -91,8 +125,19 @@
     }
 }
 
+// Questionnaire Section
+
 .questionnaire-wrapper {
     padding-top: 2rem;
+}
+
+.questionnaire-section-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    @include tablet {
+        margin: 0 0 2rem 0;
+    }
 }
 
 .quest-wrapper {
@@ -106,33 +151,16 @@
     }
     a {
         text-decoration: none;
+        margin-bottom: 1rem;
     }
 }
 
-.portfolio-company-year-style {
-    display: flex;
-    justify-content: center;
-
-    ul {
-        margin: 0;
-        padding: 0;
-        
-        li {
-            display: inline;
-            padding-right: 2rem;
-        }
-
-        li:last-child {
-            padding-right: 0;
-        }
+// Single Year Page
+.stories {
+    text-align: center;
+    @include tablet {
+        text-align: left;
     }
-
-    a {
-        text-decoration: none;
-        color: $color__brand-color-dgreen;
-    &:hover {
-        color: $color__brand-color-olive;
-    }
-    }
-
 }
+
+
