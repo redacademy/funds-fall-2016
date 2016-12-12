@@ -666,7 +666,7 @@ a {
       border-bottom: 3px solid #b0aea5; } }
 
 @media (min-width: 1240px) {
-  .single-questionnaire .menu-item-object-questionnaire > a,
+  .single-questionnaire .menu-item-object-custom > a,
   .single-story .menu-item-object-portfolio-company > a,
   .tax-portfolio-company-year .menu-item-object-portfolio-company > a {
     border-bottom: 3px solid #b0aea5; } }

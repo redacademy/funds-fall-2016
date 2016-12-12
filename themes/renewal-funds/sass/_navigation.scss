@@ -98,7 +98,7 @@ a {
 	}
 }
 @include desktop {
-	.single-questionnaire .menu-item-object-questionnaire >a,
+	.single-questionnaire .menu-item-object-custom >a,
 	.single-story .menu-item-object-portfolio-company >a,
 	.tax-portfolio-company-year .menu-item-object-portfolio-company >a {
 		border-bottom: 3px solid $color__brand-color-gray;
