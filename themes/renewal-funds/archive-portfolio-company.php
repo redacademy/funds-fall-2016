@@ -102,10 +102,16 @@ get_header(); ?>
 					<h2 class="history-title container">Questionnaires:</h2>
 
 					<?php while( $questionnaire_posts->have_posts() ) : $questionnaire_posts->the_post(); ?>
-						<div class="quest-wrapper">
-							<a class="story-title" href="<?php echo get_permalink(); ?>">
-								<?php the_title(); ?>
-							</a>
+						<div class="container">
+							<ul class="questionnaire-section-wrapper">
+								<li class="questionnaire-section">
+									<div class="quest-wrapper">
+										<a class="story-title" href="<?php echo get_permalink(); ?>">
+											<?php the_title(); ?>
+										</a>
+									</div>
+								</li>
+							</ul>
 						</div>
 					<?php endwhile;
 				endif; ?>	
