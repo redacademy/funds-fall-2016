@@ -22,16 +22,14 @@
     var scrollbarHeight = height - 200;
     // console.log(scrollbarHeight);
     // $('.header-resize .main-navigation .menu').css('max-height', scrollbarHeight);
-
-    $(window).resize(function(){location.reload();});
     
     //$( '.acf-form' ).css( 'background-color: white'); 
 
     $('.page-template-feedback .gform_button').on('click',function(event){
-        var content = $('.textarea').val();
-        if (content === ''){
+        var content = $('.textarea').val().length;
+        if (content === 0 ){
             event.preventDefault();
-            ('.page-template-feedback .textarea.medium').css('border','1px solid red');
+            $('.page-template-feedback .textarea.medium').css('border','1px solid #ccc');
 
         }
         else{
