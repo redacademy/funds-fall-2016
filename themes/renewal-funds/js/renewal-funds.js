@@ -24,20 +24,4 @@
     $( '.acf-input-wrap input' ).prop( 'disabled', true ); 
     //$( '.acf-form' ).css( 'background-color: white'); 
 
-    $('.page-template-feedback .gform_button').on('click',function(event){
-        var content = $('.textarea').val().length;
-        if (content === 0 ){
-            $('.page-template-feedback .textarea.medium').addClass('invalid');
-            if (('#input_2_1').hasClass('invalid')){
-                $('.page-template-feedback .gform_button').preventDefault();
-            }
-        } else {
-            $('.page-template-feedback .textarea.medium').removeClass('invalid');
-        }
-    });
-
-    $('.page-template-feedback .gform_button').on('click',function(event){
-        
-    });
-
 })(jQuery);
