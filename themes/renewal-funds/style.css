@@ -550,30 +550,30 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.post-type-archive-story li {
+.post-type-archive-story li, .page-template-story-upload li {
   padding-bottom: 1.5rem; }
 
-.post-type-archive-story .gform_body {
+.post-type-archive-story .gform_body, .page-template-story-upload .gform_body {
   padding: 0.5rem 3rem; }
 
-.post-type-archive-story .gfield {
+.post-type-archive-story .gfield, .page-template-story-upload .gfield {
   padding-bottom: 2rem; }
 
-.post-type-archive-story .gfield_label {
+.post-type-archive-story .gfield_label, .page-template-story-upload .gfield_label {
   padding-bottom: 0.5rem; }
 
-.post-type-archive-story #gform_fields_3 li.gfield.gfield_error {
+.post-type-archive-story #gform_fields_3 li.gfield.gfield_error, .page-template-story-upload #gform_fields_3 li.gfield.gfield_error {
   background-color: white;
   border-top: none;
   border-bottom: none; }
 
-.post-type-archive-story #gform_3 .validation_error {
+.post-type-archive-story #gform_3 .validation_error, .page-template-story-upload #gform_3 .validation_error {
   border-top: none;
   border-bottom: none;
   padding: 0.5rem 3rem;
   text-align: left; }
 
-.post-type-archive-story #input_3_2, .post-type-archive-story #input_3_1, .post-type-archive-story #input_3_3 {
+.post-type-archive-story #input_3_2, .post-type-archive-story #input_3_1, .post-type-archive-story #input_3_3, .page-template-story-upload #input_3_2, .page-template-story-upload #input_3_1, .page-template-story-upload #input_3_3 {
   background-color: #d6d6cd;
   border-radius: 25px;
   border: 1px solid #ccc;
@@ -591,17 +591,17 @@ textarea {
   -o-appearance: none;
   -ms-appearance: none; }
 
-.post-type-archive-story select {
+.post-type-archive-story select, .page-template-story-upload select {
   border-radius: 25px;
   border: 1px solid #ccc;
   padding: 1rem 1.5rem; }
 
 @media (min-width: 1240px) {
-  .post-type-archive-story .gform_wrapper {
+  .post-type-archive-story .gform_wrapper, .page-template-story-upload .gform_wrapper {
     padding: 0 5rem; } }
 
 @media only screen and (min-width: 641px) {
-  .post-type-archive-story #field_3_1 select.medium, .post-type-archive-story #field_3_2 input.medium {
+  .post-type-archive-story #field_3_1 select.medium, .post-type-archive-story #field_3_2 input.medium, .page-template-story-upload #field_3_1 select.medium, .page-template-story-upload #field_3_2 input.medium {
     width: 100%; } }
 
 /* just put it here. it affect feedback page and archive story page!!!*/
