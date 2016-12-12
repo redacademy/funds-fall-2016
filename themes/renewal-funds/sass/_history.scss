@@ -11,6 +11,10 @@
 .portfolio-company-year-style {
     display: flex;
     justify-content: center;
+    padding: 2rem;
+    @include tablet {
+        padding: 0 0 2rem 0;
+    }
 
     ul {
         margin: 0;
@@ -38,8 +42,9 @@
 
 .history-title {
     font-size: 1.75rem;
-    @include tablet {
     margin-bottom: 1rem;
+    @include desktop {
+        font-size: 2.3rem;
     }
 }
 
@@ -126,6 +131,15 @@
     padding-top: 2rem;
 }
 
+.questionnaire-section-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    @include tablet {
+        margin: 0 0 2rem 0;
+    }
+}
+
 .quest-wrapper {
     @include tablet {
     padding-left: 235px;
@@ -138,6 +152,14 @@
     a {
         text-decoration: none;
         margin-bottom: 1rem;
+    }
+}
+
+// Single Year Page
+.stories {
+    text-align: center;
+    @include tablet {
+        text-align: left;
     }
 }
 
