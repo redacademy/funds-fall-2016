@@ -1022,11 +1022,11 @@ object {
   text-align: center;
   padding: 0.5rem 2rem 1rem 2rem; }
   .not-found .page-content img {
-    height: 87px;
-    width: 87px; }
+    width: 140px; }
   .not-found .page-content p {
     font-size: 1.25rem;
-    color: #323432; }
+    color: #323432;
+    padding: 0 2rem; }
 
 .error-content a {
   text-decoration: none;
