@@ -551,6 +551,12 @@ textarea {
 .post-type-archive-story .gform_body {
   padding: 0.5rem 3rem; }
 
+.post-type-archive-story .gfield {
+  padding-bottom: 2rem; }
+
+.post-type-archive-story .gfield_label {
+  padding-bottom: 0.5rem; }
+
 .post-type-archive-story #gform_fields_3 li.gfield.gfield_error {
   background-color: white;
   border-top: none;
@@ -566,7 +572,7 @@ textarea {
   background-color: #d6d6cd;
   border-radius: 25px;
   border: 1px solid #ccc;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   -webkit-border-radius: 25px;
   -webkit-padding: 1rem 1.5rem;
   -moz-border-radius: 25px;

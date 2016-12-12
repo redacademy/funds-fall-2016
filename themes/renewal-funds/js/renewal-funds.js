@@ -26,4 +26,17 @@
     $(window).resize(function(){location.reload();});
     
     //$( '.acf-form' ).css( 'background-color: white'); 
+
+    $('.page-template-feedback .gform_button').on('click',function(event){
+        var content = $('.textarea').val();
+        if (content === ''){
+            event.preventDefault();
+            ('.page-template-feedback .textarea.medium').css('border','1px solid red');
+
+        }
+        else{
+            return event;
+        };
+    })
+
 })(jQuery);
