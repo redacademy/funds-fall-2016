@@ -24,7 +24,7 @@
         if (content === 0 ){
             event.preventDefault();
             $('.page-template-feedback .textarea.medium').css('border','2px solid red');
-        };
-    })
+        }
+    });
 
 })(jQuery);
