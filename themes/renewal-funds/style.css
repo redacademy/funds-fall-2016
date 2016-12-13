@@ -1335,7 +1335,7 @@ body {
   margin: 0 auto; }
   @media (min-width: 641px) {
     .thanks-image-wrapper {
-      max-width: 250px; } }
+      max-width: 200px; } }
 
 .home-button {
   display: -ms-flexbox;
