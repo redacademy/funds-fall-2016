@@ -68,13 +68,13 @@ function rf_scripts() {
 	// css
 	wp_enqueue_style( 'font-awesomxe-style', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'renewal-funds-style', get_stylesheet_uri() );
-	// wp_enqueue_style('flickity', '//unpkg.com/flickity@2/dist/flickity.min.css');
+	wp_enqueue_style('flickity', '//unpkg.com/flickity@2/dist/flickity.min.css');
 
 	// js
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'renewal-funds-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'renewal-funds-js', get_template_directory_uri() . '/build/js/renewal-funds.min.js', array(), '20130115', true );
- 	// wp_enqueue_script('flickity', '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js');
+ 	wp_enqueue_script('flickity', '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -19,18 +19,19 @@
     ul {
         margin: 0;
         padding: 0;
-        display: flex;
+        // display: flex;
         li {
-            padding-right: 2rem;
-            display: flex;
+            // padding-right: 2rem;
+            list-style: none;
+            // display: flex;
             align-items: center;
         }
 
         li:last-child {
             padding-right: 0;
-            img {
-                display: none;
-            }
+            // img {
+            //     display: none;
+            // }
         }
     }
 
@@ -180,3 +181,12 @@
 }
 
 
+// Flickity
+.main-carousel {
+    width: 30%;
+}
+.carousel-cell {
+  width: 100%; /* half-width */
+  height: 40px;
+  margin-right: 10px;
+}

@@ -9,7 +9,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 	<!--portfolio company year -->
-	<div class="history-page-wrapper main-carousel wrap container">
+	<div class="history-page-wrapper wrap container">
 		<header class="page-header">	
 			<h1>History</h1>
 
@@ -23,9 +23,9 @@ get_header(); ?>
 			?>
 		
 			<div class="portfolio-company-year-style">
-				<ul>
+				<ul class="main-carousel"  data-flickity='{ "cellAlign": "center", "contain": true}'>
 					<?php foreach ( $terms as $term ) : ?>
-						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a> <span class="line"><img src="<?php echo get_template_directory_uri()?>/assets/images/line.png" alt="Black Line"></span> </li>
+						<li class="carousel-cell"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
 					<?php endforeach; ?>
 				</ul>
 
@@ -35,7 +35,7 @@ get_header(); ?>
 			</div>		
 		</header>
 
-		<!-- portfolio company items by user id -->
+		 <!--portfolio company items by user id -->
 		<?php 
 			$user = wp_get_current_user(); 
 

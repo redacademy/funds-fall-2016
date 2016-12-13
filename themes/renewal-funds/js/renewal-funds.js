@@ -40,4 +40,8 @@
         
     });
     
+    // if($('#target').hasClass('is-selected')) {
+
+    // }
+
 })(jQuery);
