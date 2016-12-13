@@ -67,17 +67,6 @@ textarea {
 	.gfield_label {
 		padding-bottom: 0.5rem;
 	}
-	#gform_fields_3 li.gfield.gfield_error {
-		background-color: white;
-		border-top: none;
-		border-bottom: none;
-	}
-	#gform_3 .validation_error {
-		border-top: none;
-		border-bottom: none;
-		padding: 0.5rem 3rem;
-		text-align: left;
-	}
 	#input_3_2, #input_3_1, #input_3_3 {
 		background-color: #d6d6cd;
 		border-radius: 25px;
@@ -116,4 +105,16 @@ textarea {
 /* just put it here. it affect feedback page and archive story page!!!*/
 .gform_wrapper input[type=submit] {
 	line-height: 1 !important;
+}
+
+.gform_wrapper li.gfield.gfield_error {
+	background-color: white !important;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+.gform_wrapper .validation_error {
+	border-top: none !important;
+	border-bottom: none !important;
+	padding: 0.5rem 3rem !important;
+	text-align: left !important;
 }

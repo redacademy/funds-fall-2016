@@ -560,17 +560,6 @@ textarea {
 .post-type-archive-story .gfield_label, .page-template-story-upload .gfield_label {
   padding-bottom: 0.5rem; }
 
-.post-type-archive-story #gform_fields_3 li.gfield.gfield_error, .page-template-story-upload #gform_fields_3 li.gfield.gfield_error {
-  background-color: white;
-  border-top: none;
-  border-bottom: none; }
-
-.post-type-archive-story #gform_3 .validation_error, .page-template-story-upload #gform_3 .validation_error {
-  border-top: none;
-  border-bottom: none;
-  padding: 0.5rem 3rem;
-  text-align: left; }
-
 .post-type-archive-story #input_3_2, .post-type-archive-story #input_3_1, .post-type-archive-story #input_3_3, .page-template-story-upload #input_3_2, .page-template-story-upload #input_3_1, .page-template-story-upload #input_3_3 {
   background-color: #d6d6cd;
   border-radius: 25px;
@@ -600,6 +589,17 @@ textarea {
 /* just put it here. it affect feedback page and archive story page!!!*/
 .gform_wrapper input[type=submit] {
   line-height: 1 !important; }
+
+.gform_wrapper li.gfield.gfield_error {
+  background-color: white !important;
+  border-top: none !important;
+  border-bottom: none !important; }
+
+.gform_wrapper .validation_error {
+  border-top: none !important;
+  border-bottom: none !important;
+  padding: 0.5rem 3rem !important;
+  text-align: left !important; }
 
 /*--------------------------------------------------------------
 # Navigation
