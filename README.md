@@ -8,7 +8,7 @@ This project was intended to provide a replacement business system for the proce
 companies for the investment firm Renewal Funds.
 
 The business process called for the creation of a number of portfolio companies for a particular financial year and for those portfolio companies
-to login to the application and provide impact statements, which consist of a collection of stories, answered questionnaires and images.
+to login to the application and provide impact statements.  These impact statements consist of a collection of stories, answered questionnaires and images.
 
 The application consists of a Wordpress back-end, used by Renewal Funds employees, and a web front-end, used by the portfolio companies, with 
 designs and business processes proved by UX/UI at Red Academy.
