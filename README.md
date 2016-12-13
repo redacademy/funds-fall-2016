@@ -27,7 +27,8 @@ JLY - The development of this project allowed me to explore some of the function
 This project also enabled me to investigate the intricacies of programming plugins and manipulating their functionality to the project requirements.  Additionally I gained 
 very useful experience in project and team management as this project continued.
 
-CK - 
+CK - This was the first project I got to work in a team. Through this project I learned how to divide up the workflow of the project and the process of git pull/push while fixing merge conflicts. 
+Also I managed to refine my WordPress terminology knowledge and learned how to use complex WordPress plugins to meet client's needs for the website.
 
 MZ - 
 
