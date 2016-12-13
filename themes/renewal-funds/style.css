@@ -583,8 +583,8 @@ textarea {
     padding: 0 5rem; } }
 
 @media only screen and (min-width: 641px) {
-  .post-type-archive-story #field_3_1 select.medium, .post-type-archive-story #field_3_2 input.medium, .page-template-story-upload #field_3_1 select.medium, .page-template-story-upload #field_3_2 input.medium {
-    width: 100%; } }
+  .post-type-archive-story .medium, .page-template-story-upload .medium {
+    width: 100% !important; } }
 
 /* just put it here. it affect feedback page and archive story page!!!*/
 .gform_wrapper input[type=submit] {
