@@ -575,7 +575,7 @@ textarea {
   background-color: #d6d6cd;
   border-radius: 25px;
   border: 1px solid #ccc;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   -webkit-border-radius: 25px;
   -webkit-padding: 1rem 1.5rem;
   -moz-border-radius: 25px;
@@ -588,11 +588,6 @@ textarea {
   -moz-appearance: none;
   -o-appearance: none;
   -ms-appearance: none; }
-
-.post-type-archive-story select, .page-template-story-upload select {
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  padding: 1rem 1.5rem; }
 
 @media (min-width: 1240px) {
   .post-type-archive-story .gform_wrapper, .page-template-story-upload .gform_wrapper {
