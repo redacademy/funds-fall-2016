@@ -46,11 +46,13 @@
 
 .line {
     img {
-    width: 15px;
-    margin-left: 35px;
+    width: 10px;
+    margin-left: 25px;
     display: flex;
     align-self: center;
-    
+    @include tablet {
+        margin-left: 35px;
+    }
     }
 }
 

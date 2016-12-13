@@ -9,7 +9,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 	<!--portfolio company year -->
-	<div class="history-page-wrapper wrap container">
+	<div class="history-page-wrapper main-carousel wrap container">
 		<header class="page-header">	
 			<h1>History</h1>
 
@@ -21,7 +21,7 @@ get_header(); ?>
 								
 				$terms = get_terms( $arg );
 			?>
-
+		
 			<div class="portfolio-company-year-style">
 				<ul>
 					<?php foreach ( $terms as $term ) : ?>
@@ -116,7 +116,6 @@ get_header(); ?>
 					<?php endwhile;
 				endif; ?>	
 			</div>
-
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->

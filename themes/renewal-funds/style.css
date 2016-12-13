@@ -1418,12 +1418,15 @@ body {
       color: #536048; }
 
 .line img {
-  width: 15px;
-  margin-left: 35px;
+  width: 10px;
+  margin-left: 25px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
       align-self: center; }
+  @media (min-width: 641px) {
+    .line img {
+      margin-left: 35px; } }
 
 .history-title {
   font-size: 1.75rem;

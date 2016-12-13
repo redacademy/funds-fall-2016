@@ -39,5 +39,5 @@
     $('.page-template-feedback .gform_button').on('click',function(event){
         
     });
-
+    
 })(jQuery);
