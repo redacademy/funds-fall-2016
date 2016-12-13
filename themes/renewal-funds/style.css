@@ -1253,7 +1253,8 @@ body {
   border: none; }
 
 .acf-input-wrap > input {
-  background: white !important; }
+  background: white !important;
+  height: auto !important; }
 
 .single-questionnaire .acf-fields > .acf-field {
   border-top: none; }
