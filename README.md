@@ -30,7 +30,9 @@ very useful experience in project and team management as this project continued.
 CK - This was the first project I got to work in a team. Through this project I learned how to divide up the workflow of the project and the process of git pull/push while fixing merge conflicts. 
 Also I managed to refine my WordPress terminology knowledge and learned how to use complex WordPress plugins to meet client's needs for the website.
 
-MZ - 
+MZ - From this project, I have a deep understanding of WordPress, PHP, JavaScript / jQuery, and got good practice of front-end development skills. For instance, the header is the case of using 
+multiple skills. The dynamic header is the results showing the connection between back end and front end. Hamburger menu presents dynamic dropdown menu fitting different viewport size by JavaScript / jQuery. 
+And the use of wordpress plugins and CSS make the header functional and beautiful. Along working on this wordpress project, I did plenty of research on PHP, jQuery and wordpress, which enhanced my skills a lot.
 
 ##References
 http://www.wordpress.org/
