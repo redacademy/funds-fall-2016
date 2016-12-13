@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: 404
+ * Template Name: 404 Page
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
