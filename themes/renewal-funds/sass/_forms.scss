@@ -118,3 +118,15 @@ textarea {
 	padding: 0.5rem 3rem !important;
 	text-align: left !important;
 }
+
+.page-template-feedback {
+	.gfield_required {
+		display: none;
+	}
+	.ginput_container_textarea {
+		padding: 0 2rem !important;
+	}
+	.gfield_contains_required {
+		padding-right: 16px !important;
+	}
+}
