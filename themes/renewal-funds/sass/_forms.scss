@@ -96,11 +96,11 @@ textarea {
 		-o-appearance: none;
 		-ms-appearance: none;
 	}
-	select {
-		border-radius: 25px;
-		border: 1px solid #ccc;
-		padding: 1rem 1.5rem;
-	}
+	// select {
+	// 	border-radius: 25px;
+	// 	border: 1px solid #ccc;
+	// 	padding: 1rem 1.5rem;
+	// }
 	  
 	@include desktop {
 		.gform_wrapper {
