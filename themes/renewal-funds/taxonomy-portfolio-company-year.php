@@ -14,13 +14,27 @@ get_header(); ?>
         <div class="wrap">
 
         <?php if ( have_posts() ) : ?>
-            <header class="page-header">
-                <h1>History</h1>
-                
-                <?php
-                    the_archive_title( '<h2 class="page-header">', '</h2>' );
-                ?>
-            </header><!-- .page-header -->
+		<header class="page-header">	
+			<h1>History</h1>
+
+			<?php 
+				$user = wp_get_current_user(); 
+
+				$arg = array( 'taxonomy' => 'portfolio-company-year',
+								'hide_empty' => true, );
+								
+				$terms = get_terms( $arg );
+			?>
+		
+			<div class="portfolio-company-year-style">
+				<ul class="main-carousel"  data-flickity='{ "cellAlign": "center", "contain": true, "initialIndex": 1}'>
+					<?php foreach ( $terms as $term ) : ?>
+						<li class="carousel-cell"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+					<?php endforeach; ?>
+				</ul>
+
+			</div>		
+		</header>
 
             <?php 
                 $user = wp_get_current_user();
