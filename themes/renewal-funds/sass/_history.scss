@@ -19,14 +19,18 @@
     ul {
         margin: 0;
         padding: 0;
-        
+        display: flex;
         li {
-            display: inline;
             padding-right: 2rem;
+            display: flex;
+            align-items: center;
         }
 
         li:last-child {
             padding-right: 0;
+            img {
+                display: none;
+            }
         }
     }
 
@@ -38,6 +42,16 @@
     }
     }
 
+}
+
+.line {
+    img {
+    width: 15px;
+    margin-left: 35px;
+    display: flex;
+    align-self: center;
+    
+    }
 }
 
 .history-title {

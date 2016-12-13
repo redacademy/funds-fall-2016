@@ -58,14 +58,11 @@ textarea {
 }
 
 .post-type-archive-story, .page-template-story-upload{
-	li {
-		padding-bottom: 1.5rem;
+	li:not(:last-child){
+		padding-bottom: 2rem;
 	}
 	.gform_body {
 		padding: 0.5rem 3rem;
-	}
-	.gfield {
-		padding-bottom: 2rem;
 	}
 	.gfield_label {
 		padding-bottom: 0.5rem;

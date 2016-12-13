@@ -25,7 +25,7 @@ get_header(); ?>
 			<div class="portfolio-company-year-style">
 				<ul>
 					<?php foreach ( $terms as $term ) : ?>
-						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?><span>-</span></a></li>
+						<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a> <span class="line"><img src="<?php echo get_template_directory_uri()?>/assets/images/line.png" alt="Black Line"></span> </li>
 					<?php endforeach; ?>
 				</ul>
 
