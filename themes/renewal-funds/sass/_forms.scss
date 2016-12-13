@@ -84,13 +84,7 @@ textarea {
 		-moz-appearance: none;
 		-o-appearance: none;
 		-ms-appearance: none;
-	}
-	// select {
-	// 	border-radius: 25px;
-	// 	border: 1px solid #ccc;
-	// 	padding: 1rem 1.5rem;
-	// }
-	  
+	}	  
 	@include desktop {
 		.gform_wrapper {
 			padding: 0 5rem;
@@ -111,12 +105,14 @@ textarea {
 	background-color: white !important;
 	border-top: none !important;
 	border-bottom: none !important;
+	padding-top: 0 !important;
 }
 .gform_wrapper .validation_error {
 	border-top: none !important;
 	border-bottom: none !important;
 	padding: 0.5rem 3rem !important;
 	text-align: left !important;
+	margin-bottom: 0 !important;
 }
 
 .page-template-feedback {

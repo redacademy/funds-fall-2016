@@ -593,13 +593,15 @@ textarea {
 .gform_wrapper li.gfield.gfield_error {
   background-color: white !important;
   border-top: none !important;
-  border-bottom: none !important; }
+  border-bottom: none !important;
+  padding-top: 0 !important; }
 
 .gform_wrapper .validation_error {
   border-top: none !important;
   border-bottom: none !important;
   padding: 0.5rem 3rem !important;
-  text-align: left !important; }
+  text-align: left !important;
+  margin-bottom: 0 !important; }
 
 .page-template-feedback .gfield_required {
   display: none; }
