@@ -1390,7 +1390,10 @@ body {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 0 0 4rem 0; }
+  padding: 1rem 0 3rem 0; }
+  @media (min-width: 641px) {
+    .portfolio-company-year-style {
+      padding: 0 0 3rem 0; } }
   .portfolio-company-year-style ul {
     margin: 0;
     padding: 0; }
