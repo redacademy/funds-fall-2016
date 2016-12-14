@@ -387,9 +387,6 @@ big {
     .page-template-feedback .feedback-info {
       width: 100%; } }
 
-.page-template-feedback .feedback-text {
-  padding: 0 2rem; }
-
 .page-template-feedback .gform_wrapper .textarea.medium {
   background-color: #d6d6cd;
   border-radius: 25px;
@@ -610,7 +607,7 @@ textarea {
   padding: 0 2rem !important; }
 
 .page-template-feedback .gfield_contains_required {
-  padding-right: 16px !important; }
+  padding-right: 0 !important; }
 
 /*--------------------------------------------------------------
 # Navigation
