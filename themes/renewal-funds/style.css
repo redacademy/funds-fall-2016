@@ -1398,9 +1398,7 @@ body {
     margin: 0;
     padding: 0; }
     .portfolio-company-year-style ul li {
-      list-style: none;
-      -ms-flex-align: center;
-          align-items: center; }
+      list-style: none; }
     .portfolio-company-year-style ul li:last-child {
       padding-right: 0; }
   .portfolio-company-year-style a {
