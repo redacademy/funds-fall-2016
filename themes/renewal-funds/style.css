@@ -631,7 +631,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -938,11 +937,6 @@ object {
       height: 100%; }
       .header-resize .main-navigation .menu {
         overflow-y: auto; }
-      .header-resize .main-navigation ul {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-            flex-direction: column; }
       .header-resize .main-navigation li {
         width: 100%;
         border-bottom: 3px solid #d6d6cd;

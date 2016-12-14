@@ -76,10 +76,6 @@
         .menu {
             overflow-y: auto;
         }
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
         li {
             width: 100%;
             border-bottom: 3px solid $color__brand-color-lgray;
