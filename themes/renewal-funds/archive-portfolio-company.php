@@ -23,7 +23,7 @@ get_header(); ?>
 			?>
 		
 			<div class="portfolio-company-year-style">
-				<ul class="main-carousel"  data-flickity='{ "cellAlign": "center", "contain": true, "initialIndex": 1}'>
+				<ul class="main-carousel"  data-flickity='{ "cellAlign": "center", "contain": true, "initialIndex": 1 }'>
 					<?php foreach ( $terms as $term ) : ?>
 						<li class="carousel-cell"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
 					<?php endforeach; ?>

@@ -24,15 +24,18 @@ get_header(); ?>
 								'hide_empty' => true, );
 								
 				$terms = get_terms( $arg );
+                
+                $initial_year = (int)2015;
+                $search_year = (int)get_the_archive_title();
+                $flickity_index = $search_year - $initial_year;
 			?>
 		
 			<div class="portfolio-company-year-style">
-				<ul class="main-carousel"  data-flickity='{ "cellAlign": "center", "contain": true}'>
+				<ul class="main-carousel"  data-flickity='{ "cellAlign": "center", "contain": true, "initialIndex": <?php echo $flickity_index; ?> }'>
 					<?php foreach ( $terms as $term ) : ?>
 						<li class="carousel-cell"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
 					<?php endforeach; ?>
 				</ul>
-
 			</div>		
 		</header>
 
