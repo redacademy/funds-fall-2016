@@ -184,9 +184,13 @@
 // Flickity
 .main-carousel {
     width: 30%;
+    min-width: 200px;
 }
 .carousel-cell {
-  width: 100%; /* half-width */
+  width: 100%;
   height: 40px;
-  margin-right: 10px;
+  margin-top: 11px;
+  @include tablet {
+      margin-top: 0;
+  }
 }
