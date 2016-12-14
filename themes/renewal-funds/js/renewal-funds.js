@@ -19,18 +19,5 @@
         $( '.site-header' ).removeClass( 'header-resize' );
     });
 
-    $( '.acf-input-wrap input' ).prop( 'disabled', true );  
-
-
-
-    /*var $carousel = $('#main-carousel').flickity();
-    var cellElements = $carousel.flickity('getCellElements');
-
-    console.log(cellElements.length);
-
-    for (var i = 0; i < cellElements.length; i++) {
-        console.log(cellElements[i]);
-    }*/
-
-
+    $( '.acf-input-wrap input' ).prop( 'disabled', true );
 })(jQuery);
