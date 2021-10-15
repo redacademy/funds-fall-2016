@@ -1,6 +1,6 @@
 # Renewal Funds Community Project - WordPress, PHP, CSS/SASS JQuery
 
-### Development by Justin Levett-Yeats, Cheol Kim and Martin Zhangyx
+### Development by Justin LY, Cheol Kim and Martin Zhangyx
 
 ![alt tag](./themes/renewal-funds/screenshot.png)
 
